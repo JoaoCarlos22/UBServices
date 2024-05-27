@@ -1,5 +1,6 @@
 # TP---UBServices
 Trabalho prático da disciplina de Engenharia de Software I.  
+**Proposta:** Plataforma para serviços de UBSs
 
 **Docente:** Andrey Rodrigues 
 
