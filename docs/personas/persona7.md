@@ -2,7 +2,7 @@
  **Autor:** Calil Lima
 
 ## QUEM
-Fagner - 20 anos
+Fagner - 20 anos.
 
 **Q1** - Técnico de Enfermagem.
 
