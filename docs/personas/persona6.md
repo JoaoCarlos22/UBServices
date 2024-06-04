@@ -40,4 +40,4 @@ Caroline - 32 anos
 
 **S2** - Armazenamento seguro de dados de pacientes, históricos de consultas e visitas e integração com outros sistemas de saúde.
 
-**S3** - Conectividade, acesso à internet, compatibilidade, interoperabilidade, alpem de questões de usabilidade e treinamento.
+**S3** - Conectividade, acesso à internet, compatibilidade, interoperabilidade, além de questões de usabilidade e treinamento.
