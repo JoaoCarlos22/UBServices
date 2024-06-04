@@ -2,7 +2,7 @@
  **Autor:** Calil Lima
 
 ## QUEM
-Caroline - 32 anos
+Caroline - 32 anos.
 
 **Q1** - ACS.
 
