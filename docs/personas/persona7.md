@@ -6,7 +6,7 @@ Fagner - 20 anos
 
 **Q1** - Técnico de Enfermagem.
 
-**Q2** - Ensino médio completo e Curso técnico em enfermagem.
+**Q2** - Cursando ensino superior e possui Curso técnico em enfermagem.
 
 **Q3** - Responsável, prestativo, gosta de adiantar tarefas.
 
@@ -33,11 +33,11 @@ Fagner - 20 anos
 ## PROBLEMAS
 **P1** - Durante sua rotina os principais problemas enfrentados são a baixa usabilidade e falta de conectividade das aplicações que são utilizadas pela equipe.
 
-**P2** - Ambiente específico e organizado para documentação de pacientes, levando em conta endereço, nome, data de nascimento etc, além de um ambiente próprio para comunicação eficiente com a equipe.
+**P2** - Ambiente específico e organizado para documentação de pacientes, levando em conta questões de usabilidade e eficiência, além de implementações offline.
 
 ## SOLUÇÕES EXISTENTES
-**S1** - Sim, sistemas como iHealth e Meu Prontuário, são exemplos comuns, voltados diretamente para gestão de dados no ambiente digital.
+**S1** - Sim, o iHealth, sistema citado anteriormente, é voltado para documentação de dados de pacientes, sendo um dos mais vistos.
 
 **S2** - Armazenamento seguro de dados de pacientes, históricos de consultas e visitas e integração com outros sistemas de saúde.
 
-**S3** - Conectividade, acesso à internet, compatibilidade, interoperabilidade, alpem de questões de usabilidade e treinamento.
+**S3** - Conectividade, usabilidade, necessidade de treinamento.
