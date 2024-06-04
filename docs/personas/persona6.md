@@ -6,7 +6,7 @@ Caroline - 32 anos
 
 **Q1** - ACS.
 
-**Q2** - Ensino médio completo.
+**Q2** - Ensino superior completo.
 
 **Q3** - Decidida, responsável, gosta de praticidade.
 
