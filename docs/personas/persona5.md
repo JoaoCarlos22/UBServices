@@ -1,5 +1,7 @@
 # PERSONA 5  - PACIENTE
 
+# Autor:Luiz Henrique Mendes 
+
 ## QUEM
 
 João - 40 anos
