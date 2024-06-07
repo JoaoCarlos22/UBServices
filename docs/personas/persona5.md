@@ -26,7 +26,7 @@ E1. Ele gosta de ler livros, porque é o único tempo que ele tem já que ele tr
 
 E2. Ele não tem muito tempo pra família, já que trabalha o dia todo
 
-E3.
+E3. Celular 
 
 E4. Ele aprendeu lendo os manuais de instruções
 
