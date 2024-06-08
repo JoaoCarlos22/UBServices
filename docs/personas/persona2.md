@@ -1,4 +1,4 @@
-# PERSONA 5  -  Atendente/Recepcionista
+# PERSONA 2  -  Atendente/Recepcionista
 
 ## QUEM
 
