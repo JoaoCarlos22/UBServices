@@ -28,7 +28,8 @@
    
         1.3.3 [Tipo](#tipo)
    
-2. [INFORMAÇÕES GERAIS](#informações-gerais) 
+2. [INFORMAÇÕES GERAIS](#informações-gerais)
+   
     2.1 [Objetivo](#objetivo)
    
     2.2 [Escopo Geral](#escopo-geral)
@@ -38,36 +39,41 @@
         2.2.2 [Escopo negativo](#escopo-negativo)
 
 ## 1.	INTRODUÇÃO 
-  Atualmente, as Unidades Básicas de Saúde (as UBS) são, em muitas ocasiões, um dos primeiros contatos dos brasileiros com o Serviço Único de Saúde (SUS), que, tem como função primordial, promover a integração a saúde básica dos indivíduos. Estando presente em locais de fácil acesso, desempenhando o principal papel na garantia de acesso a saúde adequada para a sociedade (GOMES et al., 2021). O autor destaca, que apesar da proposta clara, de se promover esse direito fundamental para a sociedade, os serviços ofertados pelo SUS muitas vezes atravessam uma crise, com atendimentos sobrecarregados em algumas unidades, falta de alguns materiais e ou medicamentos disponíveis.    
-  Com os desafios citados acima, se pode relacionar, que muitos dos problemas com o atendimento e os serviços prestados nas UBS, podem gerar grandes prejuízos na saúde para os usuários dessas unidades. Sendo assim, a falta de informação adequada pode afetar uma boa parte da população, que muitas vezes dependem exclusivamente desses serviços ofertados pelo SUS. Contudo, para a promoção de serviços adequados de saúde pública nas Unidades Básicas de Saúde, é necessária a disseminação de informações corretas e adequadas para seus usuários. Pois, em muitos casos, há a disseminação de informações enganosas e fraudulentas, que acabam atrapalhando ainda mais os serviços da saúde pública. 
 
+Atualmente, as Unidades Básicas de Saúde (as UBS) são, em muitas ocasiões, um dos primeiros contatos dos brasileiros com o Serviço Único de Saúde (SUS), que, tem como função primordial, promover a integração a saúde básica dos indivíduos. Estando presente em locais de fácil acesso, desempenhando o principal papel na garantia de acesso a saúde adequada para a sociedade (GOMES et al., 2021). O autor destaca, que apesar da proposta clara, de se promover esse direito fundamental para a sociedade, os serviços ofertados pelo SUS muitas vezes atravessam uma crise, com atendimentos sobrecarregados em algumas unidades, falta de alguns materiais e ou medicamentos disponíveis.  
+Com os desafios citados acima, se pode relacionar, que muitos dos problemas com o atendimento e os serviços prestados nas UBS, podem gerar grandes prejuízos na saúde para os usuários dessas unidades. Sendo assim, a falta de informação adequada pode afetar uma boa parte da população, que muitas vezes dependem exclusivamente desses serviços ofertados pelo SUS. Contudo, para a promoção de serviços adequados de saúde pública nas Unidades Básicas de Saúde, é necessária a disseminação de informações corretas e adequadas para seus usuários. Pois, em muitos casos, há a disseminação de informações enganosas e fraudulentas, que acabam atrapalhando ainda mais os serviços da saúde pública. 
 ## 1.1	Objeto 
-1.1	Objeto 
 
   Desenvolver um sistema de gerenciamento de consultas e atendimento para Unidades Básicas de Saúde, que proporcione a interação de servidores dessas Unidades com seus respectivos pacientes. 
 
 ## 1.2	Motivação, justificativa e oportunidade 
+
   Para um melhor atendimento no acesso da saúde básica para a população, principalmente no atendimento das Unidades Básicas de Saúde integradas ao SUS, o sistema propõe uma forma disruptiva para os processos de atendimentos e consultas dos pacientes nas Unidades Básicas de Saúde. 
 
 ## 1.3.1	Caracterização do Projeto 
+
 | Classe          | Detalhamento |
 |-----------------|--------------|
 | Sistema web     | O projeto será desenvolvido como um sistema web. No front-end, utilizaremos JavaScript com o framework React.js. No back-end, empregaremos Node.js com Express.js.|
 
 ## 1.3.2	Enquadrabilidade 
+
 | Enquadrabilidade          | Detalhamento |
 |---------------------------|--------------|
 | Aplicativo público        | O aplicativo segue as regulamentações da (Lei Geral de Proteção de Dados) LGPD garantido os dados dos usuários sejam coletados, armazenados e processados de forma segura.  |
  
-## 1.3.3Tipo
+## 1.3.3  Tipo
+
 | Tipo                         | Detalhamento |
 |------------------------------|--------------|
 | Documentação de software     | Levantamento de requisitos, especificação de funcionalidade, modelagem do sistema, implementação de interfaces. |
 
 ## 2 INFORMAÇÕES GERAIS
+
   A criação de uma plataforma para serviços de UBSs visa otimizar a administração desses estabelecimentos, melhorar a qualidade dos serviços prestados e facilitar o acesso às informações tanto para profissionais da saúde quanto para os usuários. As UBSs são fundamentais para o sistema de saúde pública, oferecendo atendimento primário e prevenindo problemas de saúde mais graves. Portanto um modelo estruturado pode trazer benefícios significativos para a eficiência e eficácia do serviço prestado. 
 
 ## 2.1	Objetivo 
+
   O principal objetivo é automatizar e centralizar as tarefas de gerenciamento das UBSs, incluindo agendamentos, controle de estoque de medicamentos, registros de atendimentos e acompanhamento de pacientes. Além disso, a plataforma deve proporcionar interface acessível para que os usuários possam facilmente obter informações, agendar consultas e acessar seus históricos médicos.
 
 ## 2.2	Escopo Geral 
