@@ -15,7 +15,7 @@
 
 
 
-## 1.	INTRODUÇÃO 
+# 1.	INTRODUÇÃO 
 
 Atualmente, as Unidades Básicas de Saúde (as UBS) são, em muitas ocasiões, um dos primeiros contatos dos brasileiros com o Serviço Único de Saúde (SUS), que, tem como função primordial, promover a integração a saúde básica dos indivíduos. Estando presente em locais de fácil acesso, desempenhando o principal papel na garantia de acesso a saúde adequada para a sociedade (GOMES et al., 2021). O autor destaca, que apesar da proposta clara, de se promover esse direito fundamental para a sociedade, os serviços ofertados pelo SUS muitas vezes atravessam uma crise, com atendimentos sobrecarregados em algumas unidades, falta de alguns materiais e ou medicamentos disponíveis.  
 
@@ -47,7 +47,7 @@ Com os desafios citados acima, se pode relacionar, que muitos dos problemas com 
 |------------------------------|--------------|
 | Documentação de software     | Levantamento de requisitos, especificação de funcionalidade, modelagem do sistema, implementação de interfaces. |
 
-## 2 INFORMAÇÕES GERAIS
+# 2 INFORMAÇÕES GERAIS
 
   A criação de uma plataforma para serviços de UBSs visa otimizar a administração desses estabelecimentos, melhorar a qualidade dos serviços prestados e facilitar o acesso às informações tanto para profissionais da saúde quanto para os usuários. As UBSs são fundamentais para o sistema de saúde pública, oferecendo atendimento primário e prevenindo problemas de saúde mais graves. Portanto um modelo estruturado pode trazer benefícios significativos para a eficiência e eficácia do serviço prestado. 
 
@@ -69,7 +69,7 @@ Com os desafios citados acima, se pode relacionar, que muitos dos problemas com 
   A plataforma também disponibilizará ferramentas para geração de relatórios periódicos sobre atendimentos realizados, diagnósticos comuns e utilização de recursos, ajudando a tomada de decisões informadas. A análise de dados permitirá identificar padrões e áreas que necessitam de melhorias, promovendo uma gestão mais eficiente e focada na qualidade de atendimento. 
   Um portal de comunicação direta entre pacientes e profissionais será incluído, permitindo que os pacientes tirem suas dúvidas e recebam orientações de forma rápida. A plataforma disponibilizará materiais educativos sobre prevenção e cuidados de saúde, ajudando na conscientização e educação dos pacientes. Haverá integração com sistemas de notificação e emergências de saúde pública, garantindo que as UBSs estejam sempre preparadas e informadas sobre situações de crise. 
 
-# 2.2.2	Escopo Negativo 
+## 2.2.2	Escopo Negativo 
 
   A plataforma não fornecerá um ambiente completo de telemedicina, incluindo videoconferências, concentrando-se apenas na gestão administrativa e no agendamento de consultas presenciais, exceto consultas online ao vivo com o paciente se for necessário. Além disso, não haverá funcionalidades para gestão de pagamentos, faturamento ou transações financeiras, além de questões financeiras, como cobrança de serviços ou gestão de convênios, estarão fora do escopo. 
   A gestão de internações hospitalares ou tratamento intensivo não será incluída, uma vez que o foco estará na atenção primária fornecida pelas UBSs. Também não serão oferecidas ferramentas de diagnóstico automático ou sugestões de tratamentos baseados em inteligência artificial, deixando a decisão clínica exclusivamente a cargo dos profissionais de saúde. 
@@ -90,3 +90,50 @@ Com os desafios citados acima, se pode relacionar, que muitos dos problemas com 
 | Linguagens de marcação e estilização    | HTML 5 e CSS 3                       |
 | Linguagens de Programação               | JavaScript e Pyhton                   |
 | Banco de dados                          | MySQL                                 |
+
+
+## 2.4 Características Inovadoras do Projeto  
+
+- Localizar a UBS mais próxima do usuário integrando um mapa de interação; 
+- Estabelecer uma comunicação direta e remota de consultas (videochamada, ligação por voz ou texto);
+- Permitir o envio de arquivos como fotos de exames ou prescrições médicas; 
+- Mostrar conteúdos relevantes como artigos, revistas e notícias para levar a informação ao usuário; 
+- Destacar os principais serviços que tal UBS oferece.
+
+## 2.5	Resultados Esperados 
+
+- Os resultados esperados com a implementação do projeto são: 
+- Reduzir o sobrecarregamento manual das instituições;
+- Diminuir o prazo de atendimento a consultas; 
+- Facilitar o contato com profissionais da saúde;
+- gyAumentar a eficiência na gestão hospitalar. 
+
+ 
+
+# 3	METODOLOGIA DE PROJETO 
+
+## 3.1	Estrutura do Projeto 
+- PO – Product Owner 
+- Scrum Master 
+- Squad: Avaliador, designer e modelador 
+
+## 3.2	Equipe de Projeto: Papéis e Responsabilidades dos integrantes 
+| Responsabilidade | Profissional     |
+|------------------|------------------|
+| Avaliador        | João Carlos      |
+| Prototipação     | Hélio Nogueira   |
+| Prototipação     | Chyntia Freitas  |
+| Modelador        | Calil Lima       |
+| Modelador        | Nicolas Rocha    |
+| Modelador        | Luiz Henrique    |
+
+
+## 3.3	Fases, Atividades e Cronograma 
+
+- Fase I: Especificação – Janeiro/Fevereiro:  
+Requisitos e plano de trabalho: Personas, User Stories, Critérios de Aceitação, Regras de Negócio.
+- Fase II: Inspeção – Março/Abril:  
+- Fase III: Projeto e Arquitetura – Maio/Junho:  
+- Fase IV: Prototipagem e Refinamento – Julho:  
+- Fase V: Prototipagem e Refinamento – Agosto:  
+- Fase VI: Encerramento – Setembro: 
