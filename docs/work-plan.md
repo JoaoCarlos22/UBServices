@@ -77,3 +77,14 @@ Com os desafios citados acima, se pode relacionar, que muitos dos problemas com 
   O suporte técnico não será fornecido 24 horas por dia, 7 dias por semana, sendo disponibilizado em horário comercial padrão, com opções de escalonamento para emergências. O projeto não incluirá o desenvolvimento de qualquer tipo de hardware ou dispositivos físicos, concentrando-se no software de gestão. 
   Ferramentas para condução de pesquisas clínicas avançadas ou ensaios clínicos não serão incluídas, mantendo o foco em funcionalidades práticas e administrativas. Embora haja suporte básico e documentação para o uso da plataforma, não será fornecido um programa extensivo de capacitação ou treinamento para os usuários, devendo esses treinamentos adicionais serem providos por outras fontes. 
   A plataforma não incluirá funcionalidades de análise preditiva ou algoritmos complexos de previsão de saúde baseados em dados históricos. Além disso, os dados serão armazenados localmente ou servidores seguros designados, sem integração com provedores de armazenamento em nuvem pública na versão inicial.  
+
+## 2.3 Ambiente de Desenvolvimento
+|                             Ferramentas e Tecnologias                             |
+|              Tipo                       |         Modelo e Especificações         |
+|:---------------------------------------:|:---------------------------------------:|
+|        Repositório Online               |              Github                     |
+|Editor e criador de imagens e interfaces |                Figma                     |
+| Editor de código fonte                  | Visual Studio Code                      |
+| Linguagens de marcação e estilização    | HTML 5 e CSS 3                         |
+| Linguagens de Programação               | JavaScript e Pyhton                     |
+| Banco de dados                          | MySQL                                  |
