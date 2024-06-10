@@ -14,34 +14,13 @@
 | 1.0          | Elaboração do Plano de Trabalho    | João Carlos, Hélio Nogueira, Nicolas Rocha, Luiz Mendes, Chyntia Prestes, Calil Lima.          | 10/06/2024 |
 
 
-## Índice
-
-1. [INTRODUÇÃO](#introdução)
-
-    1.1 [Objeto](#objeto)
-   
-    1.2 [Motivação, justificativa e oportunidade](#motivação-justificativa-e-oportunidade)
-   
-        1.3.1 [Classe](#classe)
-   
-        1.3.2 [Enquadrabilidade](#enquadrabilidade)
-   
-        1.3.3 [Tipo](#tipo)
-   
-2. [INFORMAÇÕES GERAIS](#informações-gerais)
-   
-    2.1 [Objetivo](#objetivo)
-   
-    2.2 [Escopo Geral](#escopo-geral)
-   
-        2.2.1 [Escopo específico](#escopo-específico)
-   
-        2.2.2 [Escopo negativo](#escopo-negativo)
 
 ## 1.	INTRODUÇÃO 
 
 Atualmente, as Unidades Básicas de Saúde (as UBS) são, em muitas ocasiões, um dos primeiros contatos dos brasileiros com o Serviço Único de Saúde (SUS), que, tem como função primordial, promover a integração a saúde básica dos indivíduos. Estando presente em locais de fácil acesso, desempenhando o principal papel na garantia de acesso a saúde adequada para a sociedade (GOMES et al., 2021). O autor destaca, que apesar da proposta clara, de se promover esse direito fundamental para a sociedade, os serviços ofertados pelo SUS muitas vezes atravessam uma crise, com atendimentos sobrecarregados em algumas unidades, falta de alguns materiais e ou medicamentos disponíveis.  
+
 Com os desafios citados acima, se pode relacionar, que muitos dos problemas com o atendimento e os serviços prestados nas UBS, podem gerar grandes prejuízos na saúde para os usuários dessas unidades. Sendo assim, a falta de informação adequada pode afetar uma boa parte da população, que muitas vezes dependem exclusivamente desses serviços ofertados pelo SUS. Contudo, para a promoção de serviços adequados de saúde pública nas Unidades Básicas de Saúde, é necessária a disseminação de informações corretas e adequadas para seus usuários. Pois, em muitos casos, há a disseminação de informações enganosas e fraudulentas, que acabam atrapalhando ainda mais os serviços da saúde pública. 
+
 ## 1.1	Objeto 
 
   Desenvolver um sistema de gerenciamento de consultas e atendimento para Unidades Básicas de Saúde, que proporcione a interação de servidores dessas Unidades com seus respectivos pacientes. 
