@@ -47,7 +47,7 @@ Com os desafios citados acima, se pode relacionar, que muitos dos problemas com 
 |------------------------------|--------------|
 | Documentação de software     | Levantamento de requisitos, especificação de funcionalidade, modelagem do sistema, implementação de interfaces. |
 
-# 2 INFORMAÇÕES GERAIS
+# 2. INFORMAÇÕES GERAIS
 
   A criação de uma plataforma para serviços de UBSs visa otimizar a administração desses estabelecimentos, melhorar a qualidade dos serviços prestados e facilitar o acesso às informações tanto para profissionais da saúde quanto para os usuários. As UBSs são fundamentais para o sistema de saúde pública, oferecendo atendimento primário e prevenindo problemas de saúde mais graves. Portanto um modelo estruturado pode trazer benefícios significativos para a eficiência e eficácia do serviço prestado. 
 
@@ -110,7 +110,7 @@ Com os desafios citados acima, se pode relacionar, que muitos dos problemas com 
 
  
 
-# 3	METODOLOGIA DE PROJETO 
+# 3. METODOLOGIA DE PROJETO 
 
 ## 3.1	Estrutura do Projeto 
 - PO – Product Owner 
@@ -137,3 +137,24 @@ Requisitos e plano de trabalho: Personas, User Stories, Critérios de Aceitaçã
 - Fase IV: Prototipagem e Refinamento – Julho:  
 - Fase V: Prototipagem e Refinamento – Agosto:  
 - Fase VI: Encerramento – Setembro: 
+
+## 3.4	Entregas de cada Fase 
+
+| Fase                           | Mês      | Entregável                                                    |
+|--------------------------------|----------|---------------------------------------------------------------|
+| I. Especificação               | 17/06    | Personas, User Stories, Critérios de Aceitação, Regras de Negócio |
+| II. Inspeção                   |          |                                                               |
+| III. Projeto e Arquitetura     |          |                                                               |
+| IV. Prototipagem e Refinamento |          |                                                               |
+| V. Encerramento                |          |                                                               |
+ 
+
+## 3.5	Controle de Mudanças 
+
+O monitoramento e controle do escopo do projeto serão realizados a partir das seguintes diretrizes: 
+- Requisitos do projeto devem ser compreendidos por todos os membros da equipe.
+- Todas as questões técnicas, de entregas e do cronograma que a equipe do projeto possui devem ser respondidas. 
+- Todas as entregas devem ser acordadas pela equipe do projeto e entidades parceiras. 
+- Todas as informações devem estar atualizadas no escopo e não-escopo. 
+- Nenhum trabalho fora do escopo do projeto deve ser feito. 
+- Solicitações de mudança no escopo do projeto devem ser efetivamente comunicadas e compreendidas.
