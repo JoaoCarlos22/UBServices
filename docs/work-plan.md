@@ -4,7 +4,7 @@
 |------------------------|--------------------------------------------|
 | Versão                 | 1.0                                        | 
 | Status                 | Em andamento                               |
-| Executor principal     |                                            |
+| Executor principal     | Hélio Nogueira, João Carlos, Calil Lima, Nicolas Rocha, Luiz henrique, Chyntia Freitas |
 | Coordenador do Projeto:| Andrey Rodrigues                           |
 
 
