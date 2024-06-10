@@ -79,12 +79,14 @@ Com os desafios citados acima, se pode relacionar, que muitos dos problemas com 
   A plataforma não incluirá funcionalidades de análise preditiva ou algoritmos complexos de previsão de saúde baseados em dados históricos. Além disso, os dados serão armazenados localmente ou servidores seguros designados, sem integração com provedores de armazenamento em nuvem pública na versão inicial.  
 
 ## 2.3 Ambiente de Desenvolvimento
-|                             Ferramentas e Tecnologias                             |
-|              Tipo                       |         Modelo e Especificações         |
-|:---------------------------------------:|:---------------------------------------:|
-|        Repositório Online               |              Github                     |
-|Editor e criador de imagens e interfaces |                Figma                     |
-| Editor de código fonte                  | Visual Studio Code                      |
-| Linguagens de marcação e estilização    | HTML 5 e CSS 3                         |
-| Linguagens de Programação               | JavaScript e Pyhton                     |
-| Banco de dados                          | MySQL                                  |
+
+### Ferramentas e Tecnologias
+
+| Tipo                                    | Modelo e Especificações               |
+|:---------------------------------------:|:-------------------------------------:|
+| Repositório Online                      | Github                                |
+| Editor e criador de imagens e interfaces| Figma                                 |
+| Editor de código fonte                  | Visual Studio Code                    |
+| Linguagens de marcação e estilização    | HTML 5 e CSS 3                       |
+| Linguagens de Programação               | JavaScript e Pyhton                   |
+| Banco de dados                          | MySQL                                 |
