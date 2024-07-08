@@ -2,9 +2,9 @@
 
 | Nome do Projeto:       | Plataforma para serviços em UBSs           | 
 |------------------------|--------------------------------------------|
-| Versão                 | 1.0                                        | 
+| Versão                 | 2.0                                        | 
 | Status                 | Em andamento                               |
-| Executor principal     | Hélio Nogueira, João Carlos, Calil Lima, Nicolas Rocha, Luiz henrique, Chyntia Freitas |
+| Executor principal     | Hélio Nogueira, João Carlos, Calil Lima, Nicolas Rocha, Luiz Henrique, Chyntia Freitas |
 | Coordenador do Projeto:| Andrey Rodrigues                           |
 
 
@@ -12,7 +12,7 @@
 |  Versão      | Descrição                          |   Autor   |  Data   |
 |--------------|------------------------------------|-----------|---------|
 | 1.0          | Elaboração do Plano de Trabalho    | João Carlos, Hélio Nogueira, Nicolas Rocha, Luiz Mendes, Chyntia Prestes, Calil Lima.          | 10/06/2024 |
-
+| 2.0          | Alteração da estrutura do projeto | João Carlos | 08/07/2024 |
 
 
 # 1.	INTRODUÇÃO 
@@ -126,35 +126,35 @@ Com os desafios citados acima, se pode relacionar, que muitos dos problemas com 
 ## 3.1	Estrutura do Projeto 
 - PO – Product Owner 
 - Scrum Master 
-- Squad: Avaliador, designer e modelador 
+- Squad: Avaliador de inspeção, modelador, analista de requisitos e designer UX/UI 
 
 ## 3.2	Equipe de Projeto: Papéis e Responsabilidades dos integrantes 
 | Responsabilidade | Profissional     |
 |------------------|------------------|
-| Avaliador        | João Carlos      |
-| Prototipação     | Hélio Nogueira   |
+| Scrum Master     | João Carlos      |
+| Avaliador de inspeção | Hélio Nogueira |
 | Prototipação     | Chyntia Freitas  |
 | Modelador        | Calil Lima       |
-| Modelador        | Nicolas Rocha    |
+| Analista de requisitos | Nicolas Rocha |
 | Modelador        | Luiz Henrique    |
 
 
 ## 3.3	Fases, Atividades e Cronograma 
 
-- Fase I: Especificação – Janeiro/Fevereiro:  
+- Fase I: Especificação – Maio/Junho:  
 Requisitos e plano de trabalho: Personas, User Stories, Critérios de Aceitação, Regras de Negócio.
-- Fase II: Inspeção – Março/Abril:  
-- Fase III: Projeto e Arquitetura – Maio/Junho:  
+- Fase II: Inspeção – Julho: Planilha dos defeitos encontrados e relatório detalhado do processo de inspeção
+- Fase III: Projeto e Arquitetura – Julho:  
 - Fase IV: Prototipagem e Refinamento – Julho:  
-- Fase V: Prototipagem e Refinamento – Agosto:  
-- Fase VI: Encerramento – Setembro: 
+- Fase V: Prototipagem e Refinamento – Julho:  
+- Fase VI: Encerramento – Julho: 
 
 ## 3.4	Entregas de cada Fase 
 
 | Fase                           | Mês      | Entregável                                                    |
 |--------------------------------|----------|---------------------------------------------------------------|
-| I. Especificação               | 17/06    | Personas, User Stories, Critérios de Aceitação, Regras de Negócio |
-| II. Inspeção                   |          |                                                               |
+| I. Especificação               | 17/06    | Personas, User Stories, Critérios de Aceitação e Regras de Negócio |
+| II. Inspeção                   | 03/07    | Planilha dos defeitos encontrados e relatório detalhado do processo de inspeção|
 | III. Projeto e Arquitetura     |          |                                                               |
 | IV. Prototipagem e Refinamento |          |                                                               |
 | V. Encerramento                |          |                                                               |
