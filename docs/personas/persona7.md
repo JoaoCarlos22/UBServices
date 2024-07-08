@@ -1,4 +1,4 @@
-# PERSONA 8 - SUPERVISOR
+# PERSONA 7 - SUPERVISOR
 
 **Autor:** João Carlos
 
