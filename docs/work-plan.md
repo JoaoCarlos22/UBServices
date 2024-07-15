@@ -98,7 +98,8 @@ Com os desafios citados acima, se pode relacionar, que muitos dos problemas com 
 | Repositório Online                      | Github                                |
 | Editor e criador de imagens e interfaces| Figma                                 |
 | Editor de código fonte                  | Visual Studio Code                    |
-| Linguagens de marcação e estilização    | HTML 5 e CSS 3                       |
+| Modelagem                               | Draw.io e Astah Community             |
+| Linguagens de marcação e estilização    | HTML 5 e CSS 3                        |
 | Linguagens de Programação               | JavaScript e Pyhton                   |
 | Banco de dados                          | MySQL                                 |
 
