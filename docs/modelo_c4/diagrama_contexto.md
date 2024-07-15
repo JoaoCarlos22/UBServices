@@ -24,4 +24,4 @@ O nível de contexto fornece uma visão geral do sistema, mostrando como ele se 
 
 Autores: Hélio Nogueira e Chyntia Freitas
 
-![context_diagram](context_diagram.png)
+![context_diagram](images/context_diagram.png)
