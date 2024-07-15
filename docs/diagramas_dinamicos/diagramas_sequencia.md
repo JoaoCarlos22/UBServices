@@ -21,3 +21,7 @@ Autores: João Carlos e Nicolas Rocha
 ### 5. Cadastrar UBS e seus serviços
 
 ![](images/cadastrar_ubs.png)
+
+### 6. Localizar UBS
+
+![](images/localizar_ubs.png)
