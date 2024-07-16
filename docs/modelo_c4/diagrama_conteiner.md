@@ -22,12 +22,12 @@ Autor: Luiz Mendes
 
 ### 4. Recepcionista
 
-![](images/container_diagram4.png)
+![](images/container_diagram4.jpeg)
 
 ### 5. Supervisor
 
-![](images/container_diagram5.png)
+![](images/container_diagram5.jpeg)
 
 ### 6. Técnico de Enfermagem
 
-![](images/container_diagram6.png)
+![](images/container_diagram6.jpeg)
