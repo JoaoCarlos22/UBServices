@@ -25,3 +25,27 @@ Autores: João Carlos e Nicolas Rocha
 ### 6. Localizar UBS
 
 ![](images/localizar_ubs.png)
+
+### 7. Visualizar consulta
+
+![](images/vizualizar_consulta.jpg)
+
+### 8. Realizar atendimento
+
+![](images/realizar_atendimento.jpeg)
+
+### 9. Realizar triagem
+
+![](images/realizar_triagem.jpeg)
+
+### 10. Realizar consulta
+
+![](images/realizar_consulta.jpeg)
+
+### 11. Consultar endereço
+
+![](images/consultar_endereco.jpeg)
+
+### 12. Realizar orientaçõa
+
+![](images/realizar_orientacao.jpeg)
