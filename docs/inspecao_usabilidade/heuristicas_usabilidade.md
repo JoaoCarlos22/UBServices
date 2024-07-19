@@ -1,6 +1,6 @@
 ## Avaliação Heurística
 
-Descrição: 
+Descrição: Essas heurísticas são amplamente utilizadas para realizar avaliações de usabilidade em projetos de design de interfaces, garantindo que os sistemas sejam intuitivos, eficientes e satisfatórios para os usuários.
 
 
 | ID | Heurística                                  | Descrição                                                                         |
@@ -19,9 +19,9 @@ Descrição:
 
 ## Severidade
 
-Descrição:
+Descrição: A severidade, nas heurísticas de Nielsen, refere-se à classificação da gravidade dos problemas de usabilidade encontrados em uma interface
 
-| **ID** | Descriminação                                                               |
+| **ID** | severidade                                                              |
 |------------|---------------------------------------------------------------------------|
 | 0  | Falso-positivo |
 | 1  | Cosmético |
