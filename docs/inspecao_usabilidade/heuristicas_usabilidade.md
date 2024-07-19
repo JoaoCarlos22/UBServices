@@ -12,11 +12,10 @@
 | 10 | Ajuda e documentação                        | Mesmo que seja melhor que um sistema seja tão autoexplicativo que nenhum guia seja necessário, ainda é necessário fornecer documentação e ajuda. |
 
 
-| **ID** | Descrição                                                                 |
+| **ID** | Descriminação                                                               |
 |------------|---------------------------------------------------------------------------|
-| 0  | Manter os usuários informados sobre o que está acontecendo no sistema.</span>    |
-| 1  | Usar linguagem e conceitos familiares aos usuários, em vez de termos técnicos.</span> |
-| 2  | Oferecer saídas claras para que os usuários possam sair de estados indesejados.</span> |
-| 3  | Seguir convenções de plataforma e padrões de design já estabelecidos.</span>     |
-| 4  | Eliminar condições que causam erros ou apresentar mensagens de erro claras.</span> |
-| 5  |  
+| 0  | Falso-positivo |
+| 1  | Cosmético |
+| 2  | Leve |
+| 3  | Grave |
+| 4  | Catastrófico |
