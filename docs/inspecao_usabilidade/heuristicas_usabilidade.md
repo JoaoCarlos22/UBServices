@@ -1,3 +1,8 @@
+## Avaliação Heurística
+
+Descrição: 
+
+
 | ID | Heurística                                  | Descrição                                                                         |
 |----|---------------------------------------------|-----------------------------------------------------------------------------------|
 | 1  | Visibilidade do status do sistema            | O sistema deve manter os usuários informados sobre o que está acontecendo através de feedback adequado dentro de um tempo razoável. |
@@ -11,6 +16,10 @@
 | 9  | Reconhecimento, diagnóstico e recuperação de erros | Orientar os usuários sobre os erros cometidos e como recuperar. |
 | 10 | Ajuda e documentação                        | Mesmo que seja melhor que um sistema seja tão autoexplicativo que nenhum guia seja necessário, ainda é necessário fornecer documentação e ajuda. |
 
+
+## Severidade
+
+Descrição:
 
 | **ID** | Descriminação                                                               |
 |------------|---------------------------------------------------------------------------|
