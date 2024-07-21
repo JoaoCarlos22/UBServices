@@ -23,10 +23,10 @@ Descrição: Essas heurísticas são amplamente utilizadas para realizar avalia�
 
 Descrição: A severidade, nas heurísticas de Nielsen, refere-se à classificação da gravidade dos problemas de usabilidade encontrados em uma interface
 
-| **ID** | severidade                                                              |
-|------------|---------------------------------------------------------------------------|
-| 0  | Falso-positivo |
-| 1  | Cosmético |
-| 2  | Leve |
-| 3  | Grave |
-| 4  | Catastrófico |
+| **ID** | Severidade | Descrição                                                           |
+|------------|--------|------------------------------------------------------------------|
+| 0  | Falso-positivo | Não acho que isso seja um problema de usabilidade |
+| 1  | Cosmético | Não precisa ser consertado a menos que haja tempo no cronograma do projeto |
+| 2  | Leve | O conserto deste problema deve receber baixa prioridade |
+| 3  | Grave | A correção desse problema é importante, por isso, deve-se atribuir alta prioridade |
+| 4  | Catastrófico | É imperativo consertar antes de se lançar o produto |
