@@ -732,12 +732,46 @@ __- Descrição: Interface para alteração de dados, dados antigos poderão ser
 
 
 # H29-Como paciente, gostaria de selecionar a ubs mais perto da minha residência onde queira realizar os serviços Para facilitar a seleção da UBS mais próxima.
-Critérios de aceitação:
-1 - As informações sobre as UBSs incluem endereço, telefone e especialidades disponíveis.
-2 - O sistema possui uma funcionalidade de localização que sugere a UBS mais próxima da residência do paciente com base na sua localização .
-3 - O paciente pode filtrar a busca por UBSs com base em especialidades e serviços oferecidos.
-4 - O sistema permite ao paciente visualizar a distância aproximada e o tempo estimado de deslocamento para cada
-UBS.
 
-Regras de negocio:
-O sistema vai está sempre atualizando as informações das ubs, incluindo telefone, endereço, e isso deve garanti que o paciente encontre uma ubs mais rápida.
+## Critérios de aceitação:
+__C1. As informações sobre as UBSs incluem endereço, telefone e especialidades disponíveis.__
+
+__C2. O sistema possui uma funcionalidade de localização que sugere a UBS mais próxima da residência do paciente com base na sua localização.__
+
+__C3. O paciente pode filtrar a busca por UBSs com base em especialidades e serviços oferecidos.__
+
+__C4. O sistema permite ao paciente visualizar a distância aproximada e o tempo estimado de deslocamento para cada
+UBS.__
+
+## Regras de negocio:
+__R1. O sistema vai está sempre atualizando as informações das ubs, incluindo telefone, endereço, e isso deve garanti que o paciente encontre uma ubs mais rápida.__
+
+__- Fluxograma:__
+
+## Tela 15A
+
+![](https://github.com/JoaoCarlos22/TP-UBServices/blob/main/docs/rastreabilidade_requisitos/images/tela_h15a.png)
+
+
+
+__- Descrição: Interface geral de procura do portal, permite ao paciente localizar a unidade mais próxima a sua casa.__
+
+
+
+## Tela 15B
+
+![](https://github.com/JoaoCarlos22/TP-UBServices/blob/main/docs/rastreabilidade_requisitos/images/tela_h15b.png)
+
+
+
+__- Descrição: Exemplo de interação com a interface de busca de UBSs, releva a seleção de bairros ao paciente, garantindo busca eficiente.__
+
+
+
+## Tela 15C
+
+![](https://github.com/JoaoCarlos22/TP-UBServices/blob/main/docs/rastreabilidade_requisitos/images/tela_h15c.png)
+
+
+
+__- Descrição: Exemplo de resultados da busca de acordo com o bairro especificado, além de ter opção de alteração de região, garantindo mais eficiência na busca por UBSs.__
