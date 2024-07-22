@@ -142,4 +142,168 @@ __R4. O acesso ao sistema de prontuário eletrônico deve ser controlado por aut
 
 __- Fluxograma H9 e H10:__
 
+## Tela 3A
 
+![](https://github.com/JoaoCarlos22/TP-UBServices/blob/main/docs/rastreabilidade_requisitos/images/tela_h03a.png)
+
+
+
+__- Descrição:  Interface geral, permite à enfermeira mover-se pelas funcionalidades do sistema.__
+
+
+
+## Tela 3B
+
+![](https://github.com/JoaoCarlos22/TP-UBServices/blob/main/docs/rastreabilidade_requisitos/images/tela_h03b.png)
+
+
+
+__- Descrição: Histórico de pacientes, acesso a dados clínicos juntamente com seus protocolos.__
+
+
+
+## Tela 3C
+
+![](https://github.com/JoaoCarlos22/TP-UBServices/blob/main/docs/rastreabilidade_requisitos/images/tela_h03c.png)
+
+
+
+__- Descrição: Exemplo de interação com a interface, revelando a opção "Visualizar", que por sua vez, revela os dados clínicos de pacientes.__
+
+
+
+## Tela 4A
+
+![](https://github.com/JoaoCarlos22/TP-UBServices/blob/main/docs/rastreabilidade_requisitos/images/tela_h04a.png)
+
+
+
+__- Descrição: Exemplo de retorno ao menu principal, possibilitando escolha de nova funcionalidade.__
+
+
+
+## Tela 4B
+
+![](https://github.com/JoaoCarlos22/TP-UBServices/blob/main/docs/rastreabilidade_requisitos/images/tela_h04b.png)
+
+
+
+__- Descrição: Ficha de cadastro de paciente vazia para dados clínicos, possibilitando agendamento de visitas.__
+
+
+
+## Tela 4C
+
+![](https://github.com/JoaoCarlos22/TP-UBServices/blob/main/docs/rastreabilidade_requisitos/images/tela_h04c.png)
+
+
+
+__- Descrição: Exemplo de possível preenchimento da ficha, contendo dados clínicos de pacientes, possibilitando o agendamento de visitas domiciliares, assim como o acesso ao estado dos pacientes.__
+
+
+
+## Tela 4D
+
+![](https://github.com/JoaoCarlos22/TP-UBServices/blob/main/docs/rastreabilidade_requisitos/images/tela_h04d.png)
+
+
+
+__- Descrição: Exemplo de salvamento de ficha de paciente, garantindo registro de dados.__
+
+
+
+# H12-Como ACS eu quero registrar fichas de pacientes para requisitar visitas domiciliares para pacientes para que seja requisitada equipe qualificada.
+critérios de aceitação:
+1- deve ser registrado nome, endereço, idade, CPF e condição do paciente.
+2- visitas devem ser agendas para serem realizadas em no máximo uma semana.
+3- ao registrar deve-se incluir a equipe juntamente com a quantidade de membros.
+4- ao fim da visita deve-se registrar ou não, serviços adicionais como fisioterapia.
+
+regras de Negócio:
+1- as visitas domiciliares devem ser agendadas para ocorrer dentro de um prazo máximo de uma semana a partir da data do registro da ficha do paciente.
+2- o sistema deve manter um histórico detalhado de todas as fichas de pacientes registradas, visitas realizadas e serviços adicionais prestados.
+
+# H16 - Como técnico de enfermagem eu quero administrar medicamentos aos pacientes de acordo com prescrição médica para que o tratamento seja adequado.
+critérios de aceitação:
+1- as prescrições devem conter dosagem, horários de aplicações juntamente com as instruções de uso.
+2- medicamentos devem conter os dados do paciente associado juntamente com o médico que as prescreveu.
+3- os pacientes devem ser verificados antes da aplicação dos medicamentos
+4- os medicamentos devem conter os possíveis efeitos colaterais que possam causar.
+
+# H20 - Como supervisor, gostaria de cadastrar a UBS em que ministro para fazer parte do portal.
+Critérios de Aceitação
+C1. A UBS deve estar cadastrada no CNES, que é o registro oficial das unidades de saúde no Brasil.
+C2. O sistema deve exibir um formulário de cadastro que permita ao supervisor inserir os seguintes dados da UBS: nome da UBS, endereço completo (incluindo cidade, estado e CEP), telefone de contato, e-mail, e nome do responsável.
+C3. O formulário deve validar os campos obrigatórios e exibir mensagens de erro apropriadas se os dados não estiverem preenchidos corretamente.
+C4. Após a aprovação do cadastro, o sistema deve exibir uma mensagem de confirmação na interface do portal e enviar um e-mail de confirmação ao supervisor.
+C5. Somente usuários com permissões de supervisor devem ter acesso ao formulário de cadastro de UBS.
+
+Regras de Negócio
+R1. O sistema deve permitir que apenas supervisores autenticados possam cadastrar novas Unidades Básicas de Saúde (UBS) no portal.
+R2. O cadastro da UBS deve incluir campos obrigatórios como nome da UBS, endereço completo e telefone de contato, garantindo que informações essenciais sejam fornecidas.
+R3. O sistema deverá conter no máximo 2 perfis de supervisor.
+
+# H21 - Como supervisor, gostaria de cadastrar os principais serviços que minha UBS oferece para manter os pacientes cientes de quais benefícios prestamos.
+Critérios de Aceitação
+O sistema deve exibir um formulário de cadastro que permita ao supervisor inserir os seguintes dados de cada serviço: nome do serviço, descrição detalhada, horários de atendimento, requisitos para acesso (se houver), e nome do responsável pelo serviço.
+O formulário deve validar os campos obrigatórios e exibir mensagens de erro como "Preencha os campos obrigatórios" e exibir tons avermelhados em campos onde os dados não estiverem preenchidos corretamente.
+O supervisor deve ter a capacidade de editar as informações dos serviços cadastrados, incluindo nome, descrição, horários e requisitos.
+Após a submissão, o sistema deve validar os dados e, em caso de sucesso, publicar os serviços no portal, tornando-os visíveis aos pacientes.
+O supervisor deve receber uma notificação de confirmação por e-mail sobre a publicação dos serviços cadastrados.
+
+# H22 - Como paciente gostaria de acessar minha caderneta de vacina digitalmente para visualizar meu histórico de vacinas rapidamente.
+Critérios de Aceitação
+O sistema deve garantir que apenas o paciente autenticado possa visualizar seu histórico de vacinas.
+Cada entrada no histórico deve incluir informações detalhadas sobre a vacina, como nome da vacina, data de administração, dose, local de aplicação, e nome do profissional de saúde responsável.
+O paciente deve ter a capacidade de filtrar e pesquisar seu histórico de vacinas por diferentes critérios, como nome da vacina, data de administração, ou tipo de vacina (por exemplo, vacina infantil, vacina de reforço).
+O paciente deve ter a opção de baixar e/ou imprimir sua caderneta de vacina digital em um formato PDF.
+
+# H23 - Como paciente, gostaria de receber lembretes de doação de sangue para que eu possa ficar ciente de quando doar sangue.
+Critérios de Aceitação
+O paciente deve ter a opção para receber lembretes de doação de sangue, podendo escolher a frequência dos lembretes (por exemplo, a cada 3 meses, 6 meses, ou 12 meses).
+O sistema deve permitir que o paciente escolha o método de recebimento dos lembretes (por exemplo, e-mail, SMS, ou notificações push).
+Os lembretes enviados ao paciente devem conter informações relevantes, como a data sugerida para a próxima doação, os benefícios de doar sangue, e instruções sobre como e onde doar.
+Os lembretes devem ser enviados de acordo com a última data de doação do paciente e as diretrizes de intervalo mínimo entre doações (por exemplo, a cada 3 meses para homens e a cada 4 meses para mulheres, conforme as regulamentações locais).
+
+# H24 - Como paciente, gostaria de acessar as informações e serviços dos quais a UBS oferece para que eu possa estar informado das características daquele estabelecimento.
+Critérios de Aceitação
+O paciente deve poder acessar a página "Mais UBSs" no portal, que contenha informações detalhadas sobre a unidade, incluindo endereço completo, horário de funcionamento, telefone de contato e e-mail.
+A página da UBS deve exibir uma lista completa dos serviços oferecidos pela unidade, como consultas médicas, exames laboratoriais, campanhas de vacinação, programas de saúde preventiva, entre outros.
+As informações sobre a UBS e os serviços oferecidos devem ser mantidas atualizadas pelo supervisor daquele estabelecimento, com um processo definido para revisão e atualização periódica.
+Cada serviço listado deve incluir uma breve descrição, horários de atendimento, requisitos para acesso (se houver), e qualquer informação adicional relevante (como nome dos profissionais responsáveis).
+
+# H25 - Como paciente, gostaria de cadastrar meus dados no portal para estar conectado ao sistema.
+Critérios de Aceitação
+O portal deve exibir um formulário de cadastro que permita ao paciente inserir os seguintes dados: nome completo, número do SUS, data de nascimento, endereço, telefone de contato, e-mail, CPF (ou documento de identificação equivalente), e senha.
+Após o preenchimento do formulário, o sistema deve enviar um e-mail ou SMS de confirmação para o endereço/telefone fornecido pelo paciente.
+No e-mail, o paciente deve clicar em um link de verificação para confirmar sua inscrição e ativar sua conta no portal.
+O sistema deve garantir que todos os dados pessoais do paciente sejam armazenados de forma segura, utilizando criptografia da comunicação de rede e restrição do intervalo de endereços IPs autorizados para acessar.
+O portal deve estar em conformidade com as regulamentações de proteção de dados (como a LGPD no Brasil) e informar ao paciente sobre a política de privacidade e os termos de uso durante o processo de cadastro.
+Após a confirmação do cadastro, o paciente deve poder fazer login no portal utilizando seu número do SUS e senha.
+
+# H26 - Como paciente, gostaria de desconectar minha conta do portal para sair do sistema.
+Critérios de Aceitação
+C1. O botão de logout deve ser facilmente identificável, com um ícone e/ou texto descritivo (por exemplo, "Sair" ou "Logout").
+C2. A mensagem deve solicitar a confirmação do paciente para sair do sistema e oferecer a opção de cancelar ou confirmar a ação.
+C3. O paciente deve ser redirecionado para a página inicial do portal ou uma página de login após a desconexão, com uma mensagem de confirmação de que saiu do sistema com sucesso.
+C4. O sistema deve garantir que todos os dados temporários da sessão do paciente sejam limpos após o logout, incluindo cookies, caches, e qualquer informação sensível armazenada temporariamente no navegador.
+Regras de Negócio
+R1. O sistema deve permitir que pacientes autenticados possam desconectar suas contas a qualquer momento, garantindo que a ação seja repentina.
+R2. Ao desconectar a conta, apenas a sessão ativa do portal devem ser encerrada imediatamente para proteger a segurança e privacidade dos dados.
+
+# H27 - Como paciente, gostaria de alterar meu perfil para atualizar algum dado antigo.
+Critérios de Aceitação
+O paciente deve poder acessar uma página dedicada à edição de perfil a partir do portal, que pode ser acessada através de um link ou botão visível e claramente identificado, como "Editar Perfil".
+O sistema deve permitir que o paciente edite campos específicos de seu perfil, como nome, endereço, telefone de contato, e-mail, data de nascimento, e qualquer outro dado pessoal relevante.
+O sistema deve garantir que somente o paciente autenticado possa acessar e editar seu próprio perfil, protegendo os dados contra acesso não autorizado.
+
+# H29 - Como paciente, gostaria de selecionar a ubs mais perto da minha residência onde queira realizar os serviços Para facilitar a seleção da UBS mais próxima.
+Critérios de aceitação:
+1 - As informações sobre as UBSs incluem endereço, telefone e especialidades disponíveis.
+2 - O sistema possui uma funcionalidade de localização que sugere a UBS mais próxima da residência do paciente com base na sua localização .
+3 - O paciente pode filtrar a busca por UBSs com base em especialidades e serviços oferecidos.
+4 - O sistema permite ao paciente visualizar a distância aproximada e o tempo estimado de deslocamento para cada
+UBS.
+
+Regras de negocio:
+O sistema vai está sempre atualizando as informações das ubs, incluindo telefone, endereço, e isso deve garanti que o paciente encontre uma ubs mais rápida.
