@@ -249,12 +249,68 @@ __- Descrição:  Interface geral, permite ao ACS mover-se pelas funcionalidades
 __- Descrição: Interface que permite a visualização e registro de visitas domiciliares, juntamente com seus respectivos estados.__
 
 
+
+## Tela 5C
+
+![](https://github.com/JoaoCarlos22/TP-UBServices/blob/main/docs/rastreabilidade_requisitos/images/tela_h05c.png)
+
+
+
+__- Descrição: Exemplo de interação com o sistema revelando a opção "Visualizar Solicitação", que por sua vez, permite acesso ao requerimento de visita.__
+
+
+
+## Tela 5D 
+
+![](https://github.com/JoaoCarlos22/TP-UBServices/blob/main/docs/rastreabilidade_requisitos/images/tela_h05d.png)
+
+
+
+__- Descrição: Exemplo de  registro de solicitação de visita, oferece visualização dos dados dos pacientes, juntamente com suas condições de saúde e endereços.__
+
+
+
+## Tela 5E
+
+![](https://github.com/JoaoCarlos22/TP-UBServices/blob/main/docs/rastreabilidade_requisitos/images/tela_h05e.png)
+
+
+
+__- Descrição: Exemplo de confirmação de soliicção de visita, garante que os pacientes serão atendidos no tempo estipulado e também oferece opção de mensagem de confirmação ao paciente.__
+
+
+
 # H16 - Como técnico de enfermagem eu quero administrar medicamentos aos pacientes de acordo com prescrição médica para que o tratamento seja adequado.
-critérios de aceitação:
-1- as prescrições devem conter dosagem, horários de aplicações juntamente com as instruções de uso.
-2- medicamentos devem conter os dados do paciente associado juntamente com o médico que as prescreveu.
-3- os pacientes devem ser verificados antes da aplicação dos medicamentos
-4- os medicamentos devem conter os possíveis efeitos colaterais que possam causar.
+
+## critérios de aceitação:
+__C1. as prescrições devem conter dosagem, horários de aplicações juntamente com as instruções de uso.__
+
+__C2. medicamentos devem conter os dados do paciente associado juntamente com o médico que as prescreveu.__
+
+__C3. os pacientes devem ser verificados antes da aplicação dos medicamentos.__
+
+__C4. os medicamentos devem conter os possíveis efeitos colaterais que possam causar.__
+
+__- Fluxograma:__
+
+## Tela 6A
+
+![](https://github.com/JoaoCarlos22/TP-UBServices/blob/main/docs/rastreabilidade_requisitos/images/tela_h06a.png)
+
+
+
+__- Descrição: Interface inicial para administração de medicamentos, possibilita aos enfermeiros entregar medicamentos aos pacientes de acordo com prescrição médica.__
+
+
+
+## Tela 6B
+
+![](https://github.com/JoaoCarlos22/TP-UBServices/blob/main/docs/rastreabilidade_requisitos/images/tela_h06b.png)
+
+
+
+__- Descrição: 
+
 
 # H20 - Como supervisor, gostaria de cadastrar a UBS em que ministro para fazer parte do portal.
 Critérios de Aceitação
