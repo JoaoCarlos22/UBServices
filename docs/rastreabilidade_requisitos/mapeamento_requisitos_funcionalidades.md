@@ -620,7 +620,7 @@ __- Fluxograma:__
 
 
 
-__- Descrição:Interface geral de cadastro, permite ao paciente mover-se pelas funcionalidades de cadastro do portal.__
+__- Descrição: Interface geral de cadastro, permite ao paciente mover-se pelas funcionalidades de cadastro do portal.__
 
 
 
