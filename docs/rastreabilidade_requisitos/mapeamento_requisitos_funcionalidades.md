@@ -78,7 +78,7 @@ __-Descrição: Acesso ao bate-papo com pacientes juntamente com as notificaçõ
 
 
 
-__- Descrição: Exemplo de interação com o sistema, revelando a opção "Visualizar", que por usa vez, abre a caixa de mensagem com paciente.__
+__- Descrição: Exemplo de interação com o sistema, revelando a opção "Visualizar", que por sua vez, abre a caixa de mensagem com paciente.__
 
 
 
@@ -92,17 +92,20 @@ __- Descrição: Exemplo prático de interação com paciente, onde interage com
 
 
 
-H9 - Como uma Enfermeira da Comunidade, eu quero acessar rapidamente informações clínicas e protocolos relevantes para tomar decisões informadas durante o atendimento aos pacientes.
+# H9 - Como uma Enfermeira da Comunidade, eu quero acessar rapidamente informações clínicas e protocolos relevantes para tomar decisões informadas durante o atendimento aos pacientes.
 
-Critérios de Aceitação:
+## Critérios de Aceitação:
+__C1. Deve permitir o acesso à diagnósticos, exames dos pacientes para fazer o diagnóstico.__
 
-Deve permitir o acesso à diagnósticos, exames dos pacientes para fazer o diagnóstico.
-A plataforma deve permitir buscas rápidas por termos clínicos, diagnósticos, tratamentos e protocolos.
-As informações clínicas e protocolos devem ser categorizados por áreas de especialização, tipos de doenças, sintomas e tratamentos.
-A plataforma deve suportar alguns tipos de arquivos incluindo textos, imagens.
-A enfermeira deve poder marcar informações e protocolos como favoritos para acesso rápido em consultas futuras.
+__C2. A plataforma deve permitir buscas rápidas por termos clínicos, diagnósticos, tratamentos e protocolos.__
 
-Regras de Negócios:
+__C3. As informações clínicas e protocolos devem ser categorizados por áreas de especialização, tipos de doenças, sintomas e tratamentos.__
+
+__C4. A plataforma deve suportar alguns tipos de arquivos incluindo textos, imagens.__
+
+__C5. A enfermeira deve poder marcar informações e protocolos como favoritos para acesso rápido em consultas futuras.__
+
+## Regras de Negócios:
 R1 - A enfermeira deve ter acesso a um sistema de prontuário eletrônico integrado que permita a visualização rápida e fácil das informações clínicas dos pacientes durante o atendimento.
 R2 - Protocolos clínicos e diretrizes devem ser categorizados por especialidade e tipo de atendimento para facilitar a busca e consulta.
 R3 - A enfermeira deve ter acesso a uma base de dados centralizada contendo protocolos clínicos e diretrizes atualizadas para diferentes condições de saúde.
