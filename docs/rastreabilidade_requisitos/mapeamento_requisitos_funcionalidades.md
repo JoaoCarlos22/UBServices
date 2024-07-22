@@ -585,7 +585,7 @@ __- Descrição: Exemplo de interação com o portal sem ter login prévio, resu
 
 
 
-__- Descrição: Exemplo de interação com o portal com login prévio revelando a opção "Realizar Agendamento", que por sua vez, posibilita o paciente agendar uma consulta em determinda UBS.__
+__- Descrição: Exemplo de interação com o portal com login prévio revelando a opção "Realizar Agendamento", que por sua vez, possibilita o paciente agendar uma consulta em determinda UBS.__
 
 
 
