@@ -670,7 +670,7 @@ __- Descrição: Exemplo de possível preenchimento da ficha de cadastro, juntam
 
 
 
-__- Descrição: Exemplo de conclusão de cadastro, a confirmação do mesmo foi enviado para e-mail do paciente.__
+__- Descrição: Exemplo de conclusão de cadastro, a confirmação do mesmo foi enviado para o e-mail do paciente.__
 
 
 
