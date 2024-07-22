@@ -600,26 +600,121 @@ __- Descrição: Exemplo de interação com o portal, onde revela a mensagem "Co
 
 
 # H25 - Como paciente, gostaria de cadastrar meus dados no portal para estar conectado ao sistema.
-Critérios de Aceitação
-O portal deve exibir um formulário de cadastro que permita ao paciente inserir os seguintes dados: nome completo, número do SUS, data de nascimento, endereço, telefone de contato, e-mail, CPF (ou documento de identificação equivalente), e senha.
-Após o preenchimento do formulário, o sistema deve enviar um e-mail ou SMS de confirmação para o endereço/telefone fornecido pelo paciente.
-No e-mail, o paciente deve clicar em um link de verificação para confirmar sua inscrição e ativar sua conta no portal.
-O sistema deve garantir que todos os dados pessoais do paciente sejam armazenados de forma segura, utilizando criptografia da comunicação de rede e restrição do intervalo de endereços IPs autorizados para acessar.
-O portal deve estar em conformidade com as regulamentações de proteção de dados (como a LGPD no Brasil) e informar ao paciente sobre a política de privacidade e os termos de uso durante o processo de cadastro.
-Após a confirmação do cadastro, o paciente deve poder fazer login no portal utilizando seu número do SUS e senha.
+
+## Critérios de Aceitação:
+__C1. O portal deve exibir um formulário de cadastro que permita ao paciente inserir os seguintes dados: nome completo, número do SUS, data de nascimento, endereço, telefone de contato, e-mail, CPF (ou documento de identificação equivalente), e senha.__
+
+__C2. Após o preenchimento do formulário, o sistema deve enviar um e-mail ou SMS de confirmação para o endereço/telefone fornecido pelo paciente. No e-mail, o paciente deve clicar em um link de verificação para confirmar sua inscrição e ativar sua conta no portal.__
+
+__C3. O sistema deve garantir que todos os dados pessoais do paciente sejam armazenados de forma segura, utilizando criptografia da comunicação de rede e restrição do intervalo de endereços IPs autorizados para acessar.__
+
+__C4. O portal deve estar em conformidade com as regulamentações de proteção de dados (como a LGPD no Brasil) e informar ao paciente sobre a política de privacidade e os termos de uso durante o processo de cadastro.__
+
+__C5. Após a confirmação do cadastro, o paciente deve poder fazer login no portal utilizando seu número do SUS e senha.__
+
+__- Fluxograma:__
+
+## Tela 12A
+
+![](https://github.com/JoaoCarlos22/TP-UBServices/blob/main/docs/rastreabilidade_requisitos/images/tela_h12a.png)
+
+
+
+__- Descrição:Interface geral de cadastro, permite ao paciente mover-se pelas funcionalidades de cadastro do portal.__
+
+
+
+## Tela 12B
+
+![](https://github.com/JoaoCarlos22/TP-UBServices/blob/main/docs/rastreabilidade_requisitos/images/tela_h12b.png)
+
+
+
+__- Descrição: Exemplo de tela de cadastro do portal, o mesmo estipula os passos a serem realizados para formulação do cadastro.__
+
+
+
+## Tela 12C
+
+![](https://github.com/JoaoCarlos22/TP-UBServices/blob/main/docs/rastreabilidade_requisitos/images/tela_h12c.png)
+
+
+
+__- Descrição: Exemplo de login bem-sucedido, apresentando a interface geral do portal.__
+
+
+
+## Tela 12D
+
+![](https://github.com/JoaoCarlos22/TP-UBServices/blob/main/docs/rastreabilidade_requisitos/images/tela_h12d.png)
+
+
+
+__- Descrição: Exemplo de ficha de cadastro de dados no sistema, estipula os dados necessários a serem preenchidos para concluir cadastro.__
+
+
+
+## Tela 12E
+
+![](https://github.com/JoaoCarlos22/TP-UBServices/blob/main/docs/rastreabilidade_requisitos/images/tela_h12e.png)
+
+
+
+__- Descrição: Exemplo de possível preenchimento da ficha de cadastro, juntamente com o botão de Finalizar Cadastro.__
+
+
+
+## Tela 12F
+
+![](https://github.com/JoaoCarlos22/TP-UBServices/blob/main/docs/rastreabilidade_requisitos/images/tela_h12f.png)
+
+
+
+__- Descrição: Exemplo de conclusão de cadastro, a confirmação do mesmo foi enviado para e-mail do paciente.__
+
+
 
 # H26 - Como paciente, gostaria de desconectar minha conta do portal para sair do sistema.
-Critérios de Aceitação
-C1. O botão de logout deve ser facilmente identificável, com um ícone e/ou texto descritivo (por exemplo, "Sair" ou "Logout").
-C2. A mensagem deve solicitar a confirmação do paciente para sair do sistema e oferecer a opção de cancelar ou confirmar a ação.
-C3. O paciente deve ser redirecionado para a página inicial do portal ou uma página de login após a desconexão, com uma mensagem de confirmação de que saiu do sistema com sucesso.
-C4. O sistema deve garantir que todos os dados temporários da sessão do paciente sejam limpos após o logout, incluindo cookies, caches, e qualquer informação sensível armazenada temporariamente no navegador.
-Regras de Negócio
-R1. O sistema deve permitir que pacientes autenticados possam desconectar suas contas a qualquer momento, garantindo que a ação seja repentina.
-R2. Ao desconectar a conta, apenas a sessão ativa do portal devem ser encerrada imediatamente para proteger a segurança e privacidade dos dados.
+
+## Critérios de Aceitação:
+__C1. O botão de logout deve ser facilmente identificável, com um ícone e/ou texto descritivo (por exemplo, "Sair" ou "Logout").__
+
+__C2. A mensagem deve solicitar a confirmação do paciente para sair do sistema e oferecer a opção de cancelar ou confirmar a ação.__
+
+__C3. O paciente deve ser redirecionado para a página inicial do portal ou uma página de login após a desconexão, com uma mensagem de confirmação de que saiu do sistema com sucesso.__
+
+__C4. O sistema deve garantir que todos os dados temporários da sessão do paciente sejam limpos após o logout, incluindo cookies, caches, e qualquer informação sensível armazenada temporariamente no navegador.__
+
+## Regras de Negócio:
+__R1. O sistema deve permitir que pacientes autenticados possam desconectar suas contas a qualquer momento, garantindo que a ação seja repentina.__
+
+__R2. Ao desconectar a conta, apenas a sessão ativa do portal devem ser encerrada imediatamente para proteger a segurança e privacidade dos dados.__
+
+__- Fluxograma:__
+
+## Tela 13A
+
+![](https://github.com/JoaoCarlos22/TP-UBServices/blob/main/docs/rastreabilidade_requisitos/images/tela_h13a.png)
+
+
+
+__- Descrição: Interface geral do portal para gerenciamento de perfil, permite ao paciente mover-se pelas funcionalidades de perfil do portal.__
+
+
+
+## Tela 13B
+
+![](https://github.com/JoaoCarlos22/TP-UBServices/blob/main/docs/rastreabilidade_requisitos/images/tela_h13b.png)
+
+
+
+__- Descrição: Exemplo de mensagem exibida após a seleção de logout de conta, garantindo acessibilidade aos usuários.__
+
+
 
 # H27 - Como paciente, gostaria de alterar meu perfil para atualizar algum dado antigo.
-Critérios de Aceitação
+
+## Critérios de Aceitação:
 O paciente deve poder acessar uma página dedicada à edição de perfil a partir do portal, que pode ser acessada através de um link ou botão visível e claramente identificado, como "Editar Perfil".
 O sistema deve permitir que o paciente edite campos específicos de seu perfil, como nome, endereço, telefone de contato, e-mail, data de nascimento, e qualquer outro dado pessoal relevante.
 O sistema deve garantir que somente o paciente autenticado possa acessar e editar seu próprio perfil, protegendo os dados contra acesso não autorizado.
