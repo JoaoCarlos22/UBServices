@@ -361,13 +361,95 @@ __R2. O cadastro da UBS deve incluir campos obrigatórios como nome da UBS, ende
 
 __R3. O sistema deverá conter no máximo 2 perfis de supervisor.__
 
+__- Fluxograma:__
+
+## Tela 7A
+
+![](https://github.com/JoaoCarlos22/TP-UBServices/blob/main/docs/rastreabilidade_requisitos/images/tela_h07a.png)
+
+
+
+__- Descrição: Interface inicial para registro de uma UBS, permite que os supervisores registrem as UBSs que ministram.__
+
+
+
+## Tela 7B
+
+![](https://github.com/JoaoCarlos22/TP-UBServices/blob/main/docs/rastreabilidade_requisitos/images/tela_h07b.png)
+
+
+
+__- Descrição: Exemplo de ficha vazia para cadastro de uma UBS.__
+
+
+
+## Tela 7C
+
+![](https://github.com/JoaoCarlos22/TP-UBServices/blob/main/docs/rastreabilidade_requisitos/images/tela_h07c.png)
+
+
+
+__- Descrição: Exemplo de interação com interface revelando a opção de acesso ao registro da UBS.__
+
+
+
+## Tela 7D
+
+![](https://github.com/JoaoCarlos22/TP-UBServices/blob/main/docs/rastreabilidade_requisitos/images/tela_h07d.png)
+
+
+
+__- Descrição: Exemplo de possível preenchimento de ficha para registro de UBS, juntamente com a confirmação de registro.__
+
+
+
+## Tela 7E
+
+![](https://github.com/JoaoCarlos22/TP-UBServices/blob/main/docs/rastreabilidade_requisitos/images/tela_h07e.png)
+
+
+
+__- Descrição: Exemplo de acesso ao segundo supervisor para registro de uma UBS.__
+
+
+
+## Tela 7F
+
+![](https://github.com/JoaoCarlos22/TP-UBServices/blob/main/docs/rastreabilidade_requisitos/images/tela_h07f.png)
+
+
+
+__- Descrição: Exemplo de interação com interface revelando a opção de acesso ao registro da UBS feita pelo segundo supervisor.__
+
+
+
+## Tela 7G
+
+![](https://github.com/JoaoCarlos22/TP-UBServices/blob/main/docs/rastreabilidade_requisitos/images/tela_h07g.png)
+
+
+
+__- Descrição: Exemplo de possível preenchimento de ficha para registro de UBS, juntamente com a confirmação de registro feita pelo segundo supervisor__
+
+
+
 # H21 - Como supervisor, gostaria de cadastrar os principais serviços que minha UBS oferece para manter os pacientes cientes de quais benefícios prestamos.
-Critérios de Aceitação
-O sistema deve exibir um formulário de cadastro que permita ao supervisor inserir os seguintes dados de cada serviço: nome do serviço, descrição detalhada, horários de atendimento, requisitos para acesso (se houver), e nome do responsável pelo serviço.
-O formulário deve validar os campos obrigatórios e exibir mensagens de erro como "Preencha os campos obrigatórios" e exibir tons avermelhados em campos onde os dados não estiverem preenchidos corretamente.
-O supervisor deve ter a capacidade de editar as informações dos serviços cadastrados, incluindo nome, descrição, horários e requisitos.
-Após a submissão, o sistema deve validar os dados e, em caso de sucesso, publicar os serviços no portal, tornando-os visíveis aos pacientes.
-O supervisor deve receber uma notificação de confirmação por e-mail sobre a publicação dos serviços cadastrados.
+
+## Critérios de Aceitação
+__C1. O sistema deve exibir um formulário de cadastro que permita ao supervisor inserir os seguintes dados de cada serviço: nome do serviço, descrição detalhada, horários de atendimento, requisitos para acesso (se houver), e nome do responsável pelo serviço.__
+
+__C2. O formulário deve validar os campos obrigatórios e exibir mensagens de erro como "Preencha os campos obrigatórios" e exibir tons avermelhados em campos onde os dados não estiverem preenchidos corretamente.__
+
+__C3. O supervisor deve ter a capacidade de editar as informações dos serviços cadastrados, incluindo nome, descrição, horários e requisitos.__
+
+__C4. Após a submissão, o sistema deve validar os dados e, em caso de sucesso, publicar os serviços no portal, tornando-os visíveis aos pacientes.
+O supervisor deve receber uma notificação de confirmação por e-mail sobre a publicação dos serviços cadastrados.__
+
+__- Fluxograma:__
+
+## Tela 8A
+
+
 
 # H22 - Como paciente gostaria de acessar minha caderneta de vacina digitalmente para visualizar meu histórico de vacinas rapidamente.
 Critérios de Aceitação
