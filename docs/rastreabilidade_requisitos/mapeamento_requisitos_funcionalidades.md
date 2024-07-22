@@ -21,7 +21,7 @@ __R2. A notificação deve ser enviada com uma antecedência mínima de 24 horas
 
 __R3. A notificação deve ser enviada via e-mail para o médico.__
 
-# Tela 1
+## Tela 1
 
 ![](https://github.com/JoaoCarlos22/TP-UBServices/blob/main/docs/rastreabilidade_requisitos/images/tela_h01.png)
 
@@ -313,7 +313,7 @@ __- Descrição: Acesso a lista de pacientes, para administração de medicaçã
 
 
 
-# Tela 6C
+## Tela 6C
 
 ![](https://github.com/JoaoCarlos22/TP-UBServices/blob/main/docs/rastreabilidade_requisitos/images/tela_h06c.png)
 
@@ -435,7 +435,7 @@ __- Descrição: Exemplo de possível preenchimento de ficha para registro de UB
 
 # H21 - Como supervisor, gostaria de cadastrar os principais serviços que minha UBS oferece para manter os pacientes cientes de quais benefícios prestamos.
 
-## Critérios de Aceitação
+## Critérios de Aceitação:
 __C1. O sistema deve exibir um formulário de cadastro que permita ao supervisor inserir os seguintes dados de cada serviço: nome do serviço, descrição detalhada, horários de atendimento, requisitos para acesso (se houver), e nome do responsável pelo serviço.__
 
 __C2. O formulário deve validar os campos obrigatórios e exibir mensagens de erro como "Preencha os campos obrigatórios" e exibir tons avermelhados em campos onde os dados não estiverem preenchidos corretamente.__
@@ -449,17 +449,69 @@ __- Fluxograma:__
 
 ## Tela 8A
 
+![](https://github.com/JoaoCarlos22/TP-UBServices/blob/main/docs/rastreabilidade_requisitos/images/tela_h08a.png)
+
+
+
+__- Descrição: Interface geral, permite ao supervisor mover-se pelas funcionalidades do sistema.__
+
+
+
+## Tela 8B
+
+![](https://github.com/JoaoCarlos22/TP-UBServices/blob/main/docs/rastreabilidade_requisitos/images/tela_h08b.png)
+
+
+
+__- Descrição: Após cadastro de UBS, o supervisor pode cadastrar os serviços prestados pela mesma.__
+
+
+
+## Tela 8C
+
+![](https://github.com/JoaoCarlos22/TP-UBServices/blob/main/docs/rastreabilidade_requisitos/images/tela_h08c.png)
+
+
+
+__- Descrição: Exemplo de possível preenchimento de ficha de cadastro de serviço.__
+
+
+
+## Tela 8D
+
+![](https://github.com/JoaoCarlos22/TP-UBServices/blob/main/docs/rastreabilidade_requisitos/images/tela_h08d.png)
+
+
+
+__- Descrição: Exemplo de ficha preenchida e aprovada com a adição de um novo signo para edição da mesma.__
+
 
 
 # H22 - Como paciente gostaria de acessar minha caderneta de vacina digitalmente para visualizar meu histórico de vacinas rapidamente.
-Critérios de Aceitação
-O sistema deve garantir que apenas o paciente autenticado possa visualizar seu histórico de vacinas.
-Cada entrada no histórico deve incluir informações detalhadas sobre a vacina, como nome da vacina, data de administração, dose, local de aplicação, e nome do profissional de saúde responsável.
-O paciente deve ter a capacidade de filtrar e pesquisar seu histórico de vacinas por diferentes critérios, como nome da vacina, data de administração, ou tipo de vacina (por exemplo, vacina infantil, vacina de reforço).
-O paciente deve ter a opção de baixar e/ou imprimir sua caderneta de vacina digital em um formato PDF.
+
+## Critérios de Aceitação:
+__C1. O sistema deve garantir que apenas o paciente autenticado possa visualizar seu histórico de vacinas.__
+
+__C2. Cada entrada no histórico deve incluir informações detalhadas sobre a vacina, como nome da vacina, data de administração, dose, local de aplicação, e nome do profissional de saúde responsável.__
+
+__C3. O paciente deve ter a capacidade de filtrar e pesquisar seu histórico de vacinas por diferentes critérios, como nome da vacina, data de administração, ou tipo de vacina (por exemplo, vacina infantil, vacina de reforço).__
+
+__C4. O paciente deve ter a opção de baixar e/ou imprimir sua caderneta de vacina digital em um formato PDF.__
+
+## Tela 9
+
+![](https://github.com/JoaoCarlos22/TP-UBServices/blob/main/docs/rastreabilidade_requisitos/images/tela_h09.png)
+
+
+
+__- Descrição: Exemplo de acesso a caderneta de paciente. Possibilitando paciente visualizar seu histórico de vacinas digitalmente, juntamente com os dados de cada uma, e ainda possibilidade de download da mesma, garantindo acessibilidade.__
+
+
 
 # H23 - Como paciente, gostaria de receber lembretes de doação de sangue para que eu possa ficar ciente de quando doar sangue.
-Critérios de Aceitação
+
+## Critérios de Aceitação:
+
 O paciente deve ter a opção para receber lembretes de doação de sangue, podendo escolher a frequência dos lembretes (por exemplo, a cada 3 meses, 6 meses, ou 12 meses).
 O sistema deve permitir que o paciente escolha o método de recebimento dos lembretes (por exemplo, e-mail, SMS, ou notificações push).
 Os lembretes enviados ao paciente devem conter informações relevantes, como a data sugerida para a próxima doação, os benefícios de doar sangue, e instruções sobre como e onde doar.
