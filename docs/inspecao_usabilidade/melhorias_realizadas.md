@@ -1,5 +1,5 @@
 # User Story 5 Infringiu a Heurística 3 de Nielsen:
-## Há o defeito em que o sistema deveria possuir um comando para retornar para a tela anterior.
+## Há o defeito de que o sistema deveria possuir um comando para retornar para a tela anterior.
 ## Na alteração realizada após a inspeção, se adicionou um signo dinâmico para o retorno da aba anterior.
 
 ---
