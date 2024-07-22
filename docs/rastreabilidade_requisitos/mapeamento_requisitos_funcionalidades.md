@@ -337,7 +337,7 @@ __- Descrição: Exemplo de administração de medicamentos via prescrição mé
 
 ![](https://github.com/JoaoCarlos22/TP-UBServices/blob/main/docs/rastreabilidade_requisitos/images/tela_h06e.png)
 
-__- Descrição: Exemplo de atualização de estatus, confirmando que as devidas medicações já foram administradas via prescrição médica__
+__- Descrição: Exemplo de atualização de estatus, confirmando que as devidas medicações já foram administradas via prescrição médica.__
 
 
 
