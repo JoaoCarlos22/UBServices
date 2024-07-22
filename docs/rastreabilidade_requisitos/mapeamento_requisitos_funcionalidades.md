@@ -228,7 +228,7 @@ __R1. as visitas domiciliares devem ser agendadas para ocorrer dentro de um praz
 
 __R2. o sistema deve manter um histórico detalhado de todas as fichas de pacientes registradas, visitas realizadas e serviços adicionais prestados.__
 
-__ -Fluxograma:__
+__- Fluxograma:__
 
 ## Tela 5A
 
