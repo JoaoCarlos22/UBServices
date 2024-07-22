@@ -42,7 +42,7 @@ O defeito reconhecido é que não há um signo para iniciar o comando de ediçã
 
 Para a correção, se adicionou os signos dinâmicos para a alteração de perfil e de dados pessoais.
 
-![](images/historia12.1/new_telaH12b.png)
+![](images/historia12.2/new_telaH12b.png)
 
 
 ---
