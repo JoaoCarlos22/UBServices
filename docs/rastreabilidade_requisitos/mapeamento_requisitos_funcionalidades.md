@@ -33,7 +33,7 @@ __- Oferece acesso rápido a diferentes seções do sistema, como "Consultas", "
 
 
 
-# H6. Como atendente da UBS, eu desejo poder realizar atendimentos dos pacientes remotamente, para que os mesmos possam ser informados do dia e horário de sua consulta.
+# H6-Como atendente da UBS, eu desejo poder realizar atendimentos dos pacientes remotamente, para que os mesmos possam ser informados do dia e horário de sua consulta.
 
 ## Critérios de aceitação:
 __C1. As consultas e agendamentos, assim como as as respostas às dúvidas dos pacientes só estarão disponíveis para os pacientes cadastrados e que integram a UBS.__
@@ -92,7 +92,7 @@ __- Descrição: Exemplo prático de interação com paciente, onde interage com
 
 
 
-# H9 - Como uma Enfermeira da Comunidade, eu quero acessar rapidamente informações clínicas e protocolos relevantes para tomar decisões informadas durante o atendimento aos pacientes.
+# H9-Como uma Enfermeira da Comunidade, eu quero acessar rapidamente informações clínicas e protocolos relevantes para tomar decisões informadas durante o atendimento aos pacientes.
 
 ## Critérios de Aceitação:
 __C1. Deve permitir o acesso à diagnósticos, exames dos pacientes para fazer o diagnóstico.__
@@ -116,7 +116,7 @@ __R4. O acesso a informações clínicas e protocolos deve ser protegido por med
 
 __R5. Todas as decisões clínicas baseadas em protocolos e informações acessadas devem ser registradas no prontuário eletrônico do paciente para referência futura e auditoria.__
 
-# H10 - Como uma Enfermeira da Comunidade, eu quero registrar de forma eficiente as informações coletadas durante visitas domiciliares para manter um histórico completo e garantir a continuidade do cuidado.
+# H10-Como uma Enfermeira da Comunidade, eu quero registrar de forma eficiente as informações coletadas durante visitas domiciliares para manter um histórico completo e garantir a continuidade do cuidado.
 
 ## Critérios de Aceitação:
 __C1. A plataforma deve permitir o registro de informações clínicas detalhadas, incluindo sintomas, diagnósticos, tratamentos administrados, e recomendações.__
@@ -280,7 +280,7 @@ __- Descrição: Exemplo de confirmação de solicitação de visita, garante qu
 
 
 
-# H16 - Como técnico de enfermagem eu quero administrar medicamentos aos pacientes de acordo com prescrição médica para que o tratamento seja adequado.
+# H16-Como técnico de enfermagem eu quero administrar medicamentos aos pacientes de acordo com prescrição médica para que o tratamento seja adequado.
 
 ## Critérios de aceitação:
 __C1. as prescrições devem conter dosagem, horários de aplicações juntamente com as instruções de uso.__
@@ -341,7 +341,7 @@ __- Descrição: Exemplo de atualização de estatus, confirmando que as devidas
 
 
 
-# H20 - Como supervisor, gostaria de cadastrar a UBS em que ministro para fazer parte do portal.
+# H20-Como supervisor, gostaria de cadastrar a UBS em que ministro para fazer parte do portal.
 
 ## Critérios de Aceitação:
 __C1. A UBS deve estar cadastrada no CNES, que é o registro oficial das unidades de saúde no Brasil.__
@@ -433,7 +433,7 @@ __- Descrição: Exemplo de possível preenchimento de ficha para registro de UB
 
 
 
-# H21 - Como supervisor, gostaria de cadastrar os principais serviços que minha UBS oferece para manter os pacientes cientes de quais benefícios prestamos.
+# H21-Como supervisor, gostaria de cadastrar os principais serviços que minha UBS oferece para manter os pacientes cientes de quais benefícios prestamos.
 
 ## Critérios de Aceitação:
 __C1. O sistema deve exibir um formulário de cadastro que permita ao supervisor inserir os seguintes dados de cada serviço: nome do serviço, descrição detalhada, horários de atendimento, requisitos para acesso (se houver), e nome do responsável pelo serviço.__
@@ -487,7 +487,7 @@ __- Descrição: Exemplo de ficha preenchida e aprovada com a adição de um nov
 
 
 
-# H22 - Como paciente gostaria de acessar minha caderneta de vacina digitalmente para visualizar meu histórico de vacinas rapidamente.
+# H22-Como paciente gostaria de acessar minha caderneta de vacina digitalmente para visualizar meu histórico de vacinas rapidamente.
 
 ## Critérios de Aceitação:
 __C1. O sistema deve garantir que apenas o paciente autenticado possa visualizar seu histórico de vacinas.__
@@ -508,7 +508,7 @@ __- Descrição: Exemplo de acesso a caderneta de paciente. Possibilitando pacie
 
 
 
-# H23 - Como paciente, gostaria de receber lembretes de doação de sangue para que eu possa ficar ciente de quando doar sangue.
+# H23-Como paciente, gostaria de receber lembretes de doação de sangue para que eu possa ficar ciente de quando doar sangue.
 
 ## Critérios de Aceitação:
 __C1. O paciente deve ter a opção para receber lembretes de doação de sangue, podendo escolher a frequência dos lembretes (por exemplo, a cada 3 meses, 6 meses, ou 12 meses).__
@@ -528,7 +528,7 @@ __- Descrição: interface para doação de sangue, onde possibilita pacientes s
 
 
 
-# H24 - Como paciente, gostaria de acessar as informações e serviços dos quais a UBS oferece para que eu possa estar informado das características daquele estabelecimento.
+# H24-Como paciente, gostaria de acessar as informações e serviços dos quais a UBS oferece para que eu possa estar informado das características daquele estabelecimento.
 
 ## Critérios de Aceitação:
 __C1. O paciente deve poder acessar a página "Mais UBSs" no portal, que contenha informações detalhadas sobre a unidade, incluindo endereço completo, horário de funcionamento, telefone de contato e e-mail.__
@@ -599,7 +599,7 @@ __- Descrição: Exemplo de interação com o portal, onde revela a mensagem "Co
 
 
 
-# H25 - Como paciente, gostaria de cadastrar meus dados no portal para estar conectado ao sistema.
+# H25-Como paciente, gostaria de cadastrar meus dados no portal para estar conectado ao sistema.
 
 ## Critérios de Aceitação:
 __C1. O portal deve exibir um formulário de cadastro que permita ao paciente inserir os seguintes dados: nome completo, número do SUS, data de nascimento, endereço, telefone de contato, e-mail, CPF (ou documento de identificação equivalente), e senha.__
@@ -674,7 +674,7 @@ __- Descrição: Exemplo de conclusão de cadastro, a confirmação do mesmo foi
 
 
 
-# H26 - Como paciente, gostaria de desconectar minha conta do portal para sair do sistema.
+# H26-Como paciente, gostaria de desconectar minha conta do portal para sair do sistema.
 
 ## Critérios de Aceitação:
 __C1. O botão de logout deve ser facilmente identificável, com um ícone e/ou texto descritivo (por exemplo, "Sair" ou "Logout").__
@@ -712,14 +712,26 @@ __- Descrição: Exemplo de mensagem exibida após a seleção de logout de cont
 
 
 
-# H27 - Como paciente, gostaria de alterar meu perfil para atualizar algum dado antigo.
+# H27-Como paciente, gostaria de alterar meu perfil para atualizar algum dado antigo.
 
 ## Critérios de Aceitação:
-O paciente deve poder acessar uma página dedicada à edição de perfil a partir do portal, que pode ser acessada através de um link ou botão visível e claramente identificado, como "Editar Perfil".
-O sistema deve permitir que o paciente edite campos específicos de seu perfil, como nome, endereço, telefone de contato, e-mail, data de nascimento, e qualquer outro dado pessoal relevante.
-O sistema deve garantir que somente o paciente autenticado possa acessar e editar seu próprio perfil, protegendo os dados contra acesso não autorizado.
+__C1. O paciente deve poder acessar uma página dedicada à edição de perfil a partir do portal, que pode ser acessada através de um link ou botão visível e claramente identificado, como "Editar Perfil".__
 
-# H29 - Como paciente, gostaria de selecionar a ubs mais perto da minha residência onde queira realizar os serviços Para facilitar a seleção da UBS mais próxima.
+__C2. O sistema deve permitir que o paciente edite campos específicos de seu perfil, como nome, endereço, telefone de contato, e-mail, data de nascimento, e qualquer outro dado pessoal relevante.__
+
+__C3. O sistema deve garantir que somente o paciente autenticado possa acessar e editar seu próprio perfil, protegendo os dados contra acesso não autorizado.__
+
+## Tela 14
+
+![](https://github.com/JoaoCarlos22/TP-UBServices/blob/main/docs/rastreabilidade_requisitos/images/tela_h14.png)
+
+
+
+__- Descrição: Interface para alteração de dados, dados antigos poderão ser alterados por novos, garantindo usabilidade.__
+
+
+
+# H29-Como paciente, gostaria de selecionar a ubs mais perto da minha residência onde queira realizar os serviços Para facilitar a seleção da UBS mais próxima.
 Critérios de aceitação:
 1 - As informações sobre as UBSs incluem endereço, telefone e especialidades disponíveis.
 2 - O sistema possui uma funcionalidade de localização que sugere a UBS mais próxima da residência do paciente com base na sua localização .
