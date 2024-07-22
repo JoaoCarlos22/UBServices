@@ -213,15 +213,41 @@ __- Descrição: Exemplo de salvamento de ficha de paciente, garantindo registro
 
 
 # H12-Como ACS eu quero registrar fichas de pacientes para requisitar visitas domiciliares para pacientes para que seja requisitada equipe qualificada.
-critérios de aceitação:
-1- deve ser registrado nome, endereço, idade, CPF e condição do paciente.
-2- visitas devem ser agendas para serem realizadas em no máximo uma semana.
-3- ao registrar deve-se incluir a equipe juntamente com a quantidade de membros.
-4- ao fim da visita deve-se registrar ou não, serviços adicionais como fisioterapia.
 
-regras de Negócio:
-1- as visitas domiciliares devem ser agendadas para ocorrer dentro de um prazo máximo de uma semana a partir da data do registro da ficha do paciente.
-2- o sistema deve manter um histórico detalhado de todas as fichas de pacientes registradas, visitas realizadas e serviços adicionais prestados.
+## critérios de aceitação:
+__C1. deve ser registrado nome, endereço, idade, CPF e condição do paciente.__
+
+__C2. visitas devem ser agendas para serem realizadas em no máximo uma semana.__
+
+__C3. ao registrar deve-se incluir a equipe juntamente com a quantidade de membros.__
+
+__C4. ao fim da visita deve-se registrar ou não, serviços adicionais como fisioterapia.__
+
+## Regras de Negócio:
+__R1. as visitas domiciliares devem ser agendadas para ocorrer dentro de um prazo máximo de uma semana a partir da data do registro da ficha do paciente.__
+
+__R2. o sistema deve manter um histórico detalhado de todas as fichas de pacientes registradas, visitas realizadas e serviços adicionais prestados.__
+
+__ -Fluxograma:__
+
+## Tela 5A
+
+![](https://github.com/JoaoCarlos22/TP-UBServices/blob/main/docs/rastreabilidade_requisitos/images/tela_h05a.png)
+
+
+
+__- Descrição:  Interface geral, permite ao ACS mover-se pelas funcionalidades do sistema.__
+
+
+
+## Tela 5B
+
+![](https://github.com/JoaoCarlos22/TP-UBServices/blob/main/docs/rastreabilidade_requisitos/images/tela_h05b.png)
+
+
+
+__- Descrição: Interface que permite a visualização e registro de visitas domiciliares, juntamente com seus respectivos estados.__
+
 
 # H16 - Como técnico de enfermagem eu quero administrar medicamentos aos pacientes de acordo com prescrição médica para que o tratamento seja adequado.
 critérios de aceitação:
