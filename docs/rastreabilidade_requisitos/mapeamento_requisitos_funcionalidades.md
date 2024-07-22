@@ -511,18 +511,93 @@ __- Descrição: Exemplo de acesso a caderneta de paciente. Possibilitando pacie
 # H23 - Como paciente, gostaria de receber lembretes de doação de sangue para que eu possa ficar ciente de quando doar sangue.
 
 ## Critérios de Aceitação:
+__C1. O paciente deve ter a opção para receber lembretes de doação de sangue, podendo escolher a frequência dos lembretes (por exemplo, a cada 3 meses, 6 meses, ou 12 meses).__
 
-O paciente deve ter a opção para receber lembretes de doação de sangue, podendo escolher a frequência dos lembretes (por exemplo, a cada 3 meses, 6 meses, ou 12 meses).
-O sistema deve permitir que o paciente escolha o método de recebimento dos lembretes (por exemplo, e-mail, SMS, ou notificações push).
-Os lembretes enviados ao paciente devem conter informações relevantes, como a data sugerida para a próxima doação, os benefícios de doar sangue, e instruções sobre como e onde doar.
-Os lembretes devem ser enviados de acordo com a última data de doação do paciente e as diretrizes de intervalo mínimo entre doações (por exemplo, a cada 3 meses para homens e a cada 4 meses para mulheres, conforme as regulamentações locais).
+__C2. O sistema deve permitir que o paciente escolha o método de recebimento dos lembretes (por exemplo, e-mail, SMS, ou notificações push).
+Os lembretes enviados ao paciente devem conter informações relevantes, como a data sugerida para a próxima doação, os benefícios de doar sangue, e instruções sobre como e onde doar.__
+
+__C3. Os lembretes devem ser enviados de acordo com a última data de doação do paciente e as diretrizes de intervalo mínimo entre doações (por exemplo, a cada 3 meses para homens e a cada 4 meses para mulheres, conforme as regulamentações locais).__
+
+## Tela 10
+
+![](https://github.com/JoaoCarlos22/TP-UBServices/blob/main/docs/rastreabilidade_requisitos/images/tela_h10.png)
+
+
+
+__- Descrição: interface para doação de sangue, onde possibilita pacientes se voluntariarem como doadores e ainda serem notificados de possíveis doações.__
+
+
 
 # H24 - Como paciente, gostaria de acessar as informações e serviços dos quais a UBS oferece para que eu possa estar informado das características daquele estabelecimento.
-Critérios de Aceitação
-O paciente deve poder acessar a página "Mais UBSs" no portal, que contenha informações detalhadas sobre a unidade, incluindo endereço completo, horário de funcionamento, telefone de contato e e-mail.
-A página da UBS deve exibir uma lista completa dos serviços oferecidos pela unidade, como consultas médicas, exames laboratoriais, campanhas de vacinação, programas de saúde preventiva, entre outros.
-As informações sobre a UBS e os serviços oferecidos devem ser mantidas atualizadas pelo supervisor daquele estabelecimento, com um processo definido para revisão e atualização periódica.
-Cada serviço listado deve incluir uma breve descrição, horários de atendimento, requisitos para acesso (se houver), e qualquer informação adicional relevante (como nome dos profissionais responsáveis).
+
+## Critérios de Aceitação:
+__C1. O paciente deve poder acessar a página "Mais UBSs" no portal, que contenha informações detalhadas sobre a unidade, incluindo endereço completo, horário de funcionamento, telefone de contato e e-mail.__
+
+__C2. A página da UBS deve exibir uma lista completa dos serviços oferecidos pela unidade, como consultas médicas, exames laboratoriais, campanhas de vacinação, programas de saúde preventiva, entre outros.__
+
+__C3. As informações sobre a UBS e os serviços oferecidos devem ser mantidas atualizadas pelo supervisor daquele estabelecimento, com um processo definido para revisão e atualização periódica.__
+
+__C4. Cada serviço listado deve incluir uma breve descrição, horários de atendimento, requisitos para acesso (se houver), e qualquer informação adicional relevante (como nome dos profissionais responsáveis).__
+
+## Tela 11A
+
+![](https://github.com/JoaoCarlos22/TP-UBServices/blob/main/docs/rastreabilidade_requisitos/images/tela_h11a.png)
+
+
+
+__- Descrição: Interface geral, permite ao paciente mover-se pelas funcionalidades do portal.__
+
+
+
+## Tela 11B 
+
+![](https://github.com/JoaoCarlos22/TP-UBServices/blob/main/docs/rastreabilidade_requisitos/images/tela_h11b.png)
+
+
+
+__- Descrição: Exemplo de interação com a interface do portal, revelando os serviços prestados por determinada UBS.__
+
+
+
+## Tela 11C 
+
+![](https://github.com/JoaoCarlos22/TP-UBServices/blob/main/docs/rastreabilidade_requisitos/images/tela_h11c.png)
+
+
+
+__- Descrição: Avanço na interface do portal, para a opção "Enfermagem", releva os serviços relacionados à enfermagem prestados pela UBS.__
+
+
+
+## Tela 11D
+
+![](https://github.com/JoaoCarlos22/TP-UBServices/blob/main/docs/rastreabilidade_requisitos/images/tela_h11d.png)
+
+
+
+__- Descrição: Exemplo de interação com o portal sem ter login prévio, resultando em erro de Acesso Restrito.__
+
+
+
+## Tela 11E
+
+![](https://github.com/JoaoCarlos22/TP-UBServices/blob/main/docs/rastreabilidade_requisitos/images/tela_h11e.png)
+
+
+
+__- Descrição: Exemplo de interação com o portal com login prévio revelando a opção "Realizar Agendamento", que por sua vez, posibilita o paciente agendar uma consulta em determinda UBS.__
+
+
+
+## Tela 11F
+
+![](https://github.com/JoaoCarlos22/TP-UBServices/blob/main/docs/rastreabilidade_requisitos/images/tela_h11f.png)
+
+
+
+__- Descrição: Exemplo de interação com o portal, onde revela a mensagem "Consulta Agendada", comunicando que a consulta já está efetivamente marcada.__
+
+
 
 # H25 - Como paciente, gostaria de cadastrar meus dados no portal para estar conectado ao sistema.
 Critérios de Aceitação
