@@ -15,7 +15,7 @@ filtrar consultas por horário, tipo de consulta e status (confirmada, pendente,
 __C6. Garantir que o sistema mantém um histórico de todas as remarcações para fins de auditoria e planejamento.__
 
 ## Regras de Negócios:
-__R1.Todas as consultas agendadas devem ser confirmadas automaticamente por um sistema eletrônico de notificação, que enviará lembretes tanto para o médico quanto para o paciente. Isso garantirá uma comunicação eficaz e reduzirá a taxa de não comparecimento, conforme a Resolução CFM nº 1.821/2007, que regulamenta a comunicação entre médicos e pacientes.__
+__R1. Todas as consultas agendadas devem ser confirmadas automaticamente por um sistema eletrônico de notificação, que enviará lembretes tanto para o médico quanto para o paciente. Isso garantirá uma comunicação eficaz e reduzirá a taxa de não comparecimento, conforme a Resolução CFM nº 1.821/2007, que regulamenta a comunicação entre médicos e pacientes.__
 
 __R2. A notificação deve ser enviada com uma antecedência mínima de 24 horas antes da consulta, conforme as melhores práticas de preparação médica.__
 
@@ -59,7 +59,7 @@ __- Fluxograma:__
 
 
 
-__- Descrição: Interface geral, permite a atendente mover-se pelas funcionalidades do sistema.__
+__- Descrição: Interface geral, permite à atendente mover-se pelas funcionalidades do sistema.__
 
 
 ## Tela 2B
@@ -106,24 +106,40 @@ __C4. A plataforma deve suportar alguns tipos de arquivos incluindo textos, imag
 __C5. A enfermeira deve poder marcar informações e protocolos como favoritos para acesso rápido em consultas futuras.__
 
 ## Regras de Negócios:
-R1 - A enfermeira deve ter acesso a um sistema de prontuário eletrônico integrado que permita a visualização rápida e fácil das informações clínicas dos pacientes durante o atendimento.
-R2 - Protocolos clínicos e diretrizes devem ser categorizados por especialidade e tipo de atendimento para facilitar a busca e consulta.
-R3 - A enfermeira deve ter acesso a uma base de dados centralizada contendo protocolos clínicos e diretrizes atualizadas para diferentes condições de saúde.
-R4 - O acesso a informações clínicas e protocolos deve ser protegido por medidas de segurança robustas para garantir a confidencialidade e integridade dos dados.
-R5 - Todas as decisões clínicas baseadas em protocolos e informações acessadas devem ser registradas no prontuário eletrônico do paciente para referência futura e auditoria.
+__R1. A enfermeira deve ter acesso a um sistema de prontuário eletrônico integrado que permita a visualização rápida e fácil das informações clínicas dos pacientes durante o atendimento.__
 
-H10 - Como uma Enfermeira da Comunidade, eu quero registrar de forma eficiente as informações coletadas durante visitas domiciliares para manter um histórico completo e garantir a continuidade do cuidado.
-Critérios de Aceitação:
+__R2. Protocolos clínicos e diretrizes devem ser categorizados por especialidade e tipo de atendimento para facilitar a busca e consulta.__
 
-C1. A plataforma deve permitir o registro de informações clínicas detalhadas, incluindo sintomas, diagnósticos, tratamentos administrados, e recomendações.
-C2. A plataforma deve exibir o histórico completo de visitas e registros anteriores de cada paciente, permitindo uma visão holística do cuidado ao paciente.
-C3. A plataforma deve ser otimizada para uso em campo, com capacidade de funcionar offline e sincronizar os dados automaticamente quando a conexão for restabelecida.
-C4. A plataforma deve realizar backups automáticos regulares para evitar perda de dados.
-C5. Deve haver um processo claro e eficiente para a recuperação de dados em caso de falha ou perda de dispositivo.
-C6. As informações registradas durante as visitas domiciliares devem ser automaticamente atualizadas no prontuário eletrônico do paciente.
+__R3. A enfermeira deve ter acesso a uma base de dados centralizada contendo protocolos clínicos e diretrizes atualizadas para diferentes condições de saúde.__
 
-Regras de Negócio:
-R1 - A enfermeira deve coletar informações detalhadas durante cada visita domiciliar, incluindo dados vitais, sintomas relatados, medicamentos em uso, e observações gerais.
-R2 - Dispositivos móveis devem estar configurados para funcionar offline, permitindo a entrada de dados mesmo em locais sem conexão à internet, com sincronização automática assim que a conexão for restabelecida.
-R3 - As informações coletadas devem seguir um formato estruturado e padronizado, garantindo a consistência e a facilidade de acesso e análise dos dados.
-R4 - O acesso ao sistema de prontuário eletrônico deve ser controlado por autenticação segura, e o dispositivo móvel deve ter medidas de proteção, como senhas e criptografia.
+__R4. O acesso a informações clínicas e protocolos deve ser protegido por medidas de segurança robustas para garantir a confidencialidade e integridade dos dados.__
+
+__R5. Todas as decisões clínicas baseadas em protocolos e informações acessadas devem ser registradas no prontuário eletrônico do paciente para referência futura e auditoria.__
+
+# H10 - Como uma Enfermeira da Comunidade, eu quero registrar de forma eficiente as informações coletadas durante visitas domiciliares para manter um histórico completo e garantir a continuidade do cuidado.
+
+## Critérios de Aceitação:
+__C1. A plataforma deve permitir o registro de informações clínicas detalhadas, incluindo sintomas, diagnósticos, tratamentos administrados, e recomendações.__
+
+__C2. A plataforma deve exibir o histórico completo de visitas e registros anteriores de cada paciente, permitindo uma visão holística do cuidado ao paciente.__
+
+__C3. A plataforma deve ser otimizada para uso em campo, com capacidade de funcionar offline e sincronizar os dados automaticamente quando a conexão for restabelecida.__
+
+__C4. A plataforma deve realizar backups automáticos regulares para evitar perda de dados.__
+
+__C5. Deve haver um processo claro e eficiente para a recuperação de dados em caso de falha ou perda de dispositivo.__
+
+__C6. As informações registradas durante as visitas domiciliares devem ser automaticamente atualizadas no prontuário eletrônico do paciente.__
+
+## Regras de Negócio:
+__R1. A enfermeira deve coletar informações detalhadas durante cada visita domiciliar, incluindo dados vitais, sintomas relatados, medicamentos em uso, e observações gerais.__
+
+__R2. Dispositivos móveis devem estar configurados para funcionar offline, permitindo a entrada de dados mesmo em locais sem conexão à internet, com sincronização automática assim que a conexão for restabelecida.__
+
+__R3. As informações coletadas devem seguir um formato estruturado e padronizado, garantindo a consistência e a facilidade de acesso e análise dos dados.__
+
+__R4. O acesso ao sistema de prontuário eletrônico deve ser controlado por autenticação segura, e o dispositivo móvel deve ter medidas de proteção, como senhas e criptografia.__
+
+__- Fluxograma H9 e H10:__
+
+
