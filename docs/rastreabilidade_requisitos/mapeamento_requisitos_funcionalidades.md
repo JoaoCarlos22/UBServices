@@ -276,7 +276,7 @@ __- Descrição: Exemplo de  registro de solicitação de visita, oferece visual
 
 
 
-__- Descrição: Exemplo de confirmação de soliicção de visita, garante que os pacientes serão atendidos no tempo estipulado e também oferece opção de mensagem de confirmação ao paciente.__
+__- Descrição: Exemplo de confirmação de solicitação de visita, garante que os pacientes serão atendidos no tempo estipulado e também oferece opção de mensagem de confirmação ao paciente.__
 
 
 
