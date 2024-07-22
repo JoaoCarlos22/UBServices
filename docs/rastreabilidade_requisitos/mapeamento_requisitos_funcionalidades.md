@@ -62,6 +62,35 @@ __- Fluxograma:__
 __- Descrição: Interface geral, permite a atendente mover-se pelas funcionalidades do sistema.__
 
 
+## Tela 2B
+
+![](https://github.com/JoaoCarlos22/TP-UBServices/blob/main/docs/rastreabilidade_requisitos/images/tela_h02b.png)
+
+
+
+__-Descrição: Acesso ao bate-papo com pacientes juntamente com as notificações, possibilita interação direta com o paciente.__
+
+
+
+## Tela 2C
+
+![](https://github.com/JoaoCarlos22/TP-UBServices/blob/main/docs/rastreabilidade_requisitos/images/tela_h02c.png)
+
+
+
+__- Descrição: Exemplo de interação com o sistema, revelando a opção "Visualizar", que por usa vez, abre a caixa de mensagem com paciente.__
+
+
+
+# Tela 2D
+
+![](https://github.com/JoaoCarlos22/TP-UBServices/blob/main/docs/rastreabilidade_requisitos/images/tela_h02d.png)
+
+
+
+__- Descrição: Exemplo prático de interação com paciente, onde interage com uma pergunta e uma atendente oferece suporte.__
+
+
 
 H9 - Como uma Enfermeira da Comunidade, eu quero acessar rapidamente informações clínicas e protocolos relevantes para tomar decisões informadas durante o atendimento aos pacientes.
 
