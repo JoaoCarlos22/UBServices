@@ -282,7 +282,7 @@ __- Descrição: Exemplo de confirmação de solicitação de visita, garante qu
 
 # H16 - Como técnico de enfermagem eu quero administrar medicamentos aos pacientes de acordo com prescrição médica para que o tratamento seja adequado.
 
-## critérios de aceitação:
+## Critérios de aceitação:
 __C1. as prescrições devem conter dosagem, horários de aplicações juntamente com as instruções de uso.__
 
 __C2. medicamentos devem conter os dados do paciente associado juntamente com o médico que as prescreveu.__
@@ -309,21 +309,57 @@ __- Descrição: Interface inicial para administração de medicamentos, possibi
 
 
 
-__- Descrição: 
+__- Descrição: Acesso a lista de pacientes, para administração de medicação, oferece visualização da prescrição médica, juntamente com o estado de cada.__
+
+
+
+# Tela 6C
+
+![](https://github.com/JoaoCarlos22/TP-UBServices/blob/main/docs/rastreabilidade_requisitos/images/tela_h06c.png)
+
+
+
+__- Descrição: Exemplo de interação com o sistema revelando a opção "Verificar", que por sua vez, revela a prescrição médica de determinado paciente, possibilitando administração de medicamentos.__
+
+
+
+## Tela 6D
+
+![](https://github.com/JoaoCarlos22/TP-UBServices/blob/main/docs/rastreabilidade_requisitos/images/tela_h06d.png)
+
+
+
+__- Descrição: Exemplo de administração de medicamentos via prescrição médica, apresenta a medicação recomendada pelo médico juntamente com suas respectivas instruções e acesso a possíveis efeitos colaterais.__
+
+
+
+## Tela 6E
+
+![](https://github.com/JoaoCarlos22/TP-UBServices/blob/main/docs/rastreabilidade_requisitos/images/tela_h06e.png)
+
+__- Descrição: Exemplo de atualização de estatus, confirmando que as devidas medicações já foram administradas via prescrição médica__
+
 
 
 # H20 - Como supervisor, gostaria de cadastrar a UBS em que ministro para fazer parte do portal.
-Critérios de Aceitação
-C1. A UBS deve estar cadastrada no CNES, que é o registro oficial das unidades de saúde no Brasil.
-C2. O sistema deve exibir um formulário de cadastro que permita ao supervisor inserir os seguintes dados da UBS: nome da UBS, endereço completo (incluindo cidade, estado e CEP), telefone de contato, e-mail, e nome do responsável.
-C3. O formulário deve validar os campos obrigatórios e exibir mensagens de erro apropriadas se os dados não estiverem preenchidos corretamente.
-C4. Após a aprovação do cadastro, o sistema deve exibir uma mensagem de confirmação na interface do portal e enviar um e-mail de confirmação ao supervisor.
-C5. Somente usuários com permissões de supervisor devem ter acesso ao formulário de cadastro de UBS.
 
-Regras de Negócio
-R1. O sistema deve permitir que apenas supervisores autenticados possam cadastrar novas Unidades Básicas de Saúde (UBS) no portal.
-R2. O cadastro da UBS deve incluir campos obrigatórios como nome da UBS, endereço completo e telefone de contato, garantindo que informações essenciais sejam fornecidas.
-R3. O sistema deverá conter no máximo 2 perfis de supervisor.
+## Critérios de Aceitação:
+__C1. A UBS deve estar cadastrada no CNES, que é o registro oficial das unidades de saúde no Brasil.__
+
+__C2. O sistema deve exibir um formulário de cadastro que permita ao supervisor inserir os seguintes dados da UBS: nome da UBS, endereço completo (incluindo cidade, estado e CEP), telefone de contato, e-mail, e nome do responsável.__
+
+__C3. O formulário deve validar os campos obrigatórios e exibir mensagens de erro apropriadas se os dados não estiverem preenchidos corretamente.__
+
+__C4. Após a aprovação do cadastro, o sistema deve exibir uma mensagem de confirmação na interface do portal e enviar um e-mail de confirmação ao supervisor.__
+
+__C5. Somente usuários com permissões de supervisor devem ter acesso ao formulário de cadastro de UBS.__
+
+## Regras de Negócio:
+__R1. O sistema deve permitir que apenas supervisores autenticados possam cadastrar novas Unidades Básicas de Saúde (UBS) no portal.__
+
+__R2. O cadastro da UBS deve incluir campos obrigatórios como nome da UBS, endereço completo e telefone de contato, garantindo que informações essenciais sejam fornecidas.__
+
+__R3. O sistema deverá conter no máximo 2 perfis de supervisor.__
 
 # H21 - Como supervisor, gostaria de cadastrar os principais serviços que minha UBS oferece para manter os pacientes cientes de quais benefícios prestamos.
 Critérios de Aceitação
