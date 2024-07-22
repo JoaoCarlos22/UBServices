@@ -35,16 +35,33 @@ __- Oferece acesso rápido a diferentes seções do sistema, como "Consultas", "
 
 # H6. Como atendente da UBS, eu desejo poder realizar atendimentos dos pacientes remotamente, para que os mesmos possam ser informados do dia e horário de sua consulta.
 
-Critérios de aceitação:
-As consultas e agendamentos, assim como as as respostas às dúvidas dos pacientes só estarão disponíveis para os pacientes cadastrados e que integram a UBS.
-Os atendimentos ou consultas poderão ser realizadas por perfis de atendente ou médico, podendo ser simultâneo.
-As consultas, assim como as as respostas às dúvidas dos pacientes só ocorreram nos horários e dias de funcionamentos das UBS.
+## Critérios de aceitação:
+__C1. As consultas e agendamentos, assim como as as respostas às dúvidas dos pacientes só estarão disponíveis para os pacientes cadastrados e que integram a UBS.__
 
-Regras de negócio:
-Seguindo o regimento da Lei nº 8.080, de 19 de setembro 1990, o atendimento oferecido pela UBS deve ser disponibilizado para todos os pacientes em que fazem parte dela.
-O sistema deve disponibilizar a solicitação de agendamento informando ao paciente os dias e horários disponíveis para que o mesmo possa definir o melhor horário em que pode realizar a consulta.
-Em casos de consultas remotas o sistema deve permitir com que o atendente possa notificar para o paciente a data e horário definidos para a realização da consulta.
-O sistema deve permitir o usuário enviar mensagens no chat para o perfil da UBS informando sua dúvida em relação aos serviços prestados.
+__C2. Os atendimentos ou consultas poderão ser realizadas por perfis de atendente ou médico, podendo ser simultâneo.__
+
+__C3. As consultas, assim como as as respostas às dúvidas dos pacientes só ocorreram nos horários e dias de funcionamentos das UBS.__
+
+## Regras de negócio:
+__R1. Seguindo o regimento da Lei nº 8.080, de 19 de setembro 1990, o atendimento oferecido pela UBS deve ser disponibilizado para todos os pacientes em que fazem parte dela.__
+
+__R2. O sistema deve disponibilizar a solicitação de agendamento informando ao paciente os dias e horários disponíveis para que o mesmo possa definir o melhor horário em que pode realizar a consulta.__
+
+__R3. Em casos de consultas remotas o sistema deve permitir com que o atendente possa notificar para o paciente a data e horário definidos para a realização da consulta.__
+
+__R4. O sistema deve permitir o usuário enviar mensagens no chat para o perfil da UBS informando sua dúvida em relação aos serviços prestados.__
+
+__- Fluxograma:__
+
+## Tela 2A
+
+![](https://github.com/JoaoCarlos22/TP-UBServices/blob/main/docs/rastreabilidade_requisitos/images/tela_h02a.png)
+
+
+
+__- Descrição: Interface geral, permite a atendente mover-se pelas funcionalidades do sistema.__
+
+
 
 H9 - Como uma Enfermeira da Comunidade, eu quero acessar rapidamente informações clínicas e protocolos relevantes para tomar decisões informadas durante o atendimento aos pacientes.
 
