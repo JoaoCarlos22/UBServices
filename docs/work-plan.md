@@ -118,7 +118,7 @@ Com os desafios citados acima, se pode relacionar, que muitos dos problemas com 
 - Reduzir o sobrecarregamento manual das instituições;
 - Diminuir o prazo de atendimento a consultas; 
 - Facilitar o contato com profissionais da saúde;
-- gyAumentar a eficiência na gestão hospitalar. 
+- Aumentar a eficiência na gestão hospitalar. 
 
  
 
@@ -144,11 +144,9 @@ Com os desafios citados acima, se pode relacionar, que muitos dos problemas com 
 
 - Fase I: Especificação – Maio/Junho:  
 Requisitos e plano de trabalho: Personas, User Stories, Critérios de Aceitação, Regras de Negócio.
-- Fase II: Inspeção – Julho: Planilha dos defeitos encontrados e relatório detalhado do processo de inspeção
-- Fase III: Projeto e Arquitetura – Julho:  
-- Fase IV: Prototipagem e Refinamento – Julho:  
-- Fase V: Prototipagem e Refinamento – Julho:  
-- Fase VI: Encerramento – Julho: 
+- Fase II: Inspeção – Julho: Planilha dos defeitos encontrados e relatório detalhado do processo de inspeção.
+- Fase III: Projeto e Arquitetura – Julho: Diagramas estáticos, dinâmicos e modelo C4.
+- Fase IV: Prototipagem e Refinamento – Julho: Tutorial do usuário, protótipo das interfaces, documento de rastreabilidade de requisitos e relatório de inspeção de usabilidade.
 
 ## 3.4	Entregas de cada Fase 
 
@@ -156,9 +154,8 @@ Requisitos e plano de trabalho: Personas, User Stories, Critérios de Aceitaçã
 |--------------------------------|----------|---------------------------------------------------------------|
 | I. Especificação               | 17/06    | Personas, User Stories, Critérios de Aceitação e Regras de Negócio |
 | II. Inspeção                   | 03/07    | Planilha dos defeitos encontrados e relatório detalhado do processo de inspeção|
-| III. Projeto e Arquitetura     |          |                                                               |
-| IV. Prototipagem e Refinamento |          |                                                               |
-| V. Encerramento                |          |                                                               |
+| III. Projeto e Arquitetura     | 17/07    | Diagramas estáticos, dinâmicos e modelo C4 |
+| IV. Prototipagem e Refinamento | 22/07    | Tutorial do usuário, protótipo das interfaces, documento de rastreabilidade de requisitos e relatório de inspeção de usabilidade |
  
 
 ## 3.5	Controle de Mudanças 
