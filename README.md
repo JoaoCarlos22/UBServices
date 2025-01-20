@@ -10,10 +10,9 @@ Este projeto tem como objetivo principal documentar e desenvolver uma proposta p
 Elaborar a documentação completa e detalhada de um sistema que atenda às demandas de gestão de UBSs, utilizando boas práticas de Engenharia de Software.  
 
 ## **Objetivos Específicos**  
-- Analisar e especificar os requisitos funcionais e não funcionais do sistema.  
+- Analisar e especificar os requisitos do sistema utilizando a técnica _PATHY_ e _UserStories_.  
 - Desenvolver diagramas e artefatos que representem as funcionalidades do sistema (casos de uso, diagramas de classe, entre outros).  
-- Propor uma arquitetura que permita a escalabilidade e a integração com tecnologias modernas, utilizando apenas o banco de dados MongoDB como solução de persistência.  
-- Garantir que a solução seja acessível, intuitiva e adequada às necessidades de pacientes e profissionais de saúde.  
+- Propor uma protótipo consistente com os requisitos especificados no backlog, seguido de uma inspeção de usabilidade para validação.
 
 ## **Docente Responsável**  
 **Andrey Rodrigues**  
@@ -24,19 +23,42 @@ Elaborar a documentação completa e detalhada de um sistema que atenda às dema
 3. Hélio Nogueira  
 4. Nicolas Oliveira  
 5. Chyntia Prestes  
-6. Calil Lima  
+6. Calil Lima    
 
-## **Sobre o Projeto**  
-O trabalho abrange as seguintes etapas:  
-1. **Planejamento:** Levantamento inicial de requisitos e definição do escopo.  
-2. **Documentação:** Criação de artefatos como casos de uso, diagramas UML e protótipos de interface.  
-3. **Proposta Tecnológica:**  
-   - Descrição da arquitetura do sistema.  
-   - Detalhamento das funcionalidades principais.  
-   - Estruturação do banco de dados MongoDB para atender às demandas do sistema.  
+## **Processos feitos**
 
-## **Resultados Esperados**  
-Ao final do projeto, espera-se entregar uma proposta bem documentada para a gestão de UBSs, que possa ser usada como base para o desenvolvimento futuro de um sistema completo.  
+## Backlog do Produto
 
-## **Como Contribuir**  
-Este projeto é um trabalho acadêmico, mas melhorias e sugestões podem ser enviadas por meio de issues ou pull requests.  
+### - [Personas](https://github.com/JoaoCarlos22/UBServices/tree/main/docs/personas)
+
+### - [Histórias do Usuário](https://github.com/JoaoCarlos22/UBServices/blob/main/docs/user-stories.md)
+
+## Inspeção de Requisitos
+
+### - [Issues](https://github.com/JoaoCarlos22/UBServices/issues?q=is%3Aissue%20state%3Aclosed)
+
+## Projeto e Arquitetura do Software
+
+### - [Diagramas Estáticos](https://github.com/JoaoCarlos22/UBServices/tree/main/docs/diagrama_estaticos)
+
+### - [DIagramas Dinâmicos](https://github.com/JoaoCarlos22/UBServices/tree/main/docs/diagramas_dinamicos)
+
+### - [Modelo C4](https://github.com/JoaoCarlos22/UBServices/tree/main/docs/modelo_c4)
+
+## Protótipo e Validação do Software
+
+### - [Manual do Usuário](https://github.com/JoaoCarlos22/UBServices/blob/main/docs/manual_usuario.md)
+
+### - [Telas](https://github.com/JoaoCarlos22/UBServices/tree/main/docs/telas)
+
+### - [Rastreabilidade de Requisitos](https://github.com/JoaoCarlos22/UBServices/tree/main/docs/rastreabilidade_requisitos)
+
+### - [Inspeção de Usabilidade](https://github.com/JoaoCarlos22/UBServices/tree/main/docs/inspecao_usabilidade)
+
+## **Apresentações**
+
+### - [Parte 1](https://github.com/JoaoCarlos22/UBServices/blob/main/docs/apresentacoes/Backlog-Parte1_AppUBS.pdf)
+
+### - [Parte 2](https://github.com/JoaoCarlos22/UBServices/blob/main/docs/apresentacoes/Projeto%20e%20Arquitetura%20de%20Software.pdf)
+
+### - [Parte 3](https://github.com/JoaoCarlos22/UBServices/blob/main/docs/apresentacoes/Prot%C3%B3tipo_e_Valida%C3%A7%C3%A3o_de_Usbailidade-Equipe-JoaoCarlos.pdf)
