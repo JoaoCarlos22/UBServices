@@ -5,16 +5,16 @@ const router = express.Router()
 
 const visitas = []
 
-const chekIdPedido = (req, res, next) => {
+const chekIdVisita = (req, res, next) => {
     const {id} = req.params
 
-    const index = pedidos.findIndex(pedido => pedido.id === id)
+    const index = visitas.findIndex(visita => visita.id === id)
 
     if (index < 0) {
-        return res.send("Pedido não encontrado!")
+        return res.send("Visita não encontrada!")
     }
 
-    req.orderId = index
+    req.visitaId = index
 
     next()
 }
@@ -55,34 +55,34 @@ router.get('/visitas', viewRoute, (req, res) => {
     
 })
 
-router.put('/order/:id', viewRoute, chekIdPedido, (req, res) => {
-    const {index} = req.orderId
+router.put('/order/:id', viewRoute, chekIdVisita, (req, res) => {
+    const {index} = req.visitaId
     const {id} = req.params
-    const {order, name, price} = req.body
+    const {name, age} = req.body
 
-    const newOrder = {id, order, name, price}
+    const newVisita = {id, name, age}
 
-    pedidos[index] = newOrder
+    visitas[index] = newVisita
 
-    return res.json(newOrder)
+    return res.json(newVisita)
 })
 
-router.delete('/order/:id', viewRoute, chekIdPedido, (req, res) => {
-    const {index} = req.orderId
+router.delete('/delVisita/:id', viewRoute, chekIdVisita, (req, res) => {
+    const {index} = req.visitaId
     
-    pedidos.splice(index, 1)
+    visitas.splice(index, 1)
 
-    return res.send("Pedido excluído!")
+    return res.send("Visita excluída!")
 })
 
-router.get('/order/:id', viewRoute, chekIdPedido, (req, res) => {
-    const index = req.orderId
-    const pedido = pedidos[index]
-    return res.json(pedido)
+router.get('/order/:id', viewRoute, chekIdVisita, (req, res) => {
+    const index = req.visitaId
+    const visita = visitas[index]
+    return res.json(visita)
 })
 
-router.patch('/order/:id', viewRoute, chekIdPedido, (req, res) => {
-    const index = req.orderId
+router.patch('/order/:id', viewRoute, chekIdVisita, (req, res) => {
+    const index = req.visitaId
     pedidos[index].status = "Pronto!"
     return res.json(pedidos[index])
 })

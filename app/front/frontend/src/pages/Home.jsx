@@ -9,24 +9,25 @@ import {
 } from '../styles/Home'
 import { use, useState, useRef } from "react"
 import axios from 'axios'
+import { PerfilContainer } from '../components/PerfilContainer'
+import { Caminho } from '../styles/Caminho'
 
 export const Home = () => {
+    // armazenamento dos dados do front
     const [visitas, setVisitas] = useState([])
     const inputNome = useRef()
     const inputIdade = useRef()
     /*const [nome, setNome] = useState()
     const [idade, setIdade] = useState()*/
 
+    // envia uma nova visita ao back end
     async function registrarVisita(e) {
-        const data = await axios.post('http://localhost:4000/cadVisita', { name: inputNome.current.value, age: inputIdade.current.value })
+        const {data: newVisita} = await axios.post('http://localhost:4000/cadVisita', { name: inputNome.current.value, age: inputIdade.current.value })
 
-
-
-        /*setVisitas([...visitas, {
-            name: inputNome.current.value,
-            idade: inputIdade.current.value
-        }])*/
+        // 
+        setVisitas([...visitas, newVisita])
     }
+
     /*
     function capturarNome(e) {
         setNome(e.target.value)
@@ -37,35 +38,40 @@ export const Home = () => {
     }*/
 
     return (
+        <>
+        <PerfilContainer/>
+        <Caminho>
+            <p>VISITAS DOMICILIARES / REGISTRAR VISITA</p>
+        </Caminho>
         <Container>
             <HeaderForm>
-                <h2>REGISTRAR VISITA DOMICILIAR</h2><br />
-                <h3>INFORMAÇÕES CLÍNICAS</h3>
+                <h2>INFORMAÇÕES CLÍNICAS</h2><br />
             </HeaderForm>
 
             <Form>
                 <Label>Nome:</Label>
-                <InputText ref={inputNome} id="nome" name="nome" />
-                <Label for="idade">Idade:</Label>
-                <InputText ref={inputIdade} type="text" id="idade" name="idade" />
-                <Label for="genero">Gênero:</Label>
-                <InputText type="text" id="genero" name="genero" />
-                <Label for="dados-vitais">Dados Vitais:</Label>
-                <TextArea id="dados-vitais" name="dados-vitais"></TextArea>
-                <Label for="sintomas">Sintomas:</Label>
-                <TextArea id="sintomas" name="sintomas"></TextArea>
-                <Label for="diagnostico">Diagnóstico:</Label>
-                <TextArea id="diagnostico" name="diagnostico"></TextArea>
-                <Label for="tratamentos">Tratamentos Administrados:</Label>
-                <TextArea id="tratamentos" name="tratamentos"></TextArea>
-                <Label for="recomendacoes">Recomendações:</Label>
-                <TextArea id="recomendacoes" name="recomendacoes"></TextArea>
-                <Label for="anotacoes">Anotações:</Label>
-                <TextArea id="anotacoes" name="anotacoes"></TextArea>
+                <InputText ref={inputNome} />
+                <Label>Idade:</Label>
+                <InputText ref={inputIdade} />
+                <Label>Gênero:</Label>
+                <InputText/>
+                <Label>Dados Vitais:</Label>
+                <TextArea></TextArea>
+                <Label>Sintomas:</Label>
+                <TextArea></TextArea>
+                <Label>Diagnóstico:</Label>
+                <TextArea></TextArea>
+                <Label>Tratamentos Administrados:</Label>
+                <TextArea></TextArea>
+                <Label>Recomendações:</Label>
+                <TextArea></TextArea>
+                <Label>Anotações:</Label>
+                <TextArea></TextArea>
                 <Label>Profissional Responsável:</Label>
-                <InputText id="profissional" name="profissional" />
-                <Submit type="submit" onClick={registrarVisita}>Salvar e Sincronizar</Submit>
+                <InputText />
+                <Submit to="/visitas" onClick={registrarVisita}>Salvar e Sincronizar</Submit>
             </Form>
         </Container>
+        </>
     )
 }

@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 export const Container = styled.div `
     padding: 2rem;
@@ -36,7 +37,7 @@ export const TextArea = styled.textarea `
     width: 100%;
     margin-bottom: 20px;
 `
-export const Submit = styled.button `
+export const Submit = styled(Link) `
     grid-column: 2;
     background-color: #27ae60;
     color: white;
@@ -44,6 +45,7 @@ export const Submit = styled.button `
     padding: 0.75rem;
     border-radius: 4px;
     cursor: pointer;
+    text-decoration: none;
     font-size: 1rem;
     transition: background-color 0.3s;
     margin-top: 1rem;
