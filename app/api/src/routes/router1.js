@@ -3,7 +3,7 @@ const uuid = require('uuid')
 
 const router = express.Router()
 
-const pedidos = []
+const visitas = []
 
 const chekIdPedido = (req, res, next) => {
     const {id} = req.params
@@ -27,28 +27,28 @@ const viewRoute = (req, res, next) => {
     next()
 }
 
-router.post('/order', viewRoute, (req, res) => {
+router.post('/cadVisita', viewRoute, (req, res) => {
     try {
-        const {order, name, price} = req.body
+        const {name, age} = req.body
 
-        if (!order || !name || !price) throw new Error("Os campos devem ser preenchidos!")
+        if ( !name || !age) throw new Error("Os campos devem ser preenchidos!")
 
-        const pedido = {id: uuid.v4(), order, name, price, status: "Em preparação!"}
+        const newVisita = {id: uuid.v4(), name, age}
 
-        pedidos.push(pedido)
+        visitas.push(newVisita)
 
-        return res.status(201).json(pedido)
+        return res.status(201).json(newVisita)
     } catch (error) {
         return res.status(400).send({erro: error.message})
     }
 })
 
-router.get('/order', viewRoute, (req, res) => {
+router.get('/visitas', viewRoute, (req, res) => {
     try {
-        if (!pedidos) {
+        if (!visitas) {
             return res.status(201).send("Nenhum pedido cadastrado!")
         }
-        return res.status(201).json(pedidos)
+        return res.status(201).json(visitas)
     } catch (error) {
         return res.status(400).send({erro: error.message})
     }

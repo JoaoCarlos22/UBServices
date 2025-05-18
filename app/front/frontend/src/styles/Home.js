@@ -9,19 +9,17 @@ export const HeaderForm = styled.div `
     margin-bottom: 10px;
     text-align: center;
 `
-
 export const Form = styled.div `
+    display: flex;
+    flex-direction: column;
     padding: 30px;
-    border: 1px solid #ddd;
-    gap: 15px;
-    align-items: center;
+    border: 1px solid #ddd;    
 `
-
 export const Label = styled.label `
+    text-align: left;
     font-weight: bold;
     color: #2c3e50;
 `
-
 export const InputText = styled.input `
     padding: 0.5rem;
     border: 1px solid #ddd;
@@ -29,7 +27,6 @@ export const InputText = styled.input `
     width: 100%;
     margin-bottom: 20px;
 `
-
 export const TextArea = styled.textarea `
     padding: 0.5rem;
     border: 1px solid #ddd;
@@ -39,7 +36,6 @@ export const TextArea = styled.textarea `
     width: 100%;
     margin-bottom: 20px;
 `
-
 export const Submit = styled.button `
     grid-column: 2;
     background-color: #27ae60;
@@ -51,4 +47,12 @@ export const Submit = styled.button `
     font-size: 1rem;
     transition: background-color 0.3s;
     margin-top: 1rem;
+
+    &:hover{
+        opacity: 0.8;
+    }
+
+    &:active{
+        opacity: 0.6;
+    }
 `

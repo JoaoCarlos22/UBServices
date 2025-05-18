@@ -22,6 +22,11 @@ export const Item = styled.li `
     cursor: pointer;
     padding: 0.5rem;
     transition: color 0.3s;
+
+    &:hover{
+        opacity: 0.8;
+    }
+
 `
 export const PerfilBtn = styled.button `
     background-color: #3498db;
@@ -31,4 +36,13 @@ export const PerfilBtn = styled.button `
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s;
+
+    &:hover{
+        opacity: 0.8;
+    }
+
+    &:active{
+        opacity: 0.6;
+    }
+
 `
