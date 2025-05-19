@@ -8,9 +8,9 @@ export const Visitas = () => {
     const [visitas, setVisitas] = useState([])
 
     // acessa as visitas registradas na API 
-    useEffect( () => {
+    useEffect(() => {
         async function fetchVisitas() {
-            const {data: visitasBack} = await axios.get('http://localhost:4000/visitas')
+            const { data: visitasBack } = await axios.get('http://localhost:4000/visitas')
             setVisitas(visitasBack)
         }
         fetchVisitas()
@@ -28,44 +28,46 @@ export const Visitas = () => {
 
     return (
         <>
-        <PerfilContainer/>
-        <Caminho>
-            <p>VISITAS DOMICILIARES / VISITAS AGENDADAS</p>
-        </Caminho>
+            <PerfilContainer route={'/cadVisita'} />
+            <Caminho>
+                <p>VISITAS DOMICILIARES / VISITAS AGENDADAS</p>
+            </Caminho>
 
-        <ContainerTabela>
-            <WrapTable>
-            <Tabela>
-                <Thead>
-                    <tr>
-                        <Head>Data de Solicitação</Head>
-                        <Head>Lista de Pacientes</Head>
-                        <Head>Status</Head>
-                    </tr>
-                </Thead>
-                <tbody>
-                    <Linha>
-                        <Body>20/07/2024</Body>
-                        <Body>Antônio José Viana</Body>
-                        <Body>Pendente</Body>
-                    </Linha>
-                    <Linha>
-                        {visitas.map((visita) => (
-                            <><Body key={visita.id}>
-                                18/05/2025
-                            </Body><Body key={visita.id}>
+            <ContainerTabela>
+                <WrapTable>
+                    <Tabela>
+                        <Thead>
+                            <tr>
+                                <Head>Data de Solicitação</Head>
+                                <Head>Lista de Pacientes</Head>
+                                <Head>Status</Head>
+                            </tr>
+                        </Thead>
+                        <tbody>
+                            <Linha>
+                                <Body>20/07/2024</Body>
+                                <Body>Antônio José Viana</Body>
+                                <Body>Pendente</Body>
+                            </Linha>
+                            {visitas.map((visita) => (
+                            <Linha key={visita.id}>
+                                <>
+                                <Body>
+                                    18/05/2025
+                                </Body>
+                                <Body>
                                     {visita.name}
-                            </Body>
-                            <Body key={visita.id}>
+                                </Body>
+                                <Body>
                                     Pendente
-                            </Body>
-                            </>
-                        ))}
-                    </Linha>
-                </tbody>
-            </Tabela>
-            </WrapTable>
-        </ContainerTabela>
-    </>
+                                </Body>
+                                </>
+                            </Linha>
+                            ))}
+                        </tbody>
+                    </Tabela>
+                </WrapTable>
+            </ContainerTabela>
+        </>
     )
 }
