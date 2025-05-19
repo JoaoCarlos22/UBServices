@@ -17,25 +17,13 @@ export const Home = () => {
     const [visitas, setVisitas] = useState([])
     const inputNome = useRef()
     const inputIdade = useRef()
-    /*const [nome, setNome] = useState()
-    const [idade, setIdade] = useState()*/
 
     // envia uma nova visita ao back end
     async function registrarVisita(e) {
         const {data: newVisita} = await axios.post('http://localhost:4000/cadVisita', { name: inputNome.current.value, age: inputIdade.current.value })
 
-        // 
         setVisitas([...visitas, newVisita])
     }
-
-    /*
-    function capturarNome(e) {
-        setNome(e.target.value)
-    }
-
-    function capturarIdade(e) {
-        setIdade(e.target.value)
-    }*/
 
     return (
         <>

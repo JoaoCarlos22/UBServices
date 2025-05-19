@@ -50,7 +50,7 @@ export const Visitas = () => {
                         <Body>Pendente</Body>
                     </Linha>
                     <Linha>
-                        {visitas.map((visita) => {
+                        {visitas.map((visita) => (
                             <><Body key={visita.id}>
                                 18/05/2025
                             </Body><Body key={visita.id}>
@@ -60,7 +60,7 @@ export const Visitas = () => {
                                     Pendente
                             </Body>
                             </>
-                        })}
+                        ))}
                     </Linha>
                 </tbody>
             </Tabela>
