@@ -19,11 +19,11 @@ Elaborar a documentação completa e detalhada de um sistema que atenda às dema
 
 ## **Equipe de Desenvolvimento**  
 1. João Carlos  
-2. Luiz Mendes  
-3. Hélio Nogueira  
-4. Nicolas Oliveira  
-5. Chyntia Prestes  
-6. Calil Lima    
+2. [Luiz Mendes](https://github.com/Luizwxz)  
+3. [Hélio Nogueira](https://github.com/HelioNogueira)
+4. [Nicolas Oliveira](https://github.com/NicolasOliveira72) 
+5. [Chyntia Prestes](https://github.com/whosangelx)
+6. [Calil Lima](https://github.com/Kallicco)    
 
 ## **Processos feitos**
 
