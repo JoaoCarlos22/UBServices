@@ -1,23 +1,30 @@
+import LogoImg from '../assets/ubservices-logo.png'
 import {
+    Header,
+    ContainerLogo,
+    Logo,
     Nav,
-    Lista,
     Item,  
     Title, 
     PerfilBtn, 
 } from '../styles/NavBar'
 
 const NavBar = () => {
+
     return (
-        <Nav>
-            <Title>UBS Services</Title>
-            <Lista>
+        <Header>
+            <ContainerLogo>
+                <Logo src={LogoImg} alt="UBS Services" />
+                <Title>UBServices</Title>
+            </ContainerLogo>
+            <Nav>
                 <Item>Agendamento</Item>
                 <Item>Área Médica</Item>
                 <Item>Área do Paciente</Item>
                 <Item>Suporte Técnico</Item>
-            </Lista>
-            <PerfilBtn>Olá, Carolyna!</PerfilBtn>
-        </Nav> 
+            </Nav>
+            <PerfilBtn>Login/Cadastro</PerfilBtn>
+        </Header>
     );
 }
 

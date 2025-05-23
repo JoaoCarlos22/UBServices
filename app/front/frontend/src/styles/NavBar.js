@@ -1,41 +1,56 @@
 import styled from 'styled-components'
 
-export const Nav = styled.div `
-    background-color: #2c3e50;
+export const Header = styled.header `
     display: flex;
-    color: white;
-    align-items: center;
-    flex-wrap: wrap;
     justify-content: space-between;
-    padding: 10px;
+    align-items: center;
+    background: white;
+    padding: 15px 30px;
+    //box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+`
+
+export const ContainerLogo = styled.div `
+    display: flex;
+    align-items: center;
+    gap: 10px;
+`
+
+export const Logo = styled.img `
+    height: 50px;
+    width: 50px;
+`
+
+export const Nav = styled.ul `
+    display: flex;
+    align-items: center;
+    list-style: none;
+    flex-wrap: wrap;
+    gap: 1.5rem;
 `
 export const Title = styled.h1 `
     font-size: 1.8rem;
-    margin-right: 2rem;
-`
-export const Lista = styled.ul `
-    display: flex;
-    list-style: none;
-    gap: 1.5rem;
+    margin-right: 2rem;   
 `
 export const Item = styled.li `
     cursor: pointer;
-    padding: 0.5rem;
+    padding: 10px;
     transition: color 0.3s;
 
     &:hover{
+        background-color:rgba(51, 51, 51, 0.17);
+        border-bottom: 1px solid #333333;
         opacity: 0.8;
     }
 
 `
 export const PerfilBtn = styled.button `
-    background-color: #3498db;
+    background: #00bcd4;
     color: white;
     border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
+    padding: 8px 8px;
+    border-radius: 20px;
+    font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s;
 
     &:hover{
         opacity: 0.8;
