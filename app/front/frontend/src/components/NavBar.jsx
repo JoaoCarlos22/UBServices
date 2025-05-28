@@ -2,12 +2,13 @@ import LogoImg from '../assets/ubservices-logo.png'
 import {
     Header,
     ContainerLogo,
-    Logo,
     Nav,
     Item,  
-    Title, 
     PerfilBtn, 
 } from '../styles/NavBar'
+import { Logo } from '../styles/Icones';
+
+import { Title } from '../styles/globalStyle';
 
 const NavBar = () => {
 

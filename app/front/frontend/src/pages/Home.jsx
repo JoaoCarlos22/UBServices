@@ -1,65 +1,53 @@
-import {
-    Container,
-    HeaderForm,
-    Form,
-    Label,
-    InputText,
-    TextArea,
-    Submit
-} from '../styles/Home'
-import { use, useState, useRef } from "react"
-import axios from 'axios'
-import { PerfilContainer } from '../components/PerfilContainer'
-import { Caminho } from '../styles/Caminho'
+import { SearchTitle } from "../styles/globalStyle"
+import {Hero,
+        Overlay,
+        SearchBar,
+        ContainerServices,
+        Card} from '../styles/Home'
+import { IconesCard, IconeSearch } from "../styles/Icones"
+import SearchIcon from '../assets/search-icon.png'
+import UbsIcon from '../assets/local-ubs-icon.png'
+import ConsultaIcon from '../assets/consultas-icon.png'
+import ServicosIcon from '../assets/servicos-icon.png'
+import VacinasIcon from '../assets/vacinas-icon.png'
+import ResultadosIcon from '../assets/resultados-icon.png'
 
 export const Home = () => {
-    // armazenamento dos dados do front
-    const [visitas, setVisitas] = useState([])
-    const inputNome = useRef()
-    const inputIdade = useRef()
-
-    // envia uma nova visita ao back end
-    async function registrarVisita(e) {
-        const {data: newVisita} = await axios.post('http://localhost:4000/cadVisita', { name: inputNome.current.value, age: inputIdade.current.value })
-
-        setVisitas([...visitas, newVisita])
-    }
-
     return (
         <>
-        <PerfilContainer/>
-        <Caminho>
-            <p>VISITAS DOMICILIARES / REGISTRAR VISITA</p>
-        </Caminho>
-        <Container>
-            <HeaderForm>
-                <h2>INFORMAÇÕES CLÍNICAS</h2><br />
-            </HeaderForm>
-
-            <Form>
-                <Label>Nome:</Label>
-                <InputText ref={inputNome} />
-                <Label>Idade:</Label>
-                <InputText ref={inputIdade} />
-                <Label>Gênero:</Label>
-                <InputText/>
-                <Label>Dados Vitais:</Label>
-                <TextArea></TextArea>
-                <Label>Sintomas:</Label>
-                <TextArea></TextArea>
-                <Label>Diagnóstico:</Label>
-                <TextArea></TextArea>
-                <Label>Tratamentos Administrados:</Label>
-                <TextArea></TextArea>
-                <Label>Recomendações:</Label>
-                <TextArea></TextArea>
-                <Label>Anotações:</Label>
-                <TextArea></TextArea>
-                <Label>Profissional Responsável:</Label>
-                <InputText />
-                <Submit to="/visitas" onClick={registrarVisita}>Salvar e Sincronizar</Submit>
-            </Form>
-        </Container>
+        <Hero>
+            <Overlay>
+                <SearchTitle>UBServices</SearchTitle>
+                <SearchBar>
+                    <input type="text" placeholder="O que você procura?" />
+                    <button>
+                        <IconeSearch src={SearchIcon} alt="Ícone Pesquisar"/>
+                    </button>
+                </SearchBar>
+            </Overlay>
+        </Hero>
+        <ContainerServices>
+            <Card className= "light-blue">
+                <IconesCard src={UbsIcon} alt="UBS's mais próxima"/>
+                <h3>UBS's Mais Próximas</h3>
+            </Card>
+            <Card>
+                <IconesCard src={ConsultaIcon} alt="Ícone Consultas"/>
+                <h3>Minhas Consultas</h3>
+            </Card>
+            <Card className= "light-blue">
+                <IconesCard src={ServicosIcon} alt="Ícone Serviços"/>
+                <h3>Serviços Disponíveis</h3>
+            </Card>
+            <Card>
+                <IconesCard src={VacinasIcon} alt="Ícone Vacinas"/>
+                <h3>Vacinas</h3>
+            </Card>
+            <Card className= "light-blue">
+                <IconesCard src={ResultadosIcon} alt="Ícone Resultados"/>
+                <h3>Meus Resultados</h3>
+            </Card>
+        </ContainerServices>
         </>
     )
 }

@@ -15,11 +15,6 @@ export const ContainerLogo = styled.div `
     gap: 10px;
 `
 
-export const Logo = styled.img `
-    height: 50px;
-    width: 50px;
-`
-
 export const Nav = styled.ul `
     display: flex;
     align-items: center;
@@ -27,27 +22,27 @@ export const Nav = styled.ul `
     flex-wrap: wrap;
     gap: 1.5rem;
 `
-export const Title = styled.h1 `
-    font-size: 1.8rem;
-    margin-right: 2rem;   
-`
+
 export const Item = styled.li `
     cursor: pointer;
     padding: 10px;
-    transition: color 0.3s;
+    transition: transform 0.5s;
+    //transition: color 0.3s;
 
     &:hover{
-        background-color:rgba(51, 51, 51, 0.17);
-        border-bottom: 1px solid #333333;
-        opacity: 0.8;
+        //background-color:rgba(51, 51, 51, 0.17);
+        transform: translateY(-5px);
+        border-bottom: 4px solid rgb(178, 212, 216);
+        opacity: 0.9;
     }
 
 `
 export const PerfilBtn = styled.button `
-    background: #00bcd4;
-    color: white;
+    background:rgb(114, 191, 233);
+    color:rgb(244, 249, 253);
+    width: 150px;
     border: none;
-    padding: 8px 8px;
+    padding: 10px;
     border-radius: 20px;
     font-weight: bold;
     cursor: pointer;

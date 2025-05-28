@@ -1,60 +1,84 @@
-import styled from 'styled-components'
-import { Link } from 'react-router-dom'
+import styled from "styled-components";
+import Banner from '../assets/ubs-banner.jpg'
 
-export const Container = styled.div `
-    padding: 2rem;
-    max-width: 600px;
-    margin: 0 auto;
+//const backgroundColor = ""
+
+export const Hero = styled.div `
+    background-image: url('${Banner}');
+    background-size: cover;
+    background-position: center;
+    height: 320px;
+    position: relative;
 `
-export const HeaderForm = styled.div `
-    margin-bottom: 10px;
-    text-align: center;
-`
-export const Form = styled.div `
+
+export const Overlay = styled.div `
+    background: rgba(0,0,0,0.5);
+    height: 100%;
+    color: white;
     display: flex;
     flex-direction: column;
-    padding: 30px;
-    border: 1px solid #ddd;    
+    align-items: center;
+    justify-content: center;
 `
-export const Label = styled.label `
-    text-align: left;
-    font-weight: bold;
-    color: #2c3e50;
-`
-export const InputText = styled.input `
-    padding: 0.5rem;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    width: 100%;
-    margin-bottom: 20px;
-`
-export const TextArea = styled.textarea `
-    padding: 0.5rem;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    min-height: 80px;
-    resize: vertical;
-    width: 100%;
-    margin-bottom: 20px;
-`
-export const Submit = styled(Link) `
-    grid-column: 2;
-    background-color: #27ae60;
-    color: white;
-    border: none;
-    padding: 0.75rem;
-    border-radius: 4px;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 1rem;
-    transition: background-color 0.3s;
-    margin-top: 1rem;
 
-    &:hover{
+export const SearchBar = styled.div `
+    display: flex;
+    background: white;
+    border-radius: 25px;
+    overflow: hidden;
+
+    input {
+        border: none;
+        outline: none;
+        padding: 10px 20px;
+        width: 300px;
+        font-size: 16px;
+    }
+
+    button {
+        //background:rgb(229, 251, 253);
+        ///color: white;
+        border: none;
+        padding: 0 20px;
+        cursor: pointer;
+    }
+`
+
+export const ContainerServices = styled.div `
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+    //background: linear-gradient(to right, #ff9966, #00bcd4);
+`
+
+export const Card = styled.div.attrs(()=> ({ tabIndex: 0}))`
+    //background-color:rgba(141, 215, 255, 0.84);
+    background-color: #CAE8BD;
+    width: 180px;
+    height: 160px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.18);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+    text-align: center;
+    transition: transform 0.2s;
+    cursor: pointer;
+
+    &.light-blue {
+        background-color: #BBFBFF;
+    }
+
+    h3 {
+        margin-top: 20px;
+        font-size: 15px;
         opacity: 0.8;
     }
 
-    &:active{
-        opacity: 0.6;
+    &:hover {
+        transform: translateY(-5px);
     }
 `
