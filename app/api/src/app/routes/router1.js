@@ -1,7 +1,7 @@
-const express = require("express")
-const uuid = require('uuid')
+import {Router} from "express"
+import uuid from 'uuid'
 
-const router = express.Router()
+const router = new Router()
 
 const visitas = []
 
@@ -81,10 +81,4 @@ router.get('/order/:id', viewRoute, chekIdVisita, (req, res) => {
     return res.json(visita)
 })
 
-router.patch('/order/:id', viewRoute, chekIdVisita, (req, res) => {
-    const index = req.visitaId
-    pedidos[index].status = "Pronto!"
-    return res.json(pedidos[index])
-})
-
-module.exports = router
+export default router
