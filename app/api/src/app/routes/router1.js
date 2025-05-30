@@ -1,6 +1,8 @@
 import {Router} from "express"
 import uuid from 'uuid'
 
+import User from "../models/User"
+
 const router = new Router()
 
 const visitas = []

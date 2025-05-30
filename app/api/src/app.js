@@ -1,11 +1,15 @@
 import express from 'express'
-import router from './app/routes/router1'
+import router from './app/routes/router2'
 
+// invoca a insância do banco de dados (inicialização)
+import './database'
+
+// estrutura da API
 class App {
     constructor() {
         this.app = express()
         this.middlewares()
-        this.routes
+        this.routes()
     }
 
     middlewares() {
