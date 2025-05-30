@@ -1,5 +1,5 @@
 import express from 'express'
-import router from './app/routes/router2'
+import router from './app/routes/users'
 
 // invoca a insância do banco de dados (inicialização)
 import './database'
