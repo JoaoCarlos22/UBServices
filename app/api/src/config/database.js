@@ -1,10 +1,11 @@
 module.exports = {
     dialect: 'postgres', // qual banco de dados vai ser utilizado
-    host: 'localhost',
-    username: 'ubservices',
+    host: '127.0.0.1',
+    port: 5432,
+    username: 'postgres',
     password: 'ubservices@2025',
     databae: 'ubservices',
-    define: {
+    dialectOptions: {
         timestamps: true,
         underscored: true, //habilita o estilo "user_endereco"
         underscoredAll: true
