@@ -7,7 +7,16 @@ class UserController {
     async store(req, res) {
         try {
             // coleta os campos do 'body'
-            const { name, email, password_hash} = req.body
+            const { name, email, password} = req.body
+            
+            // verifica se o email já existe
+            const userExists = await User.findOne({
+                where: {email}
+            })
+
+            if(userExists) {
+                return res.status(400).send({error: "Email já cadastrado!"})
+            }
             
             // estrutura que deve ser aceita
             const schema = Yup.object().shape({
@@ -20,7 +29,7 @@ class UserController {
                 email("Email incorreto!").
                 required("O campo 'email' é obrigatório!"),
 
-                password_hash: Yup.string("O campo 'senha' não aceita somente números!").
+                password: Yup.string("O campo 'senha' não aceita somente números!").
                 required("O campo 'senha' é obrigatório!").
                 min(6, "Digite no mínimo 6 digitos! no campo 'senha'!")
             })
@@ -33,7 +42,7 @@ class UserController {
                 id: v4(),
                 name,
                 email,
-                password_hash,
+                password,
             })
 
             return res.json(user)
