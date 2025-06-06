@@ -7,7 +7,7 @@ module.exports = {
     database: 'ubservices',
     dialectOptions: {
         timestamps: true,
-        underscored: true, //habilita o estilo "user_endereco"
+        underscored: true,
         underscoredAll: true
     }
 }

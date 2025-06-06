@@ -24,7 +24,7 @@ module.exports = {
         type: Sequelize.STRING,
         allowNull: false
       },
-      admin: {
+      gerente: {
         type: Sequelize.BOOLEAN,
         defaultValue: false,
         allowNull: false

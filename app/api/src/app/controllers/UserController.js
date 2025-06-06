@@ -29,7 +29,8 @@ class UserController {
                 email("Email incorreto!").
                 required("O campo 'email' é obrigatório!"),
 
-                password: Yup.string("O campo 'senha' não aceita somente números!").
+                password: Yup.
+                string("O campo 'senha' não aceita somente números!").
                 required("O campo 'senha' é obrigatório!").
                 min(6, "Digite no mínimo 6 digitos! no campo 'senha'!")
             })
@@ -45,7 +46,7 @@ class UserController {
                 password,
             })
 
-            return res.json(user)
+            return res.json({message: "Sucesso ao realizar o cadastro!"})
         } catch (e) {
             return res.send({error: e.errors})
         }

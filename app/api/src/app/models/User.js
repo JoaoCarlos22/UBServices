@@ -10,7 +10,7 @@ class User extends Model {
             email: Sequelize.STRING,
             password: Sequelize.VIRTUAL,
             password_hash: Sequelize.STRING,
-            admin: Sequelize.BOOLEAN,
+            gerente: Sequelize.BOOLEAN,
             doctor: Sequelize.BOOLEAN,
             attendant: Sequelize.BOOLEAN,
             nurse: Sequelize.BOOLEAN
@@ -27,6 +27,11 @@ class User extends Model {
         })
         return this
     }
+
+    checkPassword(password) {
+        return bcrypt.compare(password, this.password_hash)
+    }
+
 }
 
 export default User

@@ -1,5 +1,6 @@
 import express from 'express'
-import router from './app/routes/users'
+import routesGlobal from './app/routes/global'
+import routesUser from './app/routes/users'
 
 // invoca a insância do banco de dados (inicialização)
 import './database'
@@ -17,7 +18,8 @@ class App {
     }
 
     routes() {
-        this.app.use(router)
+        this.app.use(routesGlobal)
+        this.app.use(routesUser)
     }
 }
 
