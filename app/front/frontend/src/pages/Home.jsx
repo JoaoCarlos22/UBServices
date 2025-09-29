@@ -4,6 +4,7 @@ import {Hero,
         SearchBar,
         ContainerServices,
         Card} from '../styles/Home'
+import { Link } from "react-router-dom"
 import { IconesCard, IconeSearch } from "../styles/Icones"
 import SearchIcon from '../assets/search-icon.png'
 import UbsIcon from '../assets/local-ubs-icon.png'
@@ -35,10 +36,12 @@ export const Home = () => {
                 <IconesCard src={ConsultaIcon} alt="Ícone Consultas"/>
                 <h3>Minhas Consultas</h3>
             </Card>
-            <Card className= "light-blue">
-                <IconesCard src={ServicosIcon} alt="Ícone Serviços"/>
-                <h3>Serviços Disponíveis</h3>
-            </Card>
+            <Link to="/servicos" style={{ textDecoration: 'none' }}>
+                <Card className= "light-blue">
+                    <IconesCard src={ServicosIcon} alt="Ícone Serviços"/>
+                    <h3>Serviços Disponíveis</h3>
+                </Card>
+            </Link>
             <Card>
                 <IconesCard src={VacinasIcon} alt="Ícone Vacinas"/>
                 <h3>Vacinas</h3>
