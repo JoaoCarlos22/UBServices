@@ -9,15 +9,13 @@ import { VisitasHome } from "./pages/visitas/VisitasHome";
 
 function AppRoutes() {
     return (
-        <Router>
-            <Routes>
-                <Route path="/" element={<Home/>} />
-                <Route path="/servicos" element={<Servicos />} />
-                <Route path="/visita-domiciliar" element={<VisitasHome />} />
-                <Route path="/cadVisita" element={<CadVisitas />} />
-                <Route path="/visitas" element={<Visitas />} />
-            </Routes>
-        </Router>
+        <Routes>
+            <Route path="/" element={<Home/>} />
+            <Route path="/servicos" element={<Servicos />} />
+            <Route path="/visita-domiciliar" element={<VisitasHome />} />
+            <Route path="/cadVisita" element={<CadVisitas />} />
+            <Route path="/visitas" element={<Visitas />} />
+        </Routes>
     );
 }
 
