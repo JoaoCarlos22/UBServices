@@ -1,6 +1,6 @@
-import { PerfilContainer } from "../components/PerfilContainer"
-import { ContainerTabela, WrapTable, Tabela, Thead, Head, Linha, Body } from "../styles/Tabela"
-import { Caminho } from "../styles/Caminho"
+import { PerfilContainer } from "../../components/PerfilContainer"
+import { ContainerTabela, WrapTable, Tabela, Thead, Head, Linha, Body } from "../../styles/Tabela"
+import { Caminho } from "../../styles/Caminho"
 import axios from "axios"
 import { useState, useEffect } from "react"
 

@@ -6,11 +6,11 @@ import {
     InputText,
     TextArea,
     Submit
-} from '../styles/CadVisitas'
+} from '../../styles/CadVisitas'
 import { use, useState, useRef } from "react"
 import axios from 'axios'
-import { PerfilContainer } from '../components/PerfilContainer'
-import { Caminho } from '../styles/Caminho'
+import { PerfilContainer } from '../../components/PerfilContainer'
+import { Caminho } from '../../styles/Caminho'
 
 export const CadVisitas = () => {
     // armazenamento dos dados do front
