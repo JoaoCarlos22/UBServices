@@ -1,11 +1,16 @@
 import { Cards, Icone, Nome, Descricao } from "../../styles/VisitasHome"
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Titulo, PageContainer, Card as UiCard } from '../../components/ui/UiLibrary'
+import Button from '../../components/Button'
 
 export const VisitasHome = () => {
+    const navigate = useNavigate()
     return (
         <PageContainer>
-            <Titulo>Visitas Domiciliares</Titulo>
+            <div style={{ position: 'relative', width: '100%', marginBottom: 12 }}>
+                <Button variant="ghost" onClick={() => navigate(-1)} aria-label="Voltar" style={{ position: 'absolute', left: 0 }}>←</Button>
+                <Titulo style={{ margin: 0, textAlign: 'center' }}>Visitas Domiciliares</Titulo>
+            </div>
             <Cards>
                 <Link to="/cadVisita" style={{ textDecoration: 'none' }}>
                     <UiCard>

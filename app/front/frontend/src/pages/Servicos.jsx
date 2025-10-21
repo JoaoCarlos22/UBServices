@@ -1,9 +1,10 @@
 import { Lista, Icone, Nome, Descricao } from '../styles/Servicos'
 import { Titulo, PageContainer, Card as UiCard } from '../components/ui/UiLibrary'
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import Button from '../components/Button'
 
 export const Servicos = () => {
-
+    const navigate = useNavigate()
     const servicos = [
         {
             icone: '🩺',
@@ -45,7 +46,18 @@ export const Servicos = () => {
 
     return (
         <PageContainer>
-            <Titulo>Serviços oferecidos pela UBS</Titulo>
+            <div style={{ position: 'relative', width: '100%', marginBottom: 12 }}>
+                <Button
+                    variant="ghost"
+                    onClick={() => navigate(-1)}
+                    aria-label="Voltar"
+                    style={{ position: 'absolute', left: 0 }}
+                >
+                    ←
+                </Button>
+                <Titulo style={{ margin: 0, textAlign: 'center' }}>Serviços oferecidos pela UBS</Titulo>
+            </div>
+            
             <Lista>
                 {servicos.map((servico, idx) => (
                     <Link to={servico.rota} key={idx} style={{ textDecoration: 'none' }}>

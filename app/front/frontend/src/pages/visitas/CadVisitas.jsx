@@ -51,7 +51,7 @@ export const CadVisitas = () => {
 
     return (
         <>
-    <PerfilContainer route="/visita-domiciliar" />
+    <PerfilContainer />
         <Caminho>
             <p>VISITAS DOMICILIARES / REGISTRAR VISITA</p>
         </Caminho>
