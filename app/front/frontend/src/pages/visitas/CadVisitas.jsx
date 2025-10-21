@@ -1,19 +1,20 @@
 import {
-    Container,
+    PageContainer,
     HeaderForm,
     Label,
-    InputText,
+    Input,
     TextArea,
     FormGrid,
-    Form,
     FullRow,
-    Actions
-} from '../../styles/CadVisitas'
+    PrimaryButton,
+    PathBadge
+} from '../../components/ui/UiLibrary'
 import { useState } from "react"
 import axios from 'axios'
 import { PerfilContainer } from '../../components/PerfilContainer'
 import { Caminho } from '../../styles/Caminho'
-import { BtnGreen } from '../../styles/globalStyle'
+// BtnGreen ainda disponível como opção; PrimaryButton é a nova alternativa
+// import { BtnGreen } from '../../styles/globalStyle'
 
 export const CadVisitas = () => {
     // armazenamento dos dados do front
@@ -57,27 +58,27 @@ export const CadVisitas = () => {
         <Caminho>
             <p>VISITAS DOMICILIARES / REGISTRAR VISITA</p>
         </Caminho>
-        <Container>
+        <PageContainer>
             <HeaderForm>
                 <h2>INFORMAÇÕES CLÍNICAS</h2>
             </HeaderForm>
-            <Form onSubmit={registrarVisita} noValidate>
+            <form onSubmit={registrarVisita} noValidate style={{width: '100%'}}>
                 <FormGrid>
                     <div>
-                        <Label>Nome:</Label>
-                        <InputText name="name" placeholder="Nome completo do paciente" value={form.name} onChange={handleChange} required />
+                        <Label>Nome: <small style={{fontWeight:500, color:'#666'}}> (obrigatório)</small></Label>
+                        <Input name="name" placeholder="Nome completo do paciente" value={form.name} onChange={handleChange} required />
                     </div>
                     <div>
-                        <Label>Idade:</Label>
-                        <InputText name="age" placeholder="Ex: 45" value={form.age} onChange={handleChange} required type="number" min="0" />
+                        <Label>Idade: <small style={{fontWeight:500, color:'#666'}}> (obrigatório)</small></Label>
+                        <Input name="age" placeholder="Ex: 45" value={form.age} onChange={handleChange} required type="number" min="0" />
                     </div>
                     <div>
                         <Label>Gênero:</Label>
-                        <InputText name="gender" value={form.gender} onChange={handleChange} />
+                        <Input name="gender" value={form.gender} onChange={handleChange} />
                     </div>
                     <div>
                         <Label>Profissional Responsável:</Label>
-                        <InputText name="professional" value={form.professional} onChange={handleChange} />
+                        <Input name="professional" value={form.professional} onChange={handleChange} />
                     </div>
                     <FullRow>
                         <Label>Dados Vitais:</Label>
@@ -109,14 +110,14 @@ export const CadVisitas = () => {
                         <TextArea name="notes" value={form.notes} onChange={handleChange} />
                     </FullRow>
 
-                    <Actions>
-                        <BtnGreen as="button" type="submit" disabled={!form.name || !form.age} aria-disabled={!form.name || !form.age}>
+                    <FullRow style={{ display: 'flex', justifyContent: 'flex-end' }}>
+                        <PrimaryButton type="submit" disabled={!form.name || !form.age} aria-disabled={!form.name || !form.age}>
                             Salvar e Sincronizar
-                        </BtnGreen>
-                    </Actions>
+                        </PrimaryButton>
+                    </FullRow>
                 </FormGrid>
-            </Form>
-        </Container>
+            </form>
+        </PageContainer>
         </>
     )
 }

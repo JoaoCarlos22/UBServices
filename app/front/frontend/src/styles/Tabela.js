@@ -2,7 +2,6 @@ import styled from "styled-components"
 
 export const ContainerTabela = styled.div `
     width: 100%;
-    margin-top: 30px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;

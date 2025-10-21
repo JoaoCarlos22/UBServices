@@ -1,11 +1,6 @@
-import { Container,
-    Titulo,
-    Lista,
-    Card,
-    Icone,
-    Nome,
-    Descricao } from '../styles/Servicos'
-    import { Link } from "react-router-dom";
+import { Lista, Icone, Nome, Descricao } from '../styles/Servicos'
+import { Titulo, PageContainer, Card as UiCard } from '../components/ui/UiLibrary'
+import { Link } from "react-router-dom";
 
 export const Servicos = () => {
 
@@ -49,19 +44,19 @@ export const Servicos = () => {
     ];
 
     return (
-        <Container>
+        <PageContainer>
             <Titulo>Serviços oferecidos pela UBS</Titulo>
             <Lista>
                 {servicos.map((servico, idx) => (
                     <Link to={servico.rota} key={idx} style={{ textDecoration: 'none' }}>
-                        <Card>
+                        <UiCard>
                             <Icone>{servico.icone}</Icone>
                             <Nome>{servico.nome}</Nome>
                             <Descricao>{servico.descricao}</Descricao>
-                        </Card>
+                        </UiCard>
                     </Link>
                 ))}
             </Lista>
-        </Container>
+        </PageContainer>
     );
 }

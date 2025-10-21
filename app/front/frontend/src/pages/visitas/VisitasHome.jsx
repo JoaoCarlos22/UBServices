@@ -1,26 +1,27 @@
-import { Container, Titulo, Cards, Card, Icone, Nome, Descricao } from "../../styles/VisitasHome"
+import { Cards, Icone, Nome, Descricao } from "../../styles/VisitasHome"
 import { Link } from "react-router-dom";
+import { Titulo, PageContainer, Card as UiCard } from '../../components/ui/UiLibrary'
 
 export const VisitasHome = () => {
     return (
-        <Container>
+        <PageContainer>
             <Titulo>Visitas Domiciliares</Titulo>
             <Cards>
                 <Link to="/cadVisita" style={{ textDecoration: 'none' }}>
-                    <Card>
+                    <UiCard>
                         <Icone>📝</Icone>
                         <Nome>Solicitar Visita</Nome>
                         <Descricao>Registre uma nova solicitação de visita domiciliar para um paciente.</Descricao>
-                    </Card>
+                    </UiCard>
                 </Link>
                 <Link to="/visitas" style={{ textDecoration: 'none' }}>
-                    <Card>
+                    <UiCard>
                         <Icone>📋</Icone>
                         <Nome>Visualizar Visitas</Nome>
                         <Descricao>Veja todas as visitas agendadas e seus detalhes.</Descricao>
-                    </Card>
+                    </UiCard>
                 </Link>
             </Cards>
-        </Container>
+        </PageContainer>
     );
 }

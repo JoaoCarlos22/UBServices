@@ -1,5 +1,5 @@
 import { SearchTitle } from "../styles/globalStyle"
-import {Hero,
+import { Hero,
         Overlay,
         SearchBar,
         ContainerServices,
@@ -27,30 +27,30 @@ export const Home = () => {
                 </SearchBar>
             </Overlay>
         </Hero>
-        <ContainerServices>
-            <Card className= "light-blue">
-                <IconesCard src={UbsIcon} alt="UBS's mais próxima"/>
-                <h3>UBS's Mais Próximas</h3>
-            </Card>
-            <Card>
-                <IconesCard src={ConsultaIcon} alt="Ícone Consultas"/>
-                <h3>Minhas Consultas</h3>
-            </Card>
-            <Link to="/servicos" style={{ textDecoration: 'none' }}>
-                <Card className= "light-blue">
-                    <IconesCard src={ServicosIcon} alt="Ícone Serviços"/>
-                    <h3>Serviços Disponíveis</h3>
+            <ContainerServices style={{ gap: 12 }}>
+                <Card className="light-blue">
+                    <IconesCard src={UbsIcon} alt="UBS's mais próxima"/>
+                    <h3>UBS's Mais Próximas</h3>
                 </Card>
-            </Link>
-            <Card>
-                <IconesCard src={VacinasIcon} alt="Ícone Vacinas"/>
-                <h3>Vacinas</h3>
-            </Card>
-            <Card className= "light-blue">
-                <IconesCard src={ResultadosIcon} alt="Ícone Resultados"/>
-                <h3>Meus Resultados</h3>
-            </Card>
-        </ContainerServices>
+                <Card>
+                    <IconesCard src={ConsultaIcon} alt="Ícone Consultas"/>
+                    <h3>Minhas Consultas</h3>
+                </Card>
+                <Link to="/servicos" style={{ textDecoration: 'none' }}>
+                    <Card className="light-blue">
+                        <IconesCard src={ServicosIcon} alt="Ícone Serviços"/>
+                        <h3>Serviços Disponíveis</h3>
+                    </Card>
+                </Link>
+                <Card>
+                    <IconesCard src={VacinasIcon} alt="Ícone Vacinas"/>
+                    <h3>Vacinas</h3>
+                </Card>
+                <Card className="light-blue">
+                    <IconesCard src={ResultadosIcon} alt="Ícone Resultados"/>
+                    <h3>Meus Resultados</h3>
+                </Card>
+            </ContainerServices>
         </>
     )
 }

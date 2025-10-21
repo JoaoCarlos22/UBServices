@@ -6,11 +6,6 @@ export const Container = styled.div`
 	padding: 2rem 1rem;
 `;
 
-export const Titulo = styled.h1`
-	text-align: center;
-	margin-bottom: 2rem;
-`;
-
 export const Lista = styled.ul`
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));

@@ -3,6 +3,7 @@ import { ContainerTabela, WrapTable, Tabela, Thead, Head, Linha, Body } from "..
 import { Caminho } from "../../styles/Caminho"
 import axios from "axios"
 import { useState, useEffect } from "react"
+import { Titulo, PageContainer } from '../../components/ui/UiLibrary'
 
 export const Visitas = () => {
     const [visitas, setVisitas] = useState([])
@@ -33,41 +34,44 @@ export const Visitas = () => {
                 <p>VISITAS DOMICILIARES / VISITAS AGENDADAS</p>
             </Caminho>
 
-            <ContainerTabela>
-                <WrapTable>
-                    <Tabela>
-                        <Thead>
-                            <tr>
-                                <Head>Data de Solicitação</Head>
-                                <Head>Lista de Pacientes</Head>
-                                <Head>Status</Head>
-                            </tr>
-                        </Thead>
-                        <tbody>
-                            <Linha>
-                                <Body>20/07/2024</Body>
-                                <Body>Antônio José Viana</Body>
-                                <Body>Pendente</Body>
-                            </Linha>
-                            {visitas.map((visita) => (
-                            <Linha key={visita.id}>
-                                <>
-                                <Body>
-                                    18/05/2025
-                                </Body>
-                                <Body>
-                                    {visita.name}
-                                </Body>
-                                <Body>
-                                    Pendente
-                                </Body>
-                                </>
-                            </Linha>
-                            ))}
-                        </tbody>
-                    </Tabela>
-                </WrapTable>
-            </ContainerTabela>
+            <PageContainer>
+                <Titulo>Visitas Domiciliares</Titulo>
+                <ContainerTabela>
+                    <WrapTable>
+                        <Tabela>
+                            <Thead>
+                                <tr>
+                                    <Head>Data de Solicitação</Head>
+                                    <Head>Lista de Pacientes</Head>
+                                    <Head>Status</Head>
+                                </tr>
+                            </Thead>
+                            <tbody>
+                                <Linha>
+                                    <Body>20/07/2024</Body>
+                                    <Body>Antônio José Viana</Body>
+                                    <Body>Pendente</Body>
+                                </Linha>
+                                {visitas.map((visita) => (
+                                <Linha key={visita.id}>
+                                    <>
+                                    <Body>
+                                        18/05/2025
+                                    </Body>
+                                    <Body>
+                                        {visita.name}
+                                    </Body>
+                                    <Body>
+                                        Pendente
+                                    </Body>
+                                    </>
+                                </Linha>
+                                ))}
+                            </tbody>
+                        </Tabela>
+                    </WrapTable>
+                </ContainerTabela>
+            </PageContainer>
         </>
     )
 }
