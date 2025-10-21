@@ -6,15 +6,12 @@ import {
     TextArea,
     FormGrid,
     FullRow,
-    PrimaryButton,
-    PathBadge
 } from '../../components/ui/UiLibrary'
+import Button from '../../components/Button'
 import { useState } from "react"
 import axios from 'axios'
 import { PerfilContainer } from '../../components/PerfilContainer'
 import { Caminho } from '../../styles/Caminho'
-// BtnGreen ainda disponível como opção; PrimaryButton é a nova alternativa
-// import { BtnGreen } from '../../styles/globalStyle'
 
 export const CadVisitas = () => {
     // armazenamento dos dados do front
@@ -111,10 +108,15 @@ export const CadVisitas = () => {
                     </FullRow>
 
                     <FullRow style={{ display: 'flex', justifyContent: 'flex-end' }}>
-                        <PrimaryButton type="submit" disabled={!form.name || !form.age} aria-disabled={!form.name || !form.age}>
+                        <Button
+                            type="submit"
+                            variant="primary"
+                            disabled={!form.name || !form.age}
+                            aria-disabled={!form.name || !form.age}
+                        >
                             Salvar e Sincronizar
-                        </PrimaryButton>
-                    </FullRow>
+                        </Button>
+                     </FullRow>
                 </FormGrid>
             </form>
         </PageContainer>

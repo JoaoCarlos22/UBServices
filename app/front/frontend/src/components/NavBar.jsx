@@ -3,12 +3,12 @@ import {
     Header,
     ContainerLogo,
     Nav,
-    Item,  
-    PerfilBtn, 
+    Item,
 } from '../styles/NavBar'
 import { Logo } from '../styles/Icones';
 import {Link} from 'react-router-dom';
-import { Btn, Title } from '../styles/globalStyle';
+import Button from './Button';
+import { Title } from '../styles/globalStyle';
 
 const NavBar = () => {
 
@@ -26,7 +26,7 @@ const NavBar = () => {
                 <Item>Área do Paciente</Item>
                 <Item>Suporte Técnico</Item>
             </Nav>
-            <Btn to="/login">Login/Cadastro</Btn>
+            <Button to="/login" variant="secondary">Login/Cadastro</Button>
         </Header>
     );
 }
