@@ -28,7 +28,7 @@ export const Visitas = () => {
 
     return (
         <>
-            <PerfilContainer route={'/cadVisita'} />
+            <PerfilContainer route='/visita-domiciliar' />
             <Caminho>
                 <p>VISITAS DOMICILIARES / VISITAS AGENDADAS</p>
             </Caminho>

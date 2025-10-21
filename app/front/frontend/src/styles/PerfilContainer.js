@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import { Link } from 'react-router-dom'
 
 export const Container = styled.div `
     position: relative;
@@ -15,17 +14,6 @@ export const Voltar = styled.div `
     position: absolute;
     left: 20px;
     top: 30px;
-`
-
-export const BtnVoltar = styled(Link) `
-    background: none;
-    border: 1px solid #333333;
-    font-size: 16px;
-    text-decoration: none;
-    padding: 8px 16px;
-    color: #333;
-    cursor: pointer;
-    font-weight: bold;
 `
 
 export const ContainerPerfil = styled.div `

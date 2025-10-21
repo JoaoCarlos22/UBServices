@@ -1,11 +1,12 @@
 import { Image } from "../styles/Image"
-import {Container, Voltar, BtnVoltar, ContainerPerfil, H2, P} from '../styles/PerfilContainer'
+import {Container, Voltar, ContainerPerfil, H2, P} from '../styles/PerfilContainer'
+import { Btn } from "../styles/globalStyle"
 
 export const PerfilContainer = ({route}) => {
     return (
         <Container>
             <Voltar>
-                <BtnVoltar to={route}> ← VOLTAR</BtnVoltar>
+                <Btn to={route}> VOLTAR</Btn>
             </Voltar>
 
             <ContainerPerfil>

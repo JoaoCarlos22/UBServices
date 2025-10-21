@@ -8,7 +8,7 @@ import {
 } from '../styles/NavBar'
 import { Logo } from '../styles/Icones';
 import {Link} from 'react-router-dom';
-import { Title } from '../styles/globalStyle';
+import { Btn, Title } from '../styles/globalStyle';
 
 const NavBar = () => {
 
@@ -26,7 +26,7 @@ const NavBar = () => {
                 <Item>Área do Paciente</Item>
                 <Item>Suporte Técnico</Item>
             </Nav>
-            <PerfilBtn>Login/Cadastro</PerfilBtn>
+            <Btn to="/login">Login/Cadastro</Btn>
         </Header>
     );
 }
