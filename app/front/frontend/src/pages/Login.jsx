@@ -103,7 +103,7 @@ export const Login = () => {
               {loading ? "Entrando..." : "Entrar"}
             </PrimaryButton>
 
-            <Button to="/cadastrar" variant="ghost" style={{ padding: "10px 12px" }}>
+            <Button to="/selecionar-area" variant="ghost" style={{ padding: "10px 12px" }}>
               Cadastrar
             </Button>
           </Actions>
