@@ -4,6 +4,7 @@ export const FooterWrapper = styled.footer`
   background: #b5cef4ff; /* Cor primária do header, boa para o footer */
   color: #757575ff;
   padding: 30px 0 15px; /* Mais padding superior para destaque */
+  margin-top: 60px;
 `;
 
 export const FooterInner = styled.div`
