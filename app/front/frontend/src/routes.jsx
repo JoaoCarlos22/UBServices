@@ -10,6 +10,7 @@ import { Login } from "./pages/Login";
 import { CadastroHome } from "./pages/cadastro/CadastroHome";
 import { CadastroPaciente } from "./pages/cadastro/CadAPaciente";
 import { CadastroMedico } from "./pages/cadastro/CadAMedica";
+import { Vacinas } from "./pages/vacinas/Vacinas";
 
 function AppRoutes() {
     return (
@@ -23,6 +24,7 @@ function AppRoutes() {
             <Route path="/visita-domiciliar" element={<VisitasHome />} />
             <Route path="/cadVisita" element={<CadVisitas />} />
             <Route path="/visitas" element={<Visitas />} />
+            <Route path="/vacinas" element={<Vacinas />} />
         </Routes>
     );
 }
