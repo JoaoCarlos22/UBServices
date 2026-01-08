@@ -11,6 +11,7 @@ import { CadastroHome } from "./pages/cadastro/CadastroHome";
 import { CadastroPaciente } from "./pages/cadastro/CadAPaciente";
 import { CadastroMedico } from "./pages/cadastro/CadAMedica";
 import { Vacinas } from "./pages/vacinas/Vacinas";
+import { DoacaoSangue } from "./pages/doacao_sangue/DoacaoSangue";
 
 function AppRoutes() {
     return (
@@ -25,6 +26,7 @@ function AppRoutes() {
             <Route path="/cadVisita" element={<CadVisitas />} />
             <Route path="/visitas" element={<Visitas />} />
             <Route path="/vacinas" element={<Vacinas />} />
+            <Route path="/doacoes" element={<DoacaoSangue />} />
         </Routes>
     );
 }

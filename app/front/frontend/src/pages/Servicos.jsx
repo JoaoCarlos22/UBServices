@@ -34,7 +34,7 @@ export const Servicos = () => {
             icone: '🩹',
             nome: 'Doação de Sangue',
             descricao: 'Encontre locais e agende sua doação de sangue.',
-            rota: '/doacao-sangue'
+            rota: '/doacoes'
         },
         {
             nome: 'Campanhas de Saúde',
