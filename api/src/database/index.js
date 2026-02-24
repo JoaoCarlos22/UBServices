@@ -13,7 +13,8 @@ class Database {
 		this.init();
 	}
 	init() {
-		this.connection = new Sequelize(configDB);
+		const env = process.env.NODE_ENV || "development";
+		this.connection = new Sequelize(configDB[env]);
 		models.map((model) => model.init(this.connection));
 		console.log("Banco de dados conectado com sucesso.");
 	}

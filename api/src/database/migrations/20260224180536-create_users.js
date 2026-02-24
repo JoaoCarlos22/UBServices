@@ -1,8 +1,7 @@
 "use strict";
 
-// todos os campos que devem ser enviados ao bando de dados quando chamar o arquivo
 /** @type {import('sequelize-cli').Migration} */
-export default {
+module.exports = {
 	async up(queryInterface, Sequelize) {
 		await queryInterface.createTable("Users", {
 			id: {
@@ -22,26 +21,6 @@ export default {
 			},
 			password_hash: {
 				type: Sequelize.STRING,
-				allowNull: false,
-			},
-			gerente: {
-				type: Sequelize.BOOLEAN,
-				defaultValue: false,
-				allowNull: false,
-			},
-			doctor: {
-				type: Sequelize.BOOLEAN,
-				defaultValue: false,
-				allowNull: false,
-			},
-			attendant: {
-				type: Sequelize.BOOLEAN,
-				defaultValue: false,
-				allowNull: false,
-			},
-			nurse: {
-				type: Sequelize.BOOLEAN,
-				defaultValue: false,
 				allowNull: false,
 			},
 			createdAt: {
