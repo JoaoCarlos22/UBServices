@@ -1,9 +1,0 @@
-{
-    "workbench.settings.openDefaultSettings": true,
-    "workbench.settings.editor": "json",
-    "workbench.settings.openDefaultKeybindings": true,
-    "workbench.settings.useSplitJSON": true,
-    "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": "always"
-    }
-}
