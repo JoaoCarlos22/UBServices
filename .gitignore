@@ -1,0 +1,5 @@
+node_modukes/
+dist/
+build/
+.vscode/
+.env
