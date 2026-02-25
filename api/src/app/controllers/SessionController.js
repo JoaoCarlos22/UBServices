@@ -1,4 +1,5 @@
 import User from "../models/User.js";
+import { userDTO } from "../dtos/user/userDTO.js";
 import { storeSessionSchema } from "../validators/session/storeSessionSchema.js";
 
 class SessionController {
@@ -27,12 +28,7 @@ class SessionController {
 
 			return res.status(200).json({
 				message: "Sucesso ao realizar o login!",
-				user: {
-					id: user.id,
-					name: user.name,
-					email: user.email,
-					role: user.role,
-				},
+				user: userDTO(user),
 			});
 		} catch (e) {
 			return res
