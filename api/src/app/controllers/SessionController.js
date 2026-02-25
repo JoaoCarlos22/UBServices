@@ -1,22 +1,17 @@
-import * as Yup from "yup";
 import User from "../models/User.js";
+import { storeSessionSchema } from "../validators/session/storeSessionSchema.js";
 
 class SessionController {
 	async store(req, res) {
 		try {
 			const { email, password } = req.body;
 
-			const schema = Yup.object().shape({
-				email: Yup.string()
-					.email("Email incorreto!")
-					.required("O campo 'email' é obrigatório!"),
-				password: Yup.string().required("O campo 'senha' é obrigatório!"),
-			});
-
 			const errorEmailPassword = () =>
 				res.status(401).json({ error: "Email/senha incorretos!" });
 
-			if (!(await schema.isValid(req.body))) return errorEmailPassword();
+			if (!(await storeSessionSchema.isValid(req.body))) {
+				return errorEmailPassword();
+			}
 
 			const user = await User.findOne({ where: { email } });
 			if (!user) return errorEmailPassword();
