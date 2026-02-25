@@ -7,36 +7,35 @@ class SessionController {
 			const { email, password } = req.body;
 
 			const schema = Yup.object().shape({
-				email: Yup.string("O campo 'email' não aceita somente números!")
+				email: Yup.string()
 					.email("Email incorreto!")
 					.required("O campo 'email' é obrigatório!"),
-				password: Yup.string(
-					"O campo 'senha' não aceita somente números!",
-				).required("O campo 'senha' é obrigatório!"),
+				password: Yup.string().required("O campo 'senha' é obrigatório!"),
 			});
 
-			const errorEmailPassword = () => {
-				return res.status(401).send({
-					error: "Email/senha incorretos!",
-				});
-			};
+			const errorEmailPassword = () =>
+				res.status(401).json({ error: "Email/senha incorretos!" });
 
-			if (!(await schema.isValid(req.body))) errorEmailPassword();
+			if (!(await schema.isValid(req.body))) return errorEmailPassword();
 
-			const user = await User.findOne({
-				where: {
-					email,
+			const user = await User.findOne({ where: { email } });
+			if (!user) return errorEmailPassword();
+
+			if (!(await user.checkPassword(password))) return errorEmailPassword();
+
+			return res.status(200).json({
+				message: "Sucesso ao realizar o login!",
+				user: {
+					id: user.id,
+					name: user.name,
+					email: user.email,
+					role: user.role,
 				},
 			});
-
-			if (!user) errorEmailPassword();
-
-			if (!(await user.checkPassword(password))) errorEmailPassword();
-
-			return res.json({ message: "Sucesso ao realizar o login!" });
 		} catch (e) {
-			console.log(res);
-			return res.send({ error: e.errors });
+			return res
+				.status(400)
+				.json({ error: e.errors || ["Erro ao realizar login"] });
 		}
 	}
 }

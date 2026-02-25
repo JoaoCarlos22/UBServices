@@ -7,7 +7,25 @@ class UserController {
 	async store(req, res) {
 		try {
 			// coleta os campos do 'body'
-			const { name, email, password } = req.body;
+			const {
+				name,
+				email,
+				password,
+				role = "PACIENTE",
+			} = await Yup.object()
+				.shape({
+					name: Yup.string().required("O campo 'nome' é obrigatório!"),
+					email: Yup.string()
+						.email("Email incorreto!")
+						.required("O campo 'email' é obrigatório!"),
+					password: Yup.string()
+						.required("O campo 'senha' é obrigatório!")
+						.min(6, "Digite no mínimo 6 dígitos no campo 'senha'!"),
+					role: Yup.string()
+						.oneOf(["ADMIN", "MEDICO", "ATENDENTE", "PACIENTE"])
+						.default("PACIENTE"),
+				})
+				.validate(req.body, { abortEarly: false });
 
 			// verifica se o email já existe
 			const userExists = await User.findOne({
@@ -15,38 +33,26 @@ class UserController {
 			});
 
 			if (userExists) {
-				return res.status(400).send({ error: "Email já cadastrado!" });
+				return res.status(400).json({ error: "Email já cadastrado!" });
 			}
 
-			// estrutura que deve ser aceita
-			const schema = Yup.object().shape({
-				name: Yup.string("O campo 'nome' não aceita somente números!").required(
-					"O campo 'nome' é obrigatório!",
-				),
-
-				email: Yup.string("O campo 'email' não aceita somente números!")
-					.email("Email incorreto!")
-					.required("O campo 'email' é obrigatório!"),
-
-				password: Yup.string("O campo 'senha' não aceita somente números!")
-					.required("O campo 'senha' é obrigatório!")
-					.min(6, "Digite no mínimo 6 digitos! no campo 'senha'!"),
-			});
-
-			// realiza a validação do esquema (caso der erro, lançará uma exceção)
-			schema.validateSync(req.body, { abortEarly: false });
-
 			// cria uma nova instância com os dados no postgres
-			const user = await User.create({
+			await User.create({
 				id: v4(),
 				name,
 				email,
 				password,
+				role,
 			});
 
-			return res.json({ message: "Sucesso ao realizar o cadastro!" });
+			return res
+				.status(201)
+				.json({ message: "Sucesso ao realizar o cadastro!" });
 		} catch (e) {
-			return res.send({ error: e.errors });
+			console.error("Erro ao cadastrar usuário:", e);
+			return res
+				.status(400)
+				.json({ error: e || ["Erro ao cadastrar usuário"] });
 		}
 	}
 }
