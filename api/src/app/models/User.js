@@ -8,6 +8,7 @@ class User extends Model {
 			{
 				name: Sequelize.STRING,
 				email: Sequelize.STRING,
+				role: Sequelize.ENUM("ADMIN", "MEDICO", "ATENDENTE", "PACIENTE"),
 				password: Sequelize.VIRTUAL,
 				password_hash: Sequelize.STRING,
 			},
