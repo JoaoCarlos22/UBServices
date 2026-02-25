@@ -1,5 +1,7 @@
 import express from "express";
+import session from "express-session";
 import routes from "./app/routes/index.js";
+import { sessionConfig } from "./config/session.js";
 
 // invoca a insância do banco de dados (inicialização)
 import "./database/index.js";
@@ -14,6 +16,7 @@ class App {
 
 	middlewares() {
 		this.app.use(express.json());
+		this.app.use(session(sessionConfig));
 	}
 
 	routes() {
