@@ -3,30 +3,23 @@
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
 	async up(queryInterface, Sequelize) {
-		await queryInterface.createTable("users", {
+		await queryInterface.createTable("attendant_profiles", {
 			id: {
 				type: Sequelize.UUID,
 				defaultValue: Sequelize.UUIDV4,
 				allowNull: false,
 				primaryKey: true,
 			},
-			name: {
-				type: Sequelize.STRING,
-				allowNull: false,
-			},
-			email: {
-				type: Sequelize.STRING,
+			user_id: {
+				type: Sequelize.UUID,
 				allowNull: false,
 				unique: true,
-			},
-			password_hash: {
-				type: Sequelize.STRING,
-				allowNull: false,
-			},
-			role: {
-				type: Sequelize.ENUM("ADMIN", "MEDICO", "ATENDENTE", "PACIENTE"),
-				allowNull: false,
-				defaultValue: "PACIENTE",
+				references: {
+					model: "users",
+					key: "id",
+				},
+				onUpdate: "CASCADE",
+				onDelete: "CASCADE",
 			},
 			created_at: {
 				type: Sequelize.DATE,
@@ -39,8 +32,7 @@ module.exports = {
 		});
 	},
 
-	// função que desfaz algo do 'up'
 	async down(queryInterface) {
-		await queryInterface.dropTable("users");
+		await queryInterface.dropTable("attendant_profiles");
 	},
 };
