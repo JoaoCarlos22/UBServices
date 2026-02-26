@@ -69,26 +69,7 @@ module.exports = {
 				allowNull: true,
 			},
 			services: {
-				type: Sequelize.ARRAY(
-					Sequelize.ENUM(
-						"Clínica Geral",
-						"Pediatria",
-						"Ginecologia",
-						"Cardiologia",
-						"Dermatologia",
-						"Ortopedia",
-						"Psicologia",
-						"Psiquiatria",
-						"Vacinação",
-						"Odontologia",
-						"Fisioterapia",
-						"Nutrição",
-						"Farmácia",
-						"Enfermagem",
-						"Coleta de Exames",
-						"Curativos",
-					),
-				),
+				type: Sequelize.ARRAY(Sequelize.STRING),
 				allowNull: true,
 				defaultValue: [],
 			},
@@ -102,12 +83,35 @@ module.exports = {
 				allowNull: false,
 			},
 		});
+
+		await queryInterface.sequelize.query(`
+            ALTER TABLE "ubs"
+            ADD CONSTRAINT "ck_ubs_services_allowed"
+            CHECK (
+                "services" IS NULL OR
+                "services" <@ ARRAY[
+                    'Clínica Geral',
+                    'Pediatria',
+                    'Ginecologia',
+                    'Cardiologia',
+                    'Dermatologia',
+                    'Ortopedia',
+                    'Psicologia',
+                    'Psiquiatria',
+                    'Vacinação',
+                    'Odontologia',
+                    'Fisioterapia',
+                    'Nutrição',
+                    'Farmácia',
+                    'Enfermagem',
+                    'Coleta de Exames',
+                    'Curativos'
+                ]::varchar[]
+            );
+        `);
 	},
 
 	async down(queryInterface) {
 		await queryInterface.dropTable("ubs");
-		await queryInterface.sequelize.query(
-			'DROP TYPE IF EXISTS "enum_ubs_servicos_oferecidos";',
-		);
 	},
 };
