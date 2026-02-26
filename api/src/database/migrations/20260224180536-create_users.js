@@ -23,6 +23,15 @@ module.exports = {
 				type: Sequelize.STRING,
 				allowNull: false,
 			},
+			cpf: {
+				type: Sequelize.STRING(14),
+				allowNull: false,
+				unique: true,
+			},
+			phone: {
+				type: Sequelize.STRING(20),
+				allowNull: false,
+			},
 			role: {
 				type: Sequelize.ENUM("ADMIN", "MEDICO", "ATENDENTE", "PACIENTE"),
 				allowNull: false,

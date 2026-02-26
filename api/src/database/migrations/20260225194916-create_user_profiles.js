@@ -21,15 +21,6 @@ module.exports = {
 				onUpdate: "CASCADE",
 				onDelete: "CASCADE",
 			},
-			cpf: {
-				type: Sequelize.STRING(14),
-				allowNull: false,
-				unique: true,
-			},
-			phone: {
-				type: Sequelize.STRING(20),
-				allowNull: false,
-			},
 			birth_date: {
 				type: Sequelize.DATEONLY,
 				allowNull: true,
@@ -43,15 +34,7 @@ module.exports = {
 				type: Sequelize.ENUM("A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-"),
 				allowNull: true,
 			},
-			street: {
-				type: Sequelize.STRING,
-				allowNull: true,
-			},
-			number: {
-				type: Sequelize.STRING(20),
-				allowNull: true,
-			},
-			complement: {
+			address: {
 				type: Sequelize.STRING,
 				allowNull: true,
 			},
@@ -59,11 +42,15 @@ module.exports = {
 				type: Sequelize.STRING,
 				allowNull: true,
 			},
+			cep: {
+				type: Sequelize.STRING(10),
+				allowNull: true,
+			},
 			city: {
 				type: Sequelize.STRING,
 				allowNull: true,
 			},
-			state: {
+			uf: {
 				type: Sequelize.STRING(2),
 				allowNull: true,
 			},
