@@ -4,6 +4,8 @@ export const userDTO = (user) => {
 	return {
 		name: data.name,
 		email: data.email,
+		cpf: data.cpf,
+		phone: data.phone,
 		role: data.role.toLowerCase(),
 		createdAt: data.createdAt,
 	};
