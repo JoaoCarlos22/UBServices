@@ -1,5 +1,5 @@
 import User from "../models/User.js";
-import { userDTO } from "../dtos/user/userDTO.js";
+import { userDTO } from "../dtos/users/userDTO.js";
 import { storeSessionSchema } from "../validators/session/storeSessionSchema.js";
 
 class SessionController {
