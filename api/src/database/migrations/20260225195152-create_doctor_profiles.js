@@ -22,7 +22,7 @@ module.exports = {
 				onDelete: "CASCADE",
 			},
 			crm: {
-				type: Sequelize.STRING(20),
+				type: Sequelize.STRING(6),
 				allowNull: false,
 			},
 			crm_uf: {

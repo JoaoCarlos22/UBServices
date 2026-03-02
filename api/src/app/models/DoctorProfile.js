@@ -8,7 +8,7 @@ class DoctorProfile extends Model {
 					type: Sequelize.UUID,
 					field: "user_id",
 				},
-				crm: Sequelize.STRING(20),
+				crm: Sequelize.STRING(6),
 				crmUf: {
 					type: Sequelize.STRING(2),
 					field: "crm_uf",
