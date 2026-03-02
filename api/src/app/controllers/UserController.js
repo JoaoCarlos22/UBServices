@@ -70,8 +70,7 @@ class UserController {
 
 			return res.status(201).json({
 				message: "Sucesso ao realizar o cadastro!",
-				user: userDTO(user),
-				profile: userProfileDTO(profile),
+				profile: userProfileDTO(profile, user),
 			});
 		} catch (e) {
 			console.error("Erro ao cadastrar usuário:", e);
@@ -116,8 +115,7 @@ class UserController {
 
 				return res.status(200).json({
 					authenticated: true,
-					user: userDTO(user),
-					profile: user.profile ? userProfileDTO(user.profile) : null,
+					profile: userProfileDTO(user.profile, user),
 				});
 			}
 			return res.status(200).json({ authenticated: false });
