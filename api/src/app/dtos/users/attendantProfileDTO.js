@@ -1,9 +1,13 @@
-export const attendantProfileDTO = (profile) => {
-	const data = profile?.get ? profile.get({ plain: true }) : profile;
+export const attendantProfileDTO = (profile, user) => {
+	const profileData = profile?.get ? profile.get({ plain: true }) : profile;
+	const userData = user?.get ? user.get({ plain: true }) : user;
 
 	return {
-		id: data.id,
-		userId: data.userId,
-		createdAt: data.createdAt,
+		id: profileData.userId,
+		name: userData.name,
+		email: userData.email,
+		cpf: userData.cpf,
+		phone: userData.phone,
+		createdAt: profileData.createdAt,
 	};
 };
