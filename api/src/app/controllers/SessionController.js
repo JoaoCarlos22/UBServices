@@ -1,3 +1,4 @@
+import jwt from "jsonwebtoken";
 import User from "../models/User.js";
 import { userDTO } from "../dtos/users/userDTO.js";
 import { storeSessionSchema } from "../validators/session/storeSessionSchema.js";
@@ -19,31 +20,22 @@ class SessionController {
 
 			if (!(await user.checkPassword(password))) return errorEmailPassword();
 
-			req.session.user = {
-				id: user.id,
-				name: user.name,
-				email: user.email,
-				role: user.role,
-			};
+			const token = jwt.sign(
+				{ id: user.id, role: user.role },
+				process.env.JWT_SECRET,
+				{
+					expiresIn: process.env.JWT_EXPIRES_IN,
+				},
+			);
 
 			return res.status(200).json({
 				message: "Sucesso ao realizar o login!",
-				user: userDTO(user),
+				token,
+				expiresIn: process.env.JWT_EXPIRES_IN,
 			});
 		} catch (e) {
-			return res
-				.status(400)
-				.json({ error: e.errors || ["Erro ao realizar login"] });
+			return res.status(400).json({ error: e.errors || e });
 		}
-	}
-
-	async destroy(req, res) {
-		req.session.destroy((err) => {
-			if (err) {
-				return res.status(500).json({ error: "Erro ao encerrar sessão!" });
-			}
-			return res.status(200).json({ message: "Sessão encerrada com sucesso!" });
-		});
 	}
 }
 

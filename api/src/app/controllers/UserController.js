@@ -83,42 +83,41 @@ class UserController {
 
 	async show(req, res) {
 		try {
-			if (req.session && req.session.user) {
-				const userId = req.session.user.id;
+			if (!req.auth) return res.status(401).json({ authenticated: false });
 
-				const user = await User.findByPk(userId, {
-					attributes: ["id", "name", "email", "role", "createdAt"],
-					include: [
-						{
-							model: UserProfile,
-							as: "profile",
-							required: false,
-							attributes: [
-								"id",
-								"userId",
-								"birthDate",
-								"susCard",
-								"bloodType",
-								"address",
-								"neighborhood",
-								"cep",
-								"city",
-								"uf",
-								"createdAt",
-							],
-						},
-					],
-				});
+			const userId = req.auth.id;
 
-				if (!user)
-					return res.status(404).json({ error: "Usuário não encontrado!" });
+			const user = await User.findByPk(userId, {
+				attributes: ["id", "name", "email", "role", "createdAt"],
+				include: [
+					{
+						model: UserProfile,
+						as: "profile",
+						required: false,
+						attributes: [
+							"id",
+							"userId",
+							"birthDate",
+							"susCard",
+							"bloodType",
+							"address",
+							"neighborhood",
+							"cep",
+							"city",
+							"uf",
+							"createdAt",
+						],
+					},
+				],
+			});
 
-				return res.status(200).json({
-					authenticated: true,
-					profile: userProfileDTO(user.profile, user),
-				});
-			}
-			return res.status(200).json({ authenticated: false });
+			if (!user)
+				return res.status(404).json({ error: "Usuário não encontrado!" });
+
+			return res.status(200).json({
+				authenticated: true,
+				profile: userProfileDTO(user.profile, user),
+			});
 		} catch (e) {
 			console.error("Erro na rota /me:", e);
 			return res.status(500).json({ error: "Erro ao verificar autenticação!" });

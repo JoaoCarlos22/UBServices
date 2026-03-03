@@ -7,7 +7,6 @@ import AttendantController from "../controllers/AttendantController.js";
 const routes = new Router();
 
 routes.post("/login", SessionController.store);
-routes.get("/logout", SessionController.destroy);
 routes.post("/signup/patient", UserController.store);
 routes.post("/signup/doctor", DoctorController.store);
 routes.post("/signup/attendant", AttendantController.store);
