@@ -1,24 +1,29 @@
 import jwt from "jsonwebtoken";
 import User from "../models/User.js";
-import { userDTO } from "../dtos/users/userDTO.js";
+import Erro401 from "../errors/Erro401.js";
 import { storeSessionSchema } from "../validators/session/storeSessionSchema.js";
 
 class SessionController {
-	async store(req, res) {
+	async store(req, res, next) {
 		try {
 			const { email, password } = req.body;
 
-			const errorEmailPassword = () =>
-				res.status(401).json({ error: "Email/senha incorretos!" });
+			const throwEmailPasswordError = () => {
+				throw new Erro401("Email/senha incorretos!");
+			};
 
 			if (!(await storeSessionSchema.isValid(req.body))) {
-				return errorEmailPassword();
+				throwEmailPasswordError();
 			}
 
 			const user = await User.findOne({ where: { email } });
-			if (!user) return errorEmailPassword();
+			if (!user) {
+				throwEmailPasswordError();
+			}
 
-			if (!(await user.checkPassword(password))) return errorEmailPassword();
+			if (!(await user.checkPassword(password))) {
+				throwEmailPasswordError();
+			}
 
 			const token = jwt.sign(
 				{ id: user.id, role: user.role },
@@ -34,7 +39,7 @@ class SessionController {
 				expiresIn: process.env.JWT_EXPIRES_IN,
 			});
 		} catch (e) {
-			return res.status(400).json({ error: e.errors || e });
+			return next(e);
 		}
 	}
 }

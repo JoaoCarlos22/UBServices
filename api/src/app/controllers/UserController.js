@@ -1,89 +1,63 @@
 import { v4 } from "uuid";
 import User from "../models/User.js";
 import UserProfile from "../models/UserProfile.js";
-import { userDTO } from "../dtos/users/userDTO.js";
+import Erro401 from "../errors/Erro401.js";
+import Erro404 from "../errors/Erro404.js";
 import { userProfileDTO } from "../dtos/users/userProfileDTO.js";
-import { storeUserSchema } from "../validators/store/storeUserSchema.js";
 import { storeUserProfileSchema } from "../validators/store/storeUserProfileSchema.js";
 import { normalizeDateOnly } from "../utils/dateUtils.js";
+import { createUserProfile } from "../services/createUserProfile.js";
 
 class UserController {
-	async store(req, res) {
-		let transaction;
+	async store(req, res, next) {
 		try {
-			const { name, email, password, cpf, phone } =
-				await storeUserSchema.validate(req.body, {
-					abortEarly: false,
-				});
+			const { user, profile } = await createUserProfile({
+				payload: req.body,
+				role: "PACIENTE",
+				createProfile: async ({ user, transaction, payload }) => {
+					const profileInput = {
+						birthDate: normalizeDateOnly(payload.birthDate),
+						susCard: payload.susCard,
+						bloodType: payload.bloodType,
+						address: payload.address,
+						neighborhood: payload.neighborhood,
+						cep: payload.cep,
+						city: payload.city,
+						uf: payload.uf,
+					};
 
-			const emailExists = await User.findOne({ where: { email } });
-			if (emailExists) {
-				return res.status(400).json({ error: "Email já cadastrado!" });
-			}
+					await storeUserProfileSchema.validate(
+						{ userId: user.id, ...profileInput },
+						{ abortEarly: false },
+					);
 
-			const cpfExists = await User.findOne({ where: { cpf } });
-			if (cpfExists) {
-				return res.status(400).json({ error: "CPF já cadastrado!" });
-			}
+					const profile = await UserProfile.create(
+						{
+							id: v4(),
+							userId: user.id,
+							...profileInput,
+						},
+						{ transaction },
+					);
 
-			transaction = await User.sequelize.transaction();
-
-			const user = await User.create(
-				{
-					id: v4(),
-					name,
-					email,
-					password,
-					cpf,
-					phone,
-					role: "PACIENTE",
+					return { profile };
 				},
-				{ transaction },
-			);
-
-			const profileInput = {
-				birthDate: normalizeDateOnly(req.body.birthDate),
-				susCard: req.body.susCard,
-				bloodType: req.body.bloodType,
-				address: req.body.address,
-				neighborhood: req.body.neighborhood,
-				cep: req.body.cep,
-				city: req.body.city,
-				uf: req.body.uf,
-			};
-
-			await storeUserProfileSchema.validate(
-				{ userId: user.id, ...profileInput },
-				{ abortEarly: false },
-			);
-
-			const profile = await UserProfile.create(
-				{
-					id: v4(),
-					userId: user.id,
-					...profileInput,
-				},
-				{ transaction },
-			);
-
-			await transaction.commit();
+			});
 
 			return res.status(201).json({
 				message: "Sucesso ao realizar o cadastro!",
 				profile: userProfileDTO(profile, user),
 			});
 		} catch (e) {
-			console.error("Erro ao cadastrar usuário:", e);
-			await transaction.rollback();
-			return res
-				.status(400)
-				.json({ error: e || ["Erro ao cadastrar usuário"] });
+			return next(e);
 		}
 	}
 
-	async show(req, res) {
+	async show(req, res, next) {
 		try {
-			if (!req.auth) return res.status(401).json({ authenticated: false });
+			if (!req.auth) {
+				throw new Erro401("Usuario nao autenticado");
+			}
 
 			const userId = req.auth.id;
 
@@ -111,16 +85,16 @@ class UserController {
 				],
 			});
 
-			if (!user)
-				return res.status(404).json({ error: "Usuário não encontrado!" });
+			if (!user) {
+				throw new Erro404("Usuario nao encontrado!");
+			}
 
 			return res.status(200).json({
 				authenticated: true,
 				profile: userProfileDTO(user.profile, user),
 			});
 		} catch (e) {
-			console.error("Erro na rota /me:", e);
-			return res.status(500).json({ error: "Erro ao verificar autenticação!" });
+			return next(e);
 		}
 	}
 }
