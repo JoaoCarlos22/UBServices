@@ -4,6 +4,12 @@ class UserProfile extends Model {
 	static init(sequelize) {
 		super.init(
 			{
+				id: {
+					type: Sequelize.UUID,
+					defaultValue: Sequelize.UUIDV4,
+					primaryKey: true,
+					allowNull: false,
+				},
 				userId: {
 					type: Sequelize.UUID,
 					field: "user_id",

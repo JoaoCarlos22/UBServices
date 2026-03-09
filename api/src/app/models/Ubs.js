@@ -23,6 +23,11 @@ class Ubs extends Model {
 	static init(sequelize) {
 		super.init(
 			{
+				id: {
+					type: Sequelize.UUID,
+					defaultValue: Sequelize.UUIDV4,
+					primaryKey: true,
+				},
 				name: Sequelize.STRING,
 				cnes: Sequelize.STRING(20),
 				cnpj: Sequelize.STRING(18),
