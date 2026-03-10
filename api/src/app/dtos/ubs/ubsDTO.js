@@ -1,7 +1,7 @@
 import { removeNullish } from "../../utils/nullUtils.js";
 import { adminProfileDTO } from "../users/adminProfileDTO.js";
 
-export const ubsDTO = (ubs, admin) => {
+export const ubsDTO = (ubs, admin = null) => {
 	const ubsData = ubs?.get ? ubs.get({ plain: true }) : ubs;
 	const adminData = admin ? admin.get({ plain: true }) : null;
 
@@ -22,6 +22,6 @@ export const ubsDTO = (ubs, admin) => {
 		description: ubsData.description,
 		services: ubsData.services,
 		createdAt: ubsData.createdAt,
-		createdBy: adminProfileDTO(adminData),
+		createdBy: adminData ? adminProfileDTO(adminData) : undefined,
 	});
 };
