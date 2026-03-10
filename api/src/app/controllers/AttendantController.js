@@ -1,7 +1,7 @@
 import { v4 } from "uuid";
 import AttendantProfile from "../models/AttendantProfile.js";
 import { attendantProfileDTO } from "../dtos/users/attendantProfileDTO.js";
-import { createUserProfile } from "../services/createUserProfile.js";
+import { createUserProfile } from "../services/createUserProfileService.js";
 
 class AttendantController {
 	async store(req, res, next) {

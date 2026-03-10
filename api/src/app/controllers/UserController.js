@@ -6,7 +6,7 @@ import Erro404 from "../errors/Erro404.js";
 import { userProfileDTO } from "../dtos/users/userProfileDTO.js";
 import { storeUserProfileSchema } from "../validators/store/storeUserProfileSchema.js";
 import { normalizeDateOnly } from "../utils/dateUtils.js";
-import { createUserProfile } from "../services/createUserProfile.js";
+import { createUserProfile } from "../services/createUserProfileService.js";
 
 class UserController {
 	async store(req, res, next) {

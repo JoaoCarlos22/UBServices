@@ -3,7 +3,7 @@ import { Ubs, UbsAdmin } from "../models/index.js";
 import Erro400 from "../errors/Erro400.js";
 import { storeUbsSchema } from "../validators/store/storeUbsSchema.js";
 import { ubsDTO } from "../dtos/ubs/ubsDTO.js";
-import { createUserProfile } from "../services/createUserProfile.js";
+import { createUserProfile } from "../services/createUserProfileService.js";
 
 class AdminController {
 	async store(req, res, next) {

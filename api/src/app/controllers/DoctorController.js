@@ -3,7 +3,7 @@ import DoctorProfile from "../models/DoctorProfile.js";
 import Erro400 from "../errors/Erro400.js";
 import { doctorProfileDTO } from "../dtos/users/doctorProfileDTO.js";
 import { storeDoctorProfileSchema } from "../validators/store/storeDoctorProfileSchema.js";
-import { createUserProfile } from "../services/createUserProfile.js";
+import { createUserProfile } from "../services/createUserProfileService.js";
 
 class DoctorController {
 	async store(req, res, next) {
