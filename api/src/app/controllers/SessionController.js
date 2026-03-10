@@ -26,7 +26,7 @@ class SessionController {
 			}
 
 			const token = jwt.sign(
-				{ id: user.id, role: user.role },
+				{ id: user.id, role: user.role.toLowerCase() },
 				process.env.JWT_SECRET,
 				{
 					expiresIn: process.env.JWT_EXPIRES_IN,
