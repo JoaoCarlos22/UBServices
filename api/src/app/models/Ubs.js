@@ -99,6 +99,11 @@ class Ubs extends Model {
 			otherKey: "userId",
 			as: "admins",
 		});
+
+		this.hasMany(models.UbsWorkRequest, {
+			foreignKey: "ubsId",
+			as: "workRequests",
+		});
 	}
 }
 

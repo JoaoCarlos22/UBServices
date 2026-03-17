@@ -54,6 +54,16 @@ class User extends Model {
 			otherKey: "ubsId",
 			as: "adminUbs",
 		});
+
+		this.hasMany(models.UbsWorkRequest, {
+			foreignKey: "userId",
+			as: "workRequests",
+		});
+
+		this.hasMany(models.UbsWorkRequest, {
+			foreignKey: "reviewedByUserId",
+			as: "reviewedWorkRequests",
+		});
 	}
 
 	checkPassword(password) {

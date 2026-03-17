@@ -6,6 +6,7 @@ import Ubs from "./Ubs.js";
 import UbsDoctor from "./UbsDoctor.js";
 import UbsAttendant from "./UbsAttendant.js";
 import UbsAdmin from "./UbsAdmin.js";
+import UbsWorkRequest from "./UbsWorkRequest.js";
 
 const models = [
 	User,
@@ -16,6 +17,7 @@ const models = [
 	UbsDoctor,
 	UbsAttendant,
 	UbsAdmin,
+	UbsWorkRequest,
 ];
 
 export {
@@ -27,6 +29,7 @@ export {
 	UbsDoctor,
 	UbsAttendant,
 	UbsAdmin,
+	UbsWorkRequest,
 };
 
 export default models;
