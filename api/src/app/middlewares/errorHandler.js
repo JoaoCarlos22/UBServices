@@ -19,6 +19,16 @@ const normalizeError = (error) => {
 		return new Erro401("Token invalido ou expirado");
 	}
 
+	if (error?.name === "MulterError") {
+		if (error?.code === "LIMIT_FILE_SIZE") {
+			return new Erro400(
+				"Arquivo muito grande. Tamanho máximo permitido: 5MB.",
+			);
+		}
+
+		return new Erro400("Erro ao processar o upload do arquivo.");
+	}
+
 	if (error?.name === "SequelizeValidationError") {
 		const details = error.errors?.map((item) => item.message) || [];
 		return new Erro400("Erro de validacao", details);

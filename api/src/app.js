@@ -1,5 +1,6 @@
 import express from "express";
-import session from "express-session";
+import cors from "cors";
+import path from "path";
 import routes from "./app/routes/index.js";
 import Erro404 from "./app/errors/Erro404.js";
 import errorHandler from "./app/middlewares/errorHandler.js";
@@ -16,7 +17,12 @@ class App {
 	}
 
 	middlewares() {
+		//this.app.use(cors());
 		this.app.use(express.json());
+		this.app.use(
+			"/uploads",
+			express.static(path.resolve(process.cwd(), "uploads")),
+		);
 	}
 
 	routes() {
