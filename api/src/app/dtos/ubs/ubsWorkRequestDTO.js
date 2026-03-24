@@ -22,14 +22,15 @@ export const ubsWorkRequestDTO = (ubsWorkRequest, ubs, profile = null) => {
 			address: ubs?.address || requestData?.ubs?.address,
 			neighborhood: ubs?.neighborhood || requestData?.ubs?.neighborhood,
 		},
-		user: profile
-			? {
-					id: profile?.id,
-					name: profile?.user?.name,
-					email: profile?.user?.email,
-					role: profile?.user?.role,
-				}
-			: undefined,
+		requester:
+			profile || requestData?.requester
+				? {
+						id: profile?.id || requestData?.requester?.id,
+						name: profile?.user?.name || requestData?.requester?.name,
+						email: profile?.user?.email || requestData?.requester?.email,
+						role: profile?.user?.role || requestData?.requester?.role,
+					}
+				: undefined,
 		reviewer: requestData?.reviewer
 			? {
 					id: requestData?.reviewer?.id,
