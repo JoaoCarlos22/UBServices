@@ -11,6 +11,7 @@ import Erro400 from "../errors/Erro400.js";
 import Erro403 from "../errors/Erro403.js";
 import Erro404 from "../errors/Erro404.js";
 import { ubsWorkRequestDTO } from "../dtos/ubs/ubsWorkRequestDTO.js";
+import { ubsListWorkRequestDTO } from "../dtos/ubs/ubsListWorkRequestDTO.js";
 import { storeUbsWorkRequestSchema } from "../validators/store/storeUbsWorkRequestSchema.js";
 import { reviewUbsWorkRequestSchema } from "../validators/store/reviewUbsWorkRequestSchema.js";
 
@@ -19,18 +20,18 @@ const WORKER_ROLES = ["MEDICO", "ATENDENTE"];
 // Função auxiliar para obter o perfil profissional do usuário com base no cargo
 const getWorkerProfile = async (role, userId, transaction) => {
 	if (role === "medico") {
-		return DoctorProfile.findOne({ 
-			where: { userId }, 
+		return DoctorProfile.findOne({
+			where: { userId },
 			include: { association: "user", attributes: ["name", "email", "role"] },
-			transaction 
+			transaction,
 		});
 	}
 
 	if (role === "atendente") {
-		return AttendantProfile.findOne({ 
+		return AttendantProfile.findOne({
 			where: { userId },
 			include: { association: "user", attributes: ["name", "email", "role"] },
-			transaction 
+			transaction,
 		});
 	}
 
@@ -129,6 +130,39 @@ class WorkRequestController {
 				message:
 					"Solicitação enviada com sucesso! Aguarde a análise do administrador da UBS.",
 				request: ubsWorkRequestDTO(workRequest, ubs, profile),
+			});
+		} catch (e) {
+			return next(e);
+		}
+	}
+
+	async listMy(req, res, next) {
+		try {
+			if (req.auth.role == "paciente") {
+				throw new Erro403(
+					"Somente perfis médico e atendente podem realizar essa requisição.",
+				);
+			}
+
+			const requests = await UbsWorkRequest.findAll({
+				where: {
+					userId: req.auth.id,
+				},
+				include: [
+					{
+						association: "ubs",
+						attributes: ["id", "name", "city", "uf", "address"],
+					},
+					{
+						association: "reviewer",
+						attributes: ["id", "name", "email"],
+					},
+				],
+				order: [["createdAt", "DESC"]],
+			});
+
+			return res.status(200).json({
+				...ubsListWorkRequestDTO(requests),
 			});
 		} catch (e) {
 			return next(e);
