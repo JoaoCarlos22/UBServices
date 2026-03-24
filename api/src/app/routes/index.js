@@ -1,6 +1,7 @@
 import { Router } from "express";
 import { isAuthenticated } from "../middlewares/authMiddleware.js";
 import authRoutes from "../routes/auth.js";
+import adminRoutes from "../routes/admin.js";
 import userRoutes from "../routes/users.js";
 import ubsRoutes from "../routes/ubs.js";
 import visitaRoutes from "../routes/visitas.js";
@@ -10,6 +11,7 @@ const routes = new Router();
 
 routes.use("/", authRoutes);
 routes.use(isAuthenticated);
+routes.use("/admin", adminRoutes);
 routes.use("/ubs", ubsRoutes);
 routes.use("/work-requests", workRequestRoutes);
 routes.use("/", userRoutes);
