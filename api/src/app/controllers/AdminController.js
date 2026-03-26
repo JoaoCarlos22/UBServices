@@ -8,6 +8,7 @@ import { getWorkerProfile } from "../utils/workerProfileUtils.js";
 import { storeUbsSchema } from "../validators/store/storeUbsSchema.js";
 import { reviewUbsWorkRequestSchema } from "../validators/update/reviewUbsWorkRequestSchema.js";
 import { ubsDTO } from "../dtos/ubs/ubsDTO.js";
+import { ubsWorkRequestDTO } from "../dtos/ubs/ubsWorkRequestDTO.js";
 import { ubsListWorkRequestDTO } from "../dtos/ubs/ubsListWorkRequestDTO.js";
 import { createUserProfile } from "../services/createUserProfileService.js";
 
