@@ -10,33 +10,13 @@ import {
 import Erro400 from "../errors/Erro400.js";
 import Erro403 from "../errors/Erro403.js";
 import Erro404 from "../errors/Erro404.js";
+import { getWorkerProfile } from "../utils/workerProfileUtils.js";
 import { ubsWorkRequestDTO } from "../dtos/ubs/ubsWorkRequestDTO.js";
 import { ubsListWorkRequestDTO } from "../dtos/ubs/ubsListWorkRequestDTO.js";
 import { storeUbsWorkRequestSchema } from "../validators/store/storeUbsWorkRequestSchema.js";
 import { reviewUbsWorkRequestSchema } from "../validators/store/reviewUbsWorkRequestSchema.js";
 
 const WORKER_ROLES = ["MEDICO", "ATENDENTE"];
-
-// Função auxiliar para obter o perfil profissional do usuário com base no cargo
-const getWorkerProfile = async (role, userId, transaction) => {
-	if (role === "medico") {
-		return DoctorProfile.findOne({
-			where: { userId },
-			include: { association: "user", attributes: ["name", "email", "role"] },
-			transaction,
-		});
-	}
-
-	if (role === "atendente") {
-		return AttendantProfile.findOne({
-			where: { userId },
-			include: { association: "user", attributes: ["name", "email", "role"] },
-			transaction,
-		});
-	}
-
-	return null;
-};
 
 // Função auxiliar para verificar se já existe um vínculo ativo entre o profissional e a UBS
 const getExistingLink = async (role, ubsId, profileId) => {
