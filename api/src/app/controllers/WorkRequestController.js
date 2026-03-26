@@ -14,7 +14,6 @@ import { getWorkerProfile } from "../utils/workerProfileUtils.js";
 import { ubsWorkRequestDTO } from "../dtos/ubs/ubsWorkRequestDTO.js";
 import { ubsListWorkRequestDTO } from "../dtos/ubs/ubsListWorkRequestDTO.js";
 import { storeUbsWorkRequestSchema } from "../validators/store/storeUbsWorkRequestSchema.js";
-import { reviewUbsWorkRequestSchema } from "../validators/store/reviewUbsWorkRequestSchema.js";
 
 const WORKER_ROLES = ["MEDICO", "ATENDENTE"];
 
