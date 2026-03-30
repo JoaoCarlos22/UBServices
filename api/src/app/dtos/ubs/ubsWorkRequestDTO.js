@@ -28,6 +28,7 @@ export const ubsWorkRequestDTO = (ubsWorkRequest, ubs, profile = null) => {
 						id: profile?.id || requestData?.requester?.id,
 						name: profile?.user?.name || requestData?.requester?.name,
 						email: profile?.user?.email || requestData?.requester?.email,
+						crm: profile?.crm || requestData?.requester?.crm,
 						role: profile?.user?.role || requestData?.requester?.role,
 					}
 				: undefined,
