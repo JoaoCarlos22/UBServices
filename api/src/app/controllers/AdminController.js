@@ -11,6 +11,7 @@ import { ubsDTO } from "../dtos/ubs/ubsDTO.js";
 import { ubsWorkRequestDTO } from "../dtos/ubs/ubsWorkRequestDTO.js";
 import { ubsListWorkRequestDTO } from "../dtos/ubs/ubsListWorkRequestDTO.js";
 import { createUserProfile } from "../services/createUserProfileService.js";
+import { removeWorkerService } from "../services/removeWorkerService.js";
 
 class AdminController {
 	async store(req, res, next) {
@@ -217,6 +218,50 @@ class AdminController {
 			return res.status(200).json({
 				message: `Solicitação ${shouldApprove ? "aprovada" : "rejeitada"} com sucesso!`,
 				request: ubsWorkRequestDTO(workRequest),
+			});
+		} catch (e) {
+			return next(e);
+		}
+	}
+
+	async removeUser(req, res, next) {
+		try {
+			const userId = req.params.id;
+			const [doctorProfile, attendantProfile] = await Promise.all([
+				getWorkerProfile("MEDICO", userId),
+				getWorkerProfile("ATENDENTE", userId),
+			]);
+
+			const profile = doctorProfile || attendantProfile;
+
+			if (!profile) {
+				throw new Erro404("Usuário não encontrado.");
+			}
+
+			if (profile.user.id === req.auth.id) {
+				throw new Erro403("Você não pode remover a si mesmo.");
+			}
+
+			const adminUbs = await UbsAdmin.findAll({
+				where: {
+					userId: req.auth.id,
+				},
+				attributes: ["ubsId"],
+			});
+
+			const adminUbsIds = adminUbs.map((item) => item.ubsId);
+
+			if (adminUbsIds.length === 0) {
+				throw new Erro403("Você não possui UBSs para gerenciar.");
+			}
+
+			await removeWorkerService({
+				profile,
+				adminUbsIds,
+			});
+
+			return res.status(200).json({
+				message: "Profissional removido da(s) UBS(s) com sucesso!",
 			});
 		} catch (e) {
 			return next(e);
